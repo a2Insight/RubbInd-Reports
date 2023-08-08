@@ -1,6 +1,0 @@
-{
-  "name": "RankByBidrag",
-  "expression": "CALCULATE([ProInntektYTD],FILTER(TmpHovedprosjekt,IF(NOT(ISBLANK([ProBidragYTD])),RANKX(ALL(TmpHovedprosjekt),[ProBidragYTD])<=3)))",
-  "formatString": "0",
-  "lineageTag": "d90747df-f5a8-4275-aa8b-588c4636c1c6"
-}

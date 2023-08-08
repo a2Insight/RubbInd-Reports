@@ -62,18 +62,6 @@
         "    \"fromColumn\": \"SelskapsId\",",
         "    \"toTable\": \"Selskap\",",
         "    \"toColumn\": \"SelskapsId\"",
-        "  },",
-        "  {",
-        "    \"fromTable\": \"Regnskap\",",
-        "    \"fromColumn\": \"SettId\",",
-        "    \"toTable\": \"Datasett\",",
-        "    \"toColumn\": \"SettId\"",
-        "  },",
-        "  {",
-        "    \"fromTable\": \"Regnskap\",",
-        "    \"fromColumn\": \"Aar\",",
-        "    \"toTable\": \"IB\",",
-        "    \"toColumn\": \"Aar\"",
         "  }",
         "]"
       ]

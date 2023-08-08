@@ -1,8 +1,0 @@
-{
-  "name": "TmpHovedprosjekt-1f12bad7-f4e6-4efa-86c3-940b456565be",
-  "mode": "import",
-  "source": {
-    "type": "calculated",
-    "expression": "CALCULATETABLE(VALUES(Prosjekt[HP Beskrivelse]),Prosjekt[WIPfilter]=1) "
-  }
-}

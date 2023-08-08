@@ -4,7 +4,7 @@
   "sourceColumn": "RappSort",
   "formatString": "0",
   "lineageTag": "c81b8b5b-5428-4cac-aaf9-583b5f0faa98",
-  "summarizeBy": "sum",
+  "summarizeBy": "none",
   "annotations": [
     {
       "name": "SummarizationSetBy",

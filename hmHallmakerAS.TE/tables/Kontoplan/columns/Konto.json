@@ -4,7 +4,7 @@
   "sourceColumn": "Konto",
   "formatString": "0",
   "lineageTag": "b4098cca-3f72-47ab-a09f-b7fd86f0d790",
-  "summarizeBy": "sum",
+  "summarizeBy": "none",
   "changedProperties": [
     {
       "property": "DataType"

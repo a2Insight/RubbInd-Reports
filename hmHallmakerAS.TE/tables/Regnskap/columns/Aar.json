@@ -5,7 +5,7 @@
   "isDataTypeInferred": true,
   "expression": "YEAR(Regnskap[Dato])",
   "lineageTag": "641c7858-fb6e-4319-bd61-fa136151a632",
-  "summarizeBy": "none",
+  "summarizeBy": "sum",
   "annotations": [
     {
       "name": "SummarizationSetBy",

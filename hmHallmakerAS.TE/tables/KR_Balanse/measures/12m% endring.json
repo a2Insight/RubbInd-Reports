@@ -1,6 +1,0 @@
-{
-  "name": "12m% endring",
-  "expression": "IF(MAX(KR_Balanse[Type])=4,BLANK(),DIVIDE([12m Endring],[Balanse])*100)",
-  "formatString": "#,0.0",
-  "lineageTag": "39719e14-f4e9-4677-b54d-0f356bc6d8af"
-}

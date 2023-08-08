@@ -22,30 +22,6 @@
         },
         {
           "location": {
-            "x": 848.2683476643183,
-            "y": 1204.9920143759282
-          },
-          "nodeIndex": "Budsjett",
-          "size": {
-            "height": 270,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 875.63469186017971,
-            "y": 642.1585337994112
-          },
-          "nodeIndex": "Datasett",
-          "size": {
-            "height": 137,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 2556.4747251235394,
             "y": 595.82377202720863
           },
@@ -70,30 +46,6 @@
         },
         {
           "location": {
-            "x": 1191.9312220432735,
-            "y": 0
-          },
-          "nodeIndex": "IB",
-          "size": {
-            "height": 175,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 1971.6346918601798,
-            "y": 696.41100847477855
-          },
-          "nodeIndex": "IN_ProjectForecast",
-          "size": {
-            "height": 251,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 137.28183416190743,
             "y": 87.970666319453741
           },
@@ -110,30 +62,6 @@
             "y": 629.55048805070442
           },
           "nodeIndex": "Kontoplan",
-          "size": {
-            "height": 337,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 327.63469186017971,
-            "y": 526.78072951376714
-          },
-          "nodeIndex": "KR_Balanse",
-          "size": {
-            "height": 337,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": -2.2737367544323206E-13,
-            "y": 883.1450380264331
-          },
-          "nodeIndex": "KR_Resultat",
           "size": {
             "height": 337,
             "width": 234
@@ -190,30 +118,6 @@
         },
         {
           "location": {
-            "x": 1448.2392378394352,
-            "y": 1059.8910724653479
-          },
-          "nodeIndex": "Ordreinngang",
-          "size": {
-            "height": 337,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 2884.1094169837188,
-            "y": 514.82377202720863
-          },
-          "nodeIndex": "OrdreKPI",
-          "size": {
-            "height": 337,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 3211.7441088438991,
             "y": 576.82377202720863
           },
@@ -256,18 +160,6 @@
           "nodeIndex": "ProsjektKPI",
           "size": {
             "height": 337,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 3867.0134925642587,
-            "y": 614.82377202720863
-          },
-          "nodeIndex": "ProsjektLederFilter",
-          "size": {
-            "height": 137,
             "width": 234
           },
           "zIndex": 0
@@ -322,46 +214,10 @@
         },
         {
           "location": {
-            "x": 1726.6770506813498,
-            "y": 285.41100847477861
-          },
-          "nodeIndex": "Tmp_ProsjektPowerApps",
-          "size": {
-            "height": 118,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 1971.6346918601798,
-            "y": 443.41100847477861
-          },
-          "nodeIndex": "TmpHovedprosjekt",
-          "size": {
-            "height": 213,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 4849.9175681447978,
             "y": 514.82377202720863
           },
           "nodeIndex": "WorkInProgress",
-          "size": {
-            "height": 337,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 5204.2,
-            "y": 0
-          },
-          "nodeIndex": "Merge1",
           "size": {
             "height": 337,
             "width": 234
@@ -397,30 +253,6 @@
         },
         {
           "location": {
-            "x": 309.07208248469533,
-            "y": 1204.4520407133739
-          },
-          "nodeIndex": "Budsjett",
-          "size": {
-            "height": 257,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 647.94022632376493,
-            "y": 617.33832434607814
-          },
-          "nodeIndex": "Datasett",
-          "size": {
-            "height": 257,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 1955.0505401147375,
             "y": 584.70786732906367
           },
@@ -445,18 +277,6 @@
         },
         {
           "location": {
-            "x": 221.99051627286894,
-            "y": 195.45682975769193
-          },
-          "nodeIndex": "IB",
-          "size": {
-            "height": 257,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 967.46346553671219,
             "y": 698.93188188713862
           },
@@ -473,30 +293,6 @@
             "y": 728.86164549520947
           },
           "nodeIndex": "Kontoplan",
-          "size": {
-            "height": 257,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 99.940226323764932,
-            "y": 641.0528789650358
-          },
-          "nodeIndex": "KR_Balanse",
-          "size": {
-            "height": 257,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 2.2737367544323206E-13,
-            "y": 969.51342812761993
-          },
-          "nodeIndex": "KR_Resultat",
           "size": {
             "height": 257,
             "width": 234
@@ -533,30 +329,6 @@
             "y": 52.938286050999409
           },
           "nodeIndex": "NyeKontoer",
-          "size": {
-            "height": 257,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 1337.0242389258524,
-            "y": 929.3691000204775
-          },
-          "nodeIndex": "Ordreinngang",
-          "size": {
-            "height": 257,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 2284.2462316407459,
-            "y": 584.70786732906367
-          },
-          "nodeIndex": "OrdreKPI",
           "size": {
             "height": 257,
             "width": 234
@@ -661,30 +433,6 @@
         },
         {
           "location": {
-            "x": 1611.0242389258524,
-            "y": 665.94900788083964
-          },
-          "nodeIndex": "Tmp_ProsjektPowerApps",
-          "size": {
-            "height": 257,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 1518.5704769517874,
-            "y": 386.20953052257266
-          },
-          "nodeIndex": "TmpHovedprosjekt",
-          "size": {
-            "height": 257,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 3930.2246892707881,
             "y": 584.70786732906367
           },
@@ -757,42 +505,6 @@
             "width": 230
           },
           "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 62,
-            "y": 413
-          },
-          "nodeIndex": "IN_ProjectForecast",
-          "size": {
-            "height": 251,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 903,
-            "y": 31
-          },
-          "nodeIndex": "Tmp_ProsjektPowerApps",
-          "size": {
-            "height": 118,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 902,
-            "y": 189
-          },
-          "nodeIndex": "TmpHovedprosjekt",
-          "size": {
-            "height": 213,
-            "width": 234
-          },
-          "zIndex": 0
         }
       ],
       "name": "Layout 1",
@@ -801,8 +513,102 @@
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
       "tablesLocked": false
+    },
+    {
+      "ordinal": 2,
+      "scrollPosition": {
+        "x": 0,
+        "y": 471.22625732421875
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 542.99622225212829,
+            "y": 572.67947899374121
+          },
+          "nodeIndex": "Prosjekt",
+          "nodeLineageTag": "68a97ca3-a026-4ea3-bdb6-d1f0948827a9",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 889.04525017851438,
+            "y": 881.850862429644
+          },
+          "nodeIndex": "Regnskap",
+          "nodeLineageTag": "53a5aca6-e54d-4b63-a765-f03351ea0bba",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 257.98310558508513,
+            "y": 929.926715981936
+          },
+          "nodeIndex": "ProPrognose",
+          "nodeLineageTag": "3e23fd87-7094-4c83-9a9b-9afff855ada7",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 599.56923312224319,
+            "y": 939.39921385170362
+          },
+          "nodeIndex": "HpPrognose",
+          "nodeLineageTag": "5e06afec-8350-42ed-8b46-bc10498d1a55",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 30.952579474086406,
+            "y": 215.50761970782469
+          },
+          "nodeIndex": "Betalinger",
+          "nodeLineageTag": "001674b6-b784-40e9-ad43-28f2a8aa67e2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": 572.74028375769444
+          },
+          "nodeIndex": "LiveProjectForecast",
+          "nodeLineageTag": "127f54a5-c3b0-4072-969c-248e600964b7",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Layout 2",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
     }
   ],
-  "selectedDiagram": "All tables",
+  "selectedDiagram": "Layout 2",
   "defaultDiagram": "All tables"
 }

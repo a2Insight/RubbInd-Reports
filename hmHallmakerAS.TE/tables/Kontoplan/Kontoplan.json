@@ -12,22 +12,7 @@
     },
     {
       "name": "TabularEditor_Relationships",
-      "value": [
-        "[",
-        "  {",
-        "    \"fromTable\": \"Kontoplan\",",
-        "    \"fromColumn\": \"Nivå1\",",
-        "    \"toTable\": \"KR_Resultat\",",
-        "    \"toColumn\": \"Nivå1\"",
-        "  },",
-        "  {",
-        "    \"fromTable\": \"Kontoplan\",",
-        "    \"fromColumn\": \"Nivå2\",",
-        "    \"toTable\": \"KR_Balanse\",",
-        "    \"toColumn\": \"Nivå2\"",
-        "  }",
-        "]"
-      ]
+      "value": "[]"
     }
   ]
 }
