@@ -1,0 +1,16 @@
+{
+  "name": "5121",
+  "modelPermission": "read",
+  "tablePermissions": [
+    {
+      "name": "Prosjekt",
+      "filterExpression": "[HovedArbeidProsjektNr] = \"5121\""
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "b3f7be2d498541b98778827b36983411"
+    }
+  ]
+}

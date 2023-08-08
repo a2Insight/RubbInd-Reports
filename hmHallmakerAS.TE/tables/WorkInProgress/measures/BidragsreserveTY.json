@@ -1,0 +1,11 @@
+{
+  "name": "BidragsreserveTY",
+  "expression": "SUMX(VALUES(Prosjekt[HP Beskrivelse]),CALCULATE(IF(YEAR(MAX(HpPrognose[Slutt]))<=YEAR(MAX(Kalender[Dato])),[Bidragsreserve],[Bidragsreserve]*(1-DIVIDE(MAX(HpPrognose[Slutt])-DATE(YEAR(MAX(Kalender[Dato])),12,31),SUM(HpPrognose[Varighet]))))))",
+  "lineageTag": "4edce24d-4356-4325-b7d0-ca4fb3e4c349",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

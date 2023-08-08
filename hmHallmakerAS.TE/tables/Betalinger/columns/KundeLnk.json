@@ -1,0 +1,13 @@
+{
+  "name": "KundeLnk",
+  "dataType": "string",
+  "sourceColumn": "KundeLnk",
+  "lineageTag": "2ed870f4-548c-4b7e-845e-17ff5bad4da4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

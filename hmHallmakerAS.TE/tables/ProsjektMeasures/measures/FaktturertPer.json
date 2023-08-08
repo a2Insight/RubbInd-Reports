@@ -1,0 +1,21 @@
+{
+  "name": "FaktturertPer",
+  "expression": [
+    "CALCULATE (",
+    "                    SUMX (",
+    "                        CALCULATETABLE ( VALUES ( Prosjekt[ProsjektNummer] ), Prosjekt[WIPfilter]=1),",
+    "                        - [Regnskap] / MIN ( Faktorer[Faktor] )",
+    "                    ),",
+    "                    Kontoplan[Nivå2] = \"Inntekter\"",
+    "                )",
+    ""
+  ],
+  "formatString": "#,0",
+  "lineageTag": "8070bf12-33eb-4d77-8194-26f18b7f3764",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

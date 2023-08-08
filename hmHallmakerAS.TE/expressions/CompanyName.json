@@ -1,0 +1,17 @@
+{
+  "name": "CompanyName",
+  "kind": "m",
+  "expression": "\"Linto AS\" meta [IsParameterQuery=true, List={\"Hallmaker AS\", \"Byggservice AS\", \"Linto AS\", \"Rubb AS\", \"Utleie AS\"}, DefaultValue=..., Type=\"Text\", IsParameterQueryRequired=true]",
+  "queryGroup": "Parametere",
+  "lineageTag": "4e3b57a2-3bd8-4c70-ae5c-c5267d50b6ef",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigasjon"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    }
+  ]
+}

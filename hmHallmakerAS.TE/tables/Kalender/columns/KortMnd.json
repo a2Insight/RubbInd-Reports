@@ -1,0 +1,14 @@
+{
+  "name": "KortMnd",
+  "dataType": "string",
+  "sourceColumn": "KortMnd",
+  "sortByColumn": "MndNo",
+  "lineageTag": "8827a0f3-2fca-490b-ae3a-92e6ec67b97e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

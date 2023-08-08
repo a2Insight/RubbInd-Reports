@@ -1,0 +1,18 @@
+{
+  "name": "FerdigDato",
+  "dataType": "dateTime",
+  "sourceColumn": "FerdigDato",
+  "formatString": "Long Date",
+  "lineageTag": "4406b5de-5e4c-4927-b5e1-8b6ddffb8d58",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

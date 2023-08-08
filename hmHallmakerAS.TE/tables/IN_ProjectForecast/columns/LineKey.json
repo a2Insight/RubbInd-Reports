@@ -1,0 +1,16 @@
+{
+  "name": "LineKey",
+  "dataType": "int64",
+  "isNullable": false,
+  "sourceColumn": "LineKey",
+  "formatString": "0",
+  "sourceProviderType": "bigint",
+  "lineageTag": "611afe34-4f65-44ef-a629-64cf074c2ce8",
+  "summarizeBy": "count",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Mnd",
+  "dataType": "string",
+  "sourceColumn": "Mnd",
+  "sortByColumn": "MndNo",
+  "lineageTag": "ef144f76-746e-41f9-ad4f-fec20d4eb7c0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

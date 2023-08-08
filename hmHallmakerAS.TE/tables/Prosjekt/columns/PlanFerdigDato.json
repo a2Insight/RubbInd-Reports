@@ -1,0 +1,18 @@
+{
+  "name": "PlanFerdigDato",
+  "dataType": "dateTime",
+  "sourceColumn": "PlanFerdigDato",
+  "formatString": "Long Date",
+  "lineageTag": "60befa33-515c-4937-a3e8-5f22eff11c5d",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

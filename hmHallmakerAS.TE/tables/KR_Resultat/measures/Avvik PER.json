@@ -1,0 +1,23 @@
+{
+  "name": "Avvik PER",
+  "expression": [
+    "( [Virkelig PER] - [Budsjett PER] )",
+    "    * IF (",
+    "        ( MAX ( Kontoplan[Nivå1] ) IN { \"Inntekter\", \"Kostnader\" } ),",
+    "        1,",
+    "        IF (",
+    "            MAX ( KR_Resultat[Type] ) = 1,",
+    "            -1,",
+    "            IF ( MAX ( KR_Resultat[Type] ) = 3, BLANK (), 1 )",
+    "        )",
+    "    )"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "10df30d5-2b8f-4a65-920d-6bb3c278333f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

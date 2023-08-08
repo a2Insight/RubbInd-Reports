@@ -1,0 +1,12 @@
+{
+  "name": "VIAakkumulert",
+  "expression": "SUMX(VALUES(Prosjekt[HovedArbeidProsjektNr]),[Inntektsprognose]*IF([Opptjent %]<=1,[Opptjent %],1)-[FakturertAkk]+[ForskuddAkk])",
+  "formatString": "#,0",
+  "lineageTag": "c778de9d-9749-4178-917b-b28a44952db0",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

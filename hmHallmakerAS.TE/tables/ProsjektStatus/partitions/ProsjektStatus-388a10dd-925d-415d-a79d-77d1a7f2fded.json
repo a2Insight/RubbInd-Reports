@@ -1,0 +1,15 @@
+{
+  "name": "ProsjektStatus-388a10dd-925d-415d-a79d-77d1a7f2fded",
+  "mode": "import",
+  "queryGroup": "Hjelpetabeller",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WCkgtysxPSVXSUTJUitWJVvLILCnJzFHIVDi8tAgoaIQqWFCUX5yVml2SWgKUMwbLBaUWlwCF0/Pyi0GmmIAFA6DqFErySxJzQIpNlWJjAQ==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Statusperioder = _t, Order = _t]),",
+      "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Statusperioder\", type text}})",
+      "in",
+      "    #\"Changed Type\""
+    ]
+  }
+}

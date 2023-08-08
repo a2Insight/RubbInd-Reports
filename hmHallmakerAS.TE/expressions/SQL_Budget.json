@@ -1,0 +1,27 @@
+{
+  "name": "SQL_Budget",
+  "kind": "m",
+  "expression": [
+    "let",
+    "   ",
+    "table1 = \"Budget\",",
+    "",
+    "    sqlDatabase = Sql.Database(\"a2insight.database.windows.net\", \"a2dmHallmaker\"),",
+    "",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data]",
+    "in",
+    "    sqlTbl1"
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "148f7815-ff55-47ca-991c-4c49b8747074",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigasjon"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

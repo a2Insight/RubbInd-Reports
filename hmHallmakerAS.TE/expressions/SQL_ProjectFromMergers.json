@@ -1,0 +1,49 @@
+{
+  "name": "SQL_ProjectFromMergers",
+  "kind": "m",
+  "expression": [
+    "let",
+    "   ",
+    "table1 = \"IN_ProjecthistFromMergers\",",
+    "table2 = \"Prosjekter\",",
+    "table3 = \"Companies\",",
+    "    sqlDatabase = Sql.Database(\"a2insight.database.windows.net\", \"a2dmHallmaker\"),",
+    "",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
+    "    sqlTbl2 = sqlDatabase{[Schema=\"dbo\",Item=(table2)]}[Data],",
+    "    sqlTbl3 = sqlDatabase{[Schema=\"dbo\",Item=(table3)]}[Data],",
+    "    FilterCompany = Table.SelectRows(sqlTbl3, each [CompanyId] = CompanyId),",
+    "    ProjectId = Table.SelectColumns(sqlTbl2,{\"FirmaId\", \"ProsjektId\"}),",
+    "    AddParentId = Table.AddColumn(ProjectId, \"ParentId\", each Text.BeforeDelimiter([ProsjektId], \"-\"), type text),",
+    "    FilterParentProjects = Table.SelectRows(sqlTbl1, each [ProjectRef] = null),",
+    "    #\"Merged Queries\" = Table.NestedJoin(FilterParentProjects,{\"FromCompany\"},sqlTbl3,{\"CompanyId\"},\"FilterParentProjects\",JoinKind.Inner),",
+    "    #\"Expanded FilterParentProjects\" = Table.ExpandTableColumn(#\"Merged Queries\", \"FilterParentProjects\", {\"InfoEasyId\"}, {\"InfoEasyId\"}),",
+    "    #\"Merged Queries1\" = Table.NestedJoin(AddParentId,{\"FirmaId\", \"ParentId\"},#\"Expanded FilterParentProjects\",{\"InfoEasyId\", \"FromProjectRef\"},\"Expanded FilterParentProjects\",JoinKind.Inner),",
+    "    #\"Expanded Expanded FilterParentProjects\" = Table.ExpandTableColumn(#\"Merged Queries1\", \"Expanded FilterParentProjects\", {\"CompanyId\", \"FromCompany\"}, {\"CompanyId\", \"FromCompany\"}),",
+    "    #\"Removed Columns\" = Table.RemoveColumns(#\"Expanded Expanded FilterParentProjects\",{\"ParentId\"}),",
+    "    FilterProjects = Table.SelectRows(sqlTbl1, each [ProjectRef] <> null),",
+    "    Custom1 = Table.NestedJoin(FilterProjects,{\"FromCompany\"},sqlTbl3,{\"CompanyId\"},\"FilterParentProjects\",JoinKind.Inner),",
+    "    #\"Expanded FilterParentProjects1\" = Table.ExpandTableColumn(Custom1, \"FilterParentProjects\", {\"InfoEasyId\"}, {\"InfoEasyId\"}),",
+    "    Custom2 = Table.NestedJoin(ProjectId,{\"FirmaId\", \"ProsjektId\"},#\"Expanded FilterParentProjects1\",{\"InfoEasyId\", \"FromProjectRef\"},\"Expanded FilterParentProjects1\",JoinKind.Inner),",
+    "    #\"Expanded Expanded FilterParentProjects1\" = Table.ExpandTableColumn(Custom2, \"Expanded FilterParentProjects1\", {\"CompanyId\", \"FromCompany\", \"ProjectRef\"}, {\"CompanyId\", \"FromCompany\", \"ProjectRef\"}),",
+    "    #\"Added Custom\" = Table.AddColumn(#\"Expanded Expanded FilterParentProjects1\", \"Custom\", each if [ProjectRef] = null then [ProsjektId] else [ProjectRef]),",
+    "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Added Custom\",{\"ProsjektId\", \"ProjectRef\"}),",
+    "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns1\",{{\"Custom\", \"ProsjektId\"}}),",
+    "    #\"Appended Query\" = Table.Combine({#\"Renamed Columns\", #\"Removed Columns\"}),",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Appended Query\",{{\"FirmaId\", Int64.Type}, {\"ProsjektId\", type text}})",
+    "in",
+    "    #\"Changed Type\""
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "df4fe5aa-5b91-42d1-8556-ab0185caf5c2",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigasjon"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

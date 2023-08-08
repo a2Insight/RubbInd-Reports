@@ -1,0 +1,17 @@
+{
+  "name": "Mengde",
+  "dataType": "double",
+  "sourceColumn": "Mengde",
+  "lineageTag": "fb82b581-66e7-4ded-b067-d0ffd7f0031b",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

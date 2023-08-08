@@ -1,0 +1,11 @@
+{
+  "name": "Slett1",
+  "expression": "CALCULATE([VIAakkumulert],FILTER(ALL(Kalender),Kalender[År]=MAX(Kalender[År])-1),Kalender[MndNo]=12)",
+  "lineageTag": "0730a9ea-49eb-42b5-bf5e-c0716631c254",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

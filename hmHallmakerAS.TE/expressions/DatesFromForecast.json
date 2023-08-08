@@ -1,0 +1,24 @@
+{
+  "name": "DatesFromForecast",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = SQL_Forecast,",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"ProsjektId\", type text}, {\"Inntekter\", type number}, {\"Kostnader\", type number}, {\"PlanStart\", type date}, {\"PlanSlutt\", type date}, {\"Date\", type date}}),",
+    "    #\"Grouped Rows\" = Table.Group(#\"Changed Type\", {\"Hovedarbeidsprosjekt\"}, {{\"Start\", each List.Min([PlanStart]), type date}, {\"Slutt\", each List.Max([PlanSlutt]), type date}, {\"Dato\", each List.Min([Date]), type date}})",
+    "in",
+    "    #\"Grouped Rows\""
+  ],
+  "queryGroup": "Hjelpetabeller",
+  "lineageTag": "f8440dd4-f7df-4463-9f8b-4f96ad53a2a9",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ProInntektPer",
+  "expression": "[ProInntektTD]-CALCULATE([ProInntektTD],DATEADD(Kalender[Dato],-1,MONTH))",
+  "lineageTag": "b30c5ce4-7153-4eef-a760-f8581f5fa9f1",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

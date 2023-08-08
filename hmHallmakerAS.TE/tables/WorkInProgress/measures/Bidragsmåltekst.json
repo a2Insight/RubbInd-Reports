@@ -1,0 +1,5 @@
+{
+  "name": "Bidragsmåltekst",
+  "expression": "CONCATENATE(\"Bidragsmål for \",SELECTEDVALUE(Kalender[År]))",
+  "lineageTag": "1e8b5a83-2a52-4b4a-86c6-18365ed45ec4"
+}

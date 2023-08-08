@@ -1,0 +1,11 @@
+{
+  "name": "ProBidragTD",
+  "expression": "SUMX(VALUES(Prosjekt[HP Beskrivelse]),[ProInntektEst]*[ProFremdriftTD])-[ProKostTD]",
+  "lineageTag": "a2ff0572-8170-452d-a8bd-31eb2e54c5f7",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

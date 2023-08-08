@@ -1,0 +1,25 @@
+{
+  "name": "Transform Sample File from ProNummerEndring",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = Excel.Workbook(#\"Sample File Parameter2\", null, true),",
+    "    #\"Filtered Rows\" = Table.SelectRows(Source, each ([Kind] = \"Table\")),",
+    "    #\"Expanded Data\" = Table.ExpandTableColumn(#\"Filtered Rows\", \"Data\", {\"GLEntryNo\", \"VendorId\", \"ProjectId\"}, {\"GLEntryNo\", \"VendorId\", \"ProjectId\"}),",
+    "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Expanded Data\",{\"GLEntryNo\", \"VendorId\", \"ProjectId\"})",
+    "in",
+    "    #\"Removed Other Columns\""
+  ],
+  "queryGroup": "Transform File from ProNummerEndring",
+  "lineageTag": "f8a6aefb-8761-4235-b8b2-8466cda73931",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

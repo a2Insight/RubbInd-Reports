@@ -1,0 +1,17 @@
+{
+  "name": "RevenueChange",
+  "dataType": "double",
+  "sourceColumn": "RevenueChange",
+  "lineageTag": "6f734576-2ed4-4bdb-a389-34cbf488f58b",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

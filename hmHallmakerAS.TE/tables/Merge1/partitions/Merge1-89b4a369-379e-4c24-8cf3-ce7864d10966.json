@@ -1,0 +1,13 @@
+{
+  "name": "Merge1-89b4a369-379e-4c24-8cf3-ce7864d10966",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = Table.NestedJoin(SQL_GeneralLedger,{\"FirmaId\", \"ProsjektId\"},SQL_ProjectFromMergers,{\"FirmaId\", \"ProsjektId\"},\"SQL_ProjectFromMergers\",JoinKind.Inner)",
+      "in",
+      "    Source"
+    ]
+  }
+}

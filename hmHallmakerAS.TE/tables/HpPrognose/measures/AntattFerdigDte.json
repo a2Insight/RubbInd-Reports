@@ -1,0 +1,11 @@
+{
+  "name": "AntattFerdigDte",
+  "expression": "MAX(HpPrognose[Slutt])",
+  "lineageTag": "3f3bad59-111f-4080-84d4-a23048640d19",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDateTimeCustom\":true}"
+    }
+  ]
+}

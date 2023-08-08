@@ -1,0 +1,14 @@
+{
+  "name": "Eyeshare",
+  "dataType": "string",
+  "sourceColumn": "Eyeshare",
+  "lineageTag": "c2164e7e-c815-4948-9138-ec898bbae8ab",
+  "dataCategory": "WebUrl",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

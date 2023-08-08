@@ -1,0 +1,34 @@
+{
+  "name": "Eyeshare",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    sqlTbl1 = SQL_EyeShare,",
+    "",
+    "//Procedure",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(sqlTbl1,{{\"FirmaId\", Int64.Type}}),",
+    "    #\"Merged Queries\" = Table.NestedJoin(#\"Changed Type\",{\"FirmaId\"},SQL_Company,{\"InfoEasyId\"},\"Companies\",JoinKind.Inner),",
+    "    #\"Expanded Companies\" = Table.ExpandTableColumn(#\"Merged Queries\", \"Companies\", {\"CompanyId\"}, {\"CompanyId\"}),",
+    "    #\"Added Custom\" = Table.AddColumn(#\"Expanded Companies\", \"ProsjektLnk\", each if Text.Length([ProsjektId]) = 0 then null else Text.From([CompanyId])&\"-\"&Text.From([ProsjektId]),type text),",
+    "    #\"Added Custom1\" = Table.AddColumn(#\"Added Custom\", \"KontoLnk\", each if Text.Length([KontoId]) = 0 then null else Text.From([CompanyId])&\"-\"&Text.From([KontoId]),type text),",
+    "    #\"Added Custom2\" = Table.AddColumn(#\"Added Custom1\", \"LevLnk\", each if Text.Length([LevId]) = 0 then null else Text.From([CompanyId])&\"-\"&Text.From([LevId]),type text),",
+    "    #\"Removed Columns\" = Table.RemoveColumns(#\"Added Custom2\",{\"FirmaId\", \"LevId\", \"KontoId\", \"ProsjektId\"}),",
+    "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns\",{{\"EstNetAmount\", \"Belop2\"}, {\"EyeShare\", \"Eyeshare\"}, {\"CompanyId\", \"SelskapsId\"}}),",
+    "    #\"Filtered Rows\" = Table.SelectRows(#\"Renamed Columns\", each ([ProsjektLnk] <> null))",
+    "in",
+    "    #\"Filtered Rows\""
+  ],
+  "queryGroup": "Hjelpetabeller",
+  "lineageTag": "37880ddc-22a0-45bd-b81e-d780727a1dcf",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

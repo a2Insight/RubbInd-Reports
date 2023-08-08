@@ -1,0 +1,17 @@
+{
+  "name": "Inntekter",
+  "dataType": "int64",
+  "sourceColumn": "Inntekter",
+  "lineageTag": "45b137f3-b8e3-4b93-af24-a6f70a29bf4e",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

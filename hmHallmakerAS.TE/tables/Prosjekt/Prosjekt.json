@@ -1,0 +1,42 @@
+{
+  "name": "Prosjekt",
+  "lineageTag": "68a97ca3-a026-4ea3-bdb6-d1f0948827a9",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": [
+        "[",
+        "  {",
+        "    \"fromTable\": \"Prosjekt\",",
+        "    \"fromColumn\": \"HovedArbeidProsjektNr\",",
+        "    \"toTable\": \"Tmp_ProsjektPowerApps\",",
+        "    \"toColumn\": \"HovedArbeidProsjektNr\",",
+        "    \"crossFilteringBehavior\": \"bothDirections\"",
+        "  },",
+        "  {",
+        "    \"fromTable\": \"Prosjekt\",",
+        "    \"fromColumn\": \"HP Beskrivelse\",",
+        "    \"toTable\": \"TmpHovedprosjekt\",",
+        "    \"toColumn\": \"HP Beskrivelse\"",
+        "  },",
+        "  {",
+        "    \"fromCardinality\": \"one\",",
+        "    \"fromTable\": \"Prosjekt\",",
+        "    \"fromColumn\": \"ProjectId\",",
+        "    \"toTable\": \"LiveProjectForecast\",",
+        "    \"toColumn\": \"ProjectId\",",
+        "    \"crossFilteringBehavior\": \"bothDirections\"",
+        "  }",
+        "]"
+      ]
+    }
+  ]
+}

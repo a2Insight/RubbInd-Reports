@@ -1,0 +1,16 @@
+{
+  "type": "calculated",
+  "name": "FirstDate",
+  "dataType": "dateTime",
+  "isDataTypeInferred": true,
+  "expression": "MINX(FILTER(HpPrognose,HpPrognose[HovedArbeidProsjektNr]=EARLIER(HpPrognose[HovedArbeidProsjektNr])),HpPrognose[Dato])",
+  "formatString": "General Date",
+  "lineageTag": "657cf5de-56a3-4378-8709-71e6a54d7627",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

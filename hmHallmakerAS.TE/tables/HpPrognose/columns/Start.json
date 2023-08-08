@@ -1,0 +1,18 @@
+{
+  "name": "Start",
+  "dataType": "dateTime",
+  "sourceColumn": "Start",
+  "formatString": "Long Date",
+  "lineageTag": "4c9507a7-59a4-48df-b2bb-8f49b758ccf1",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

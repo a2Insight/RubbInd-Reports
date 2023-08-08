@@ -1,0 +1,6 @@
+{
+  "name": "InntektsprognoseAll",
+  "expression": "CALCULATE([ProgInntEndring],ALL(Kalender))",
+  "formatString": "0",
+  "lineageTag": "c007857c-2d47-4eeb-8256-fbc451826794"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Kostnader",
+  "dataType": "double",
+  "sourceColumn": "Kostnader",
+  "formatString": "#,0",
+  "lineageTag": "2caaf950-df1a-4451-8367-cd3c42d2668d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

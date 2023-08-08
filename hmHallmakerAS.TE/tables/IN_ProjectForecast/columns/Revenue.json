@@ -1,0 +1,18 @@
+{
+  "name": "Revenue",
+  "dataType": "double",
+  "sourceColumn": "Revenue",
+  "sourceProviderType": "float",
+  "lineageTag": "72935779-0d38-4d41-ac72-1a32414386f1",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ParentProjectNo",
+  "dataType": "string",
+  "sourceColumn": "ParentProjectNo",
+  "sourceProviderType": "varchar(50)",
+  "lineageTag": "3bd5cfb3-353a-41d5-add0-dd759240147d",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

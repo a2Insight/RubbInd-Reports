@@ -1,0 +1,25 @@
+{
+  "name": "Ordreinngang-82916fd4-1ded-4175-81c3-da18ba8cbf02",
+  "mode": "import",
+  "queryGroup": "Fakta",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = Table.NestedJoin(SQL_Company,{\"InfoEasyId\"},SQL_Projects,{\"FirmaId\"},\"Added Custom3\",JoinKind.Inner),",
+      "    #\"Expanded Added Custom3\" = Table.ExpandTableColumn(Source, \"Added Custom3\", {\"ProsjektId\", \"StartDato\", \"PlanFerdigDato\", \"OrdreVerdi\", \"DG\", \"OrdreDato\", \"HovedArbeidProsjektNr\"}, {\"ProsjektId\", \"StartDato\", \"PlanFerdigDato\", \"OrdreVerdi\", \"DG\", \"OrdreDato\", \"HovedArbeidProsjektNr\"}),",
+      "    #\"Added Custom\" = Table.AddColumn(#\"Expanded Added Custom3\", \"FilterHP\", each if [ProsjektId]=[HovedArbeidProsjektNr] then 1 else 0),",
+      "    #\"Filtered Rows\" = Table.SelectRows(#\"Added Custom\", each ([FilterHP] = 1) and ([OrdreDato] <> null) and ([OrdreVerdi] > 0)),",
+      "    #\"Added Custom1\" = Table.AddColumn(#\"Filtered Rows\", \"ProsjektLnk\", each Text.From([CompanyId])&\"-\"&Text.From([ProsjektId])),",
+      "    #\"Added Custom2\" = Table.AddColumn(#\"Added Custom1\", \"Kostnader\", each [OrdreVerdi]*(1-[DG])),",
+      "    #\"Added Custom3\" = Table.AddColumn(#\"Added Custom2\", \"Version\", each \"Sales\"),",
+      "    #\"Added Custom4\" = Table.AddColumn(#\"Added Custom3\", \"Duration\", each Number.From([PlanFerdigDato])-Number.From([StartDato])+1),",
+      "    #\"Multiplied Column\" = Table.TransformColumns(#\"Added Custom4\", {{\"OrdreVerdi\", each _ * -1, type number}}),",
+      "    #\"Removed Columns\" = Table.RemoveColumns(#\"Multiplied Column\",{\"FilterHP\", \"InfoEasyId\", \"DG\"}),",
+      "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns\",{{\"OrdreDato\", \"Date\"}, {\"OrdreVerdi\", \"Inntekter\"}, {\"HovedArbeidProsjektNr\", \"Hovedarbeidsprosjekt\"}, {\"PlanFerdigDato\", \"FerdigDato\"}}),",
+      "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns\",{{\"Company\", type text}, {\"CompanyId\", Int64.Type}, {\"ProsjektId\", Int64.Type}, {\"Date\", type date}, {\"Inntekter\", Int64.Type}, {\"ProsjektLnk\", type text}, {\"Kostnader\", Int64.Type}})",
+      "in",
+      "    #\"Changed Type\""
+    ]
+  }
+}

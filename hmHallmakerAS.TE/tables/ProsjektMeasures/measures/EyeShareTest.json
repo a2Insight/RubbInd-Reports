@@ -1,0 +1,11 @@
+{
+  "name": "EyeShareTest",
+  "expression": "SUM(Regnskap[Belop2])",
+  "lineageTag": "c9543722-d440-4bf4-aeff-393d99c55d13",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

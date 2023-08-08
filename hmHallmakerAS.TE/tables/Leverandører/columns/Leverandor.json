@@ -1,0 +1,13 @@
+{
+  "name": "Leverandor",
+  "dataType": "string",
+  "sourceColumn": "Leverandor",
+  "lineageTag": "8cb84ab2-8262-49ac-a57f-ba02136f46ab",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

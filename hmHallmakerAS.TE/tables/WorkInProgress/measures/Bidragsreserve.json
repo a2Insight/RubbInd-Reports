@@ -1,0 +1,12 @@
+{
+  "name": "Bidragsreserve",
+  "expression": "[DB Prognose]-[Bidrag]",
+  "formatString": "#,0",
+  "lineageTag": "ecd2172c-079a-4dd2-b14d-3c6c210615b3",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

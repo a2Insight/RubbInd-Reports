@@ -1,0 +1,13 @@
+{
+  "name": "Version",
+  "dataType": "string",
+  "sourceColumn": "Version",
+  "lineageTag": "d70cb5b8-eafd-4ba5-935a-4059f9b2f053",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

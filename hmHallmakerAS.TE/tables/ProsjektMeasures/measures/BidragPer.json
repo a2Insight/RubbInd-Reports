@@ -1,0 +1,11 @@
+{
+  "name": "BidragPer",
+  "expression": "[FaktturertPer]-[KostPer]",
+  "lineageTag": "b8e79ad7-851d-4f10-833e-8a0025e008e9",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

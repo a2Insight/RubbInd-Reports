@@ -1,0 +1,18 @@
+{
+  "name": "Inntekter",
+  "dataType": "double",
+  "sourceColumn": "Inntekter",
+  "formatString": "#,0",
+  "lineageTag": "1d5cf549-8efd-471c-831e-c8422e19ad05",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

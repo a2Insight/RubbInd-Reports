@@ -1,0 +1,22 @@
+{
+  "name": "ProInntektIndikator",
+  "expression": [
+    "",
+    "",
+    "VAR Up =",
+    "    UNICHAR ( 9650 )",
+    "VAR Down =",
+    "    UNICHAR ( 9660 )",
+    "    ",
+    "VAR Test = [ProgInntEndring]",
+    "    ",
+    "        ",
+    "RETURN ",
+    "    ",
+    "    IF(HASONEVALUE(Prosjekt[HovedArbeidProsjektNr]),",
+    "    MAXX(VALUES(ProPrognose[Hovedarbeidsprosjekt]),",
+    "    IF ( Test > 1 , Up , IF(Test < -1 , Down , BLANK()))) ",
+    "    ,BLANK())"
+  ],
+  "lineageTag": "824de53b-7a1c-4477-92e7-76580eaa8cf4"
+}

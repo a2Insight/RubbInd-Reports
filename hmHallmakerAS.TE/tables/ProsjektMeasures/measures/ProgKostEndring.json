@@ -1,0 +1,6 @@
+{
+  "name": "ProgKostEndring",
+  "expression": "DIVIDE(SUM(ProPrognose[CostChange]),Faktorer[Rapportfaktor])",
+  "formatString": "0",
+  "lineageTag": "dbb5749a-fc74-4da1-a919-fdf70af89d95"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ProInntektYTD",
+  "expression": "[ProInntektTD] - CALCULATE([ProInntektTD],FILTER(ALL(Kalender),Kalender[År]=YEAR(MAX(Kalender[Dato]))-1),Kalender[MndNo]=12)",
+  "lineageTag": "26f59701-c22f-47d8-962e-23d49ac2fda6",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

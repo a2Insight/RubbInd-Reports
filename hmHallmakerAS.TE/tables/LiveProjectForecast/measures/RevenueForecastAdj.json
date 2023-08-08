@@ -1,0 +1,12 @@
+{
+  "name": "RevenueForecastAdj",
+  "expression": "IF([Justert]>0,[RevenueForecastLive],\" \")",
+  "formatString": "#,0",
+  "lineageTag": "c115c477-60ab-4af2-8cad-6bc9ac1f57ce",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

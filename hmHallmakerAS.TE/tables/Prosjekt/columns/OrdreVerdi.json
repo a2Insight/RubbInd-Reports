@@ -1,0 +1,17 @@
+{
+  "name": "OrdreVerdi",
+  "dataType": "double",
+  "sourceColumn": "OrdreVerdi",
+  "lineageTag": "618ff1f3-7ced-42da-aef9-fd8a580c12ac",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

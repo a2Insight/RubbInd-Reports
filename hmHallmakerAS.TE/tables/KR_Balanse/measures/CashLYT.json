@@ -1,0 +1,11 @@
+{
+  "name": "CashLYT",
+  "expression": "CALCULATE([Cash],FILTER(ALL(Kalender),Kalender[År]=MAX(Kalender[År])-1),Kalender[MndNo]=12)",
+  "lineageTag": "98922715-6446-42e1-a01c-a14bdcb03bc2",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

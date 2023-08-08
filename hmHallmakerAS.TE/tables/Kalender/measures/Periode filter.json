@@ -1,0 +1,5 @@
+{
+  "name": "Periode filter",
+  "expression": "CONCATENATE(\"Periode : \",COMBINEVALUES(\"-\",SELECTEDVALUE(Kalender[KortMnd]),SELECTEDVALUE(Kalender[År])))",
+  "lineageTag": "53767b95-9e74-4e97-aa7c-bd40e2538aec"
+}

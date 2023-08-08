@@ -1,0 +1,13 @@
+{
+  "name": "Sett",
+  "dataType": "string",
+  "sourceColumn": "Sett",
+  "lineageTag": "817b4496-0788-49b8-a716-ac9bd143d4ec",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

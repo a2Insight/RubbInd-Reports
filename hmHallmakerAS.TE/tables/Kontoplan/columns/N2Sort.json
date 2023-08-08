@@ -1,0 +1,14 @@
+{
+  "name": "N2Sort",
+  "dataType": "int64",
+  "sourceColumn": "N2Sort",
+  "formatString": "0",
+  "lineageTag": "e98ef674-ec92-4fad-951e-3a556f9dc717",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Budsjett YTD",
+  "expression": "TOTALYTD([Budsjett PER],Kalender[Dato])",
+  "formatString": "#,0",
+  "lineageTag": "9934f49f-2292-44b7-8497-1faa4b336b0c",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

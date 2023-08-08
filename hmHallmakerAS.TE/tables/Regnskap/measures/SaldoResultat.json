@@ -1,0 +1,11 @@
+{
+  "name": "SaldoResultat",
+  "expression": "SUMX(VALUES(Kontoplan),CALCULATE(SUMX(FILTER(Kontoplan,LEFT(Kontoplan[Konto],1)>\"2\"),SUM(Regnskap[Belop])),FILTER(ALL(Kalender),Kalender[YY-Tx]<=MAX(Kalender[YY-Tx])&&Kalender[År]=MAX(Kalender[år]))))",
+  "lineageTag": "17f54cc7-999e-48ef-900b-cdc2bcfc2778",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "MotKonto",
+  "dataType": "int64",
+  "sourceColumn": "MotKonto",
+  "formatString": "0",
+  "lineageTag": "04911e13-3568-4a15-8946-34d454b3ef01",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

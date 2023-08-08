@@ -1,0 +1,11 @@
+{
+  "name": "BudsjettUtenFortegn",
+  "expression": "SUMX(Budsjett,Budsjett[NOK]*RELATED(Kontoplan[Fortegn]))",
+  "lineageTag": "0792b4d4-3f25-44b9-8f16-d4c577c730b6",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

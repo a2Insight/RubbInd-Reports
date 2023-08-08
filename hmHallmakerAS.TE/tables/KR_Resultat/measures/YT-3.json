@@ -1,0 +1,12 @@
+{
+  "name": "YT-3",
+  "expression": "CLOSINGBALANCEYEAR(CALCULATE([YT-2],PREVIOUSYEAR(Kalender[Dato])),Kalender[Dato])",
+  "formatString": "#,0",
+  "lineageTag": "fa68b6ee-c7f6-4b40-81dd-8af83d1270f3",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

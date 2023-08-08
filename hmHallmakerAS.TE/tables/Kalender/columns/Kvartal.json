@@ -1,0 +1,13 @@
+{
+  "name": "Kvartal",
+  "dataType": "string",
+  "sourceColumn": "Kvartal",
+  "lineageTag": "c01feca4-0487-4a24-9ebb-aeaa06dcab5a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

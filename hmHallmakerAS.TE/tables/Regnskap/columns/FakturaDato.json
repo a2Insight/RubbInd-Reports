@@ -1,0 +1,23 @@
+{
+  "name": "FakturaDato",
+  "dataType": "dateTime",
+  "sourceColumn": "FakturaDato",
+  "formatString": "Short Date",
+  "lineageTag": "e6b54993-4c7e-4ee9-afcc-000510c9c50d",
+  "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "DataType"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

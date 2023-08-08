@@ -1,0 +1,27 @@
+{
+  "name": "SQL_CustomersAccounts",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"KundeReskontro\",",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data]",
+    "",
+    "",
+    "in",
+    "    sqlTbl1"
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "71f35e5a-ef96-414a-bd56-11dfb5e69890",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

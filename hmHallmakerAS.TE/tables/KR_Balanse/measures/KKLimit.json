@@ -1,0 +1,6 @@
+{
+  "name": "KKLimit",
+  "expression": "-18000000/MIN(Faktorer[Faktor])",
+  "formatString": "#,0",
+  "lineageTag": "234efad7-004f-4e67-bd87-12824b3e0abc"
+}

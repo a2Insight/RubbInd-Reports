@@ -1,0 +1,16 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "HP Beskrivelse",
+  "dataType": "string",
+  "isNameInferred": true,
+  "isDataTypeInferred": true,
+  "sourceColumn": "Prosjekt[HP Beskrivelse]",
+  "lineageTag": "e0ff1483-e7af-4570-9a89-550069ad978e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "DimAlnk",
+  "dataType": "string",
+  "sourceColumn": "DimAlnk",
+  "lineageTag": "21e5f1aa-caff-463e-ad94-bca0afdf774e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "YYYYMM",
+  "dataType": "int64",
+  "sourceColumn": "YYYYMM",
+  "formatString": "0",
+  "lineageTag": "3049810a-f141-4a1a-8cb0-542608d65292",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "SQL_ProjectMgrs",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"LU_ProjectMgrs\",",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data]",
+    "",
+    "",
+    "in",
+    "    sqlTbl1"
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "755d5223-d0bc-485e-baf5-7f2d532e650d",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

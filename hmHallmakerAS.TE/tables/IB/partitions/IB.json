@@ -1,0 +1,24 @@
+{
+  "name": "IB",
+  "mode": "import",
+  "queryGroup": "Hjelpetabeller",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "",
+      "//Procedure",
+      "    FilterSelskap = Table.NestedJoin(SQL_Company,{\"InfoEasyId\"}, SQL_GeneralLedger,{\"FirmaId\"},\"SelskapsId\",JoinKind.Inner),",
+      "    #\"Filtered Rows\" = Table.SelectRows(FilterSelskap, each [Company] = CompanyName),",
+      "    HentData = Table.ExpandTableColumn(#\"Filtered Rows\", \"SelskapsId\", {\"HovedbokId\", \"KontoId\", \"BilagsNummer\", \"Dato\", \"DimensjonA\", \"DimensjonB\", \"DimensjonC\", \"DimensjonD\", \"ProsjektId\", \"MomsKode\", \"MotkontoType\", \"MotKonto\", \"NettoBelop\", \"TekstKode\", \"Tekst\", \"Periode\", \"Aar\", \"BunkeNummer\", \"RegistreringId\", \"Mengde\", \"KontoLnk\", \"Eyeshare\", \"LevLnk\", \"KundeLnk\", \"DimAlnk\", \"ProsjektLnk\", \"DateLnk\"}, {\"HovedbokId\", \"KontoId\", \"BilagsNummer\", \"Dato\", \"DimensjonA\", \"DimensjonB\", \"DimensjonC\", \"DimensjonD\", \"ProsjektId\", \"MomsKode\", \"MotkontoType\", \"MotKonto\", \"NettoBelop\", \"TekstKode\", \"Tekst\", \"Periode\", \"Aar\", \"BunkeNummer\", \"RegistreringId\", \"Mengde\", \"KontoLnk\", \"Eyeshare\", \"LevLnk\", \"KundeLnk\", \"DimAlnk\", \"ProsjektLnk\", \"DateLnk\"}),",
+      "    FilterData = Table.SelectRows(HentData, each [Aar] <= SisteAar and [Aar] >= ((SisteAar)-5)),",
+      "    #\"Grupperte rader\" = Table.Group(FilterData, {\"TekstKode\", \"Aar\"}, {{\"Antall\", each Table.RowCount(_), type number}}),",
+      "    #\"Filtrerte rader2\" = Table.SelectRows(#\"Grupperte rader\", each ([TekstKode] = 19)),",
+      "    #\"Trukket fra kolonne\" = Table.TransformColumns(#\"Filtrerte rader2\", {{\"Aar\", each _ - 1, type number}}),",
+      "    #\"Andre kolonner fjernet\" = Table.SelectColumns(#\"Trukket fra kolonne\",{\"Aar\"}),",
+      "    #\"Egendefinert lagt til\" = Table.AddColumn(#\"Andre kolonner fjernet\", \"IB\", each \"IB\", type text)",
+      "in",
+      "    #\"Egendefinert lagt til\""
+    ]
+  }
+}

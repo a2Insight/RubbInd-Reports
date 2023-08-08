@@ -1,0 +1,19 @@
+{
+  "name": "MonthNo",
+  "dataType": "double",
+  "isNullable": false,
+  "sourceColumn": "MonthNo",
+  "sourceProviderType": "float",
+  "lineageTag": "50ed05ec-b257-46a1-a965-0e7360dcb63d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

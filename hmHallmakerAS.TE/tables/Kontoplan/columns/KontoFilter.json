@@ -1,0 +1,14 @@
+{
+  "name": "KontoFilter",
+  "dataType": "int64",
+  "sourceColumn": "KontoFilter",
+  "formatString": "0",
+  "lineageTag": "786cb3d3-847f-4b66-b1cd-8b59074ca29c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

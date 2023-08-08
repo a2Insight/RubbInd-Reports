@@ -1,0 +1,15 @@
+{
+  "name": "ProjectManagerId",
+  "dataType": "int64",
+  "sourceColumn": "ProjectManagerId",
+  "formatString": "0",
+  "sourceProviderType": "bigint",
+  "lineageTag": "ee3ab189-bc2b-411f-9d9e-a6f47d8ae21e",
+  "summarizeBy": "count",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

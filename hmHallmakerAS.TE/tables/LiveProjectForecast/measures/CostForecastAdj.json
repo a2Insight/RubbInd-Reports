@@ -1,0 +1,5 @@
+{
+  "name": "CostForecastAdj",
+  "expression": "IF([Justert]>0,[CostForecastLive],\" \")",
+  "lineageTag": "a56bb226-16c8-448f-9c4b-34742e59a2bd"
+}

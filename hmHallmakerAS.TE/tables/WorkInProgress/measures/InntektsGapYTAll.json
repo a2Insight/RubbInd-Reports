@@ -1,0 +1,11 @@
+{
+  "name": "InntektsGapYTAll",
+  "expression": "[InntektsGapYT]+[SalgAlliå]",
+  "lineageTag": "971feed4-b8d6-45c0-89fc-4be54a41e974",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

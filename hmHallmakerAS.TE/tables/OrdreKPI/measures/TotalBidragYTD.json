@@ -1,0 +1,12 @@
+{
+  "name": "TotalBidragYTD",
+  "expression": "CALCULATE(-[RegnskapAkk],KR_Resultat[Rekkefølge]<4) ",
+  "formatString": "#,0",
+  "lineageTag": "65b46120-47b4-42e4-ac15-15da1677b6c5",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

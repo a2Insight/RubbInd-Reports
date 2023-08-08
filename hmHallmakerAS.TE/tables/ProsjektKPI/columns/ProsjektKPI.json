@@ -1,0 +1,19 @@
+{
+  "name": "ProsjektKPI",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "ProsjektKPI",
+  "lineageTag": "bdd42834-7d11-4ce4-a1bd-e86f1bbf9139",
+  "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "IsHidden"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "WorkInProgress-14aa3fe9-0580-4e49-9c64-6cf18e41b73b",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = \"\"",
+      "in",
+      "    Source"
+    ]
+  }
+}

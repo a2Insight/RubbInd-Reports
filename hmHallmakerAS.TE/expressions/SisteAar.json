@@ -1,0 +1,17 @@
+{
+  "name": "SisteAar",
+  "kind": "m",
+  "expression": "2023 meta [IsParameterQuery=true, Type=\"Number\", IsParameterQueryRequired=true]",
+  "queryGroup": "Parametere",
+  "lineageTag": "fd0776db-0363-4a99-aba2-a02517a77501",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigasjon"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Number"
+    }
+  ]
+}

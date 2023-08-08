@@ -1,0 +1,11 @@
+{
+  "name": "FakturertHIÅ",
+  "expression": "TOTALYTD([FaktturertPer],Kalender[Dato])",
+  "lineageTag": "e9c3b552-b78f-40f9-9a92-f6d4795a473a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

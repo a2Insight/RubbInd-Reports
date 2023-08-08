@@ -1,0 +1,12 @@
+{
+  "name": "RevenueForecastLive",
+  "expression": "SUM(LiveProjectForecast[Revenue])",
+  "formatString": "#,0",
+  "lineageTag": "e5988e81-f0b7-49a0-b3c8-fac5a7fac07c",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

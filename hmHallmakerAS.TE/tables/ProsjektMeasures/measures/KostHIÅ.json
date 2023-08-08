@@ -1,0 +1,16 @@
+{
+  "name": "KostHIÅ",
+  "expression": [
+    "TOTALYTD (",
+    "            [KostPer],",
+    "            Kalender[Dato]",
+    "        )"
+  ],
+  "lineageTag": "75411373-00ce-4848-8ad2-5d11ac548505",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

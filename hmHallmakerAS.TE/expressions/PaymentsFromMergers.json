@@ -1,0 +1,44 @@
+{
+  "name": "PaymentsFromMergers",
+  "kind": "m",
+  "expression": [
+    "let",
+    "   ",
+    "//Procedure",
+    "    ProjectFromMergers = SQL_ProjectFromMergers,",
+    "    MergedCompanyId = Table.Distinct(ProjectFromMergers, {\"FromCompany\"}),",
+    "",
+    "    #\"Merged Queries\" = Table.NestedJoin(SQL_CustomersAccounts,{\"FirmaId\"},MergedCompanyId,{\"FirmaId\"},\"Temp\",JoinKind.Inner),",
+    "    #\"Expanded Temp\" = Table.ExpandTableColumn(#\"Merged Queries\", \"Temp\", {\"CompanyId\", \"FromCompany\"}, {\"CompanyId\", \"FromCompany\"}),",
+    "    #\"Added Custom\" = Table.AddColumn(#\"Expanded Temp\", \"Custom\", each if Text.Length(Text.From([KundeId])) = 0 then null else Text.From([FromCompany])&\"-\"&Text.From([KundeId])),",
+    "    #\"Renamed Columns\" = Table.RenameColumns(#\"Added Custom\",{{\"Custom\", \"KundeLnk\"}}),",
+    "    #\"Sorted Rows\" = Table.Sort(#\"Renamed Columns\",{{\"Dato\", Order.Descending}}),",
+    "    Custom1 = SQL_GeneralLedger,",
+    "    #\"Merged Queries2\" = Table.NestedJoin(Custom1,{\"FirmaId\"},MergedCompanyId,{\"FirmaId\"},\"Custom1\",JoinKind.Inner),",
+    "    #\"Extracted Text After Delimiter\" = Table.TransformColumns(#\"Merged Queries2\", {{\"KontoLnk\", each Text.AfterDelimiter(_, \"-\"), type text}}),",
+    "    #\"Filtered Rows2\" = Table.SelectRows(#\"Extracted Text After Delimiter\", each Text.StartsWith([KontoLnk], \"3\")),",
+    "    #\"Merged Queries1\" = Table.NestedJoin(#\"Renamed Columns\",{\"FirmaId\", \"BilagsNummer\"},#\"Filtered Rows2\",{\"FirmaId\", \"BilagsNummer\"},\"Regnskap\",JoinKind.LeftOuter),",
+    "    #\"Expanded Regnskap\" = Table.ExpandTableColumn(#\"Merged Queries1\", \"Regnskap\", {\"ProsjektId\", \"NettoBelop\"}, {\"ProsjektId\", \"NettoBelop\"}),",
+    "    #\"Merged Queries3\" = Table.NestedJoin(#\"Expanded Regnskap\",{\"ProsjektId\"},ProjectFromMergers,{\"ProsjektId\"},\"Expanded Regnskap\",JoinKind.Inner),",
+    "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Merged Queries3\",{\"Expanded Regnskap\"}),",
+    "    #\"Added Custom1\" = Table.AddColumn(#\"Removed Columns1\", \"ProsjektLnk\", each Text.From([CompanyId])&\"-\"&Text.From([ProsjektId])),",
+    "    #\"Inserted Year\" = Table.AddColumn(#\"Added Custom1\", \"Old\", each if Date.Year([Dato]) < (SisteAar - AntallAar) then #date(SisteAar - AntallAar,1,1) else [Dato]),",
+    "    #\"Removed Columns\" = Table.RemoveColumns(#\"Inserted Year\",{\"Dato\", \"FirmaId\", \"FromCompany\", \"ProsjektId\"}),",
+    "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Columns\",{{\"Old\", \"Dato\"}, {\"NettoBelop\", \"Belop\"}}),",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns1\",{{\"KundeId\", Int64.Type}, {\"BilagsNummer\", Int64.Type}, {\"PostNummer\", Int64.Type}, {\"NOK\", Int64.Type}, {\"TekstKode\", Int64.Type}, {\"Tekst\", type text}, {\"ForfallsDato\", type datetime}, {\"BokfDato\", type datetime}, {\"CompanyId\", Int64.Type}, {\"KundeLnk\", type text}, {\"ProsjektLnk\", type text}, {\"Dato\", type date}})",
+    "in",
+    "    #\"Changed Type\""
+  ],
+  "queryGroup": "Hjelpetabeller",
+  "lineageTag": "ccadd1b6-dc60-4eeb-a18c-8095ba289673",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

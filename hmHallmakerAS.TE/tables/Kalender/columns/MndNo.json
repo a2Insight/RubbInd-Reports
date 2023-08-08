@@ -1,0 +1,14 @@
+{
+  "name": "MndNo",
+  "dataType": "int64",
+  "sourceColumn": "MndNo",
+  "formatString": "0",
+  "lineageTag": "67e215b8-4a77-4344-ab8e-421ec72e9eb4",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

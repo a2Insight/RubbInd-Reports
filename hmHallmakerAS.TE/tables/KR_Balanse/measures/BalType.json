@@ -1,0 +1,11 @@
+{
+  "name": "BalType",
+  "expression": "SUM(KR_Balanse[Type])",
+  "lineageTag": "220290f3-0438-4e82-be6b-71ccd7d1fe6a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

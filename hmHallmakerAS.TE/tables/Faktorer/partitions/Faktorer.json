@@ -1,0 +1,21 @@
+{
+  "name": "Faktorer",
+  "mode": "import",
+  "queryGroup": "Dimensjoner",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "   ",
+      "table1 = \"Factors\",",
+      "",
+      "    sqlDatabase = Sql.Database(\"a2insight.database.windows.net\", \"a2dmHallmaker\"),",
+      "",
+      "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
+      "",
+      "    columns2Norwegian = Table.RenameColumns(sqlTbl1,{{\"Unit\", \"Enhet\"}, {\"Factor\", \"Faktor\"}})",
+      "in",
+      "    columns2Norwegian"
+    ]
+  }
+}

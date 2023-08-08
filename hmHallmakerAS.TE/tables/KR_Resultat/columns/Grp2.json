@@ -1,0 +1,14 @@
+{
+  "name": "Grp2",
+  "dataType": "int64",
+  "sourceColumn": "Grp2",
+  "formatString": "0",
+  "lineageTag": "b50eecb7-76e9-44f0-a6ee-b5e17e46e7dd",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

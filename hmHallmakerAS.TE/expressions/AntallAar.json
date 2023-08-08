@@ -1,0 +1,17 @@
+{
+  "name": "AntallAar",
+  "kind": "m",
+  "expression": "3 meta [IsParameterQuery=true, Type=\"Number\", IsParameterQueryRequired=true]",
+  "queryGroup": "Parametere",
+  "lineageTag": "4de62ca3-4f7c-4eb8-9a3f-2c71fced9b32",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigasjon"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Number"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "SQL_Suppliers",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"Leverandorer\",",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data]",
+    "",
+    "",
+    "in",
+    "    sqlTbl1"
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "3afdba9f-18bc-43b5-b100-304e81c8486d",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "KR_Resultat",
+  "mode": "import",
+  "queryGroup": "Dimensjoner",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "   ",
+      "table1 = \"Reports\",",
+      "",
+      "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+      "",
+      "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
+      "",
+      "    filterCompanyRecords = Table.SelectRows(sqlTbl1, each ([CompanyId] = CompanyName and [Rapport] = \"KR_Resultat\")),",
+      "    setNivåLink = Table.RenameColumns(filterCompanyRecords,{{\"Nlink\", \"Nivå1\"}})",
+      "in",
+      "    setNivåLink"
+    ]
+  }
+}

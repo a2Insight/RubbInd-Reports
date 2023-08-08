@@ -1,0 +1,14 @@
+{
+  "name": "RegistreringId",
+  "dataType": "int64",
+  "sourceColumn": "RegistreringId",
+  "formatString": "0",
+  "lineageTag": "8ede5713-4612-494e-9a04-a93dfc4ea6a7",
+  "summarizeBy": "count",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

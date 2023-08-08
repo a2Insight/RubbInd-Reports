@@ -1,0 +1,11 @@
+{
+  "name": "LiGr2LYT",
+  "expression": "CALCULATE([Likviditetsgrad 2],FILTER(ALL(Kalender),Kalender[År]=MAX(Kalender[År])-1),Kalender[MndNo]=12)",
+  "lineageTag": "b4e5ad23-069a-4284-85b5-45af87ec8426",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

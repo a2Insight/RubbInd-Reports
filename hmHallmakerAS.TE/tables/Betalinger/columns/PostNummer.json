@@ -1,0 +1,14 @@
+{
+  "name": "PostNummer",
+  "dataType": "int64",
+  "sourceColumn": "PostNummer",
+  "formatString": "0",
+  "lineageTag": "29ba6355-fa2f-41db-afa6-a1d8cd8288d8",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

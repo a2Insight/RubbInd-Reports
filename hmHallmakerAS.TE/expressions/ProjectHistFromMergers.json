@@ -1,0 +1,23 @@
+{
+  "name": "ProjectHistFromMergers",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = RegnskapHistFromMergers,",
+    "    #\"Removed Columns\" = Table.RemoveColumns(Source,{\"FirmaId\", \"KontoId\", \"ProsjektId\", \"Lev\", \"Kunde\", \"FromCompany\"})",
+    "in",
+    "    #\"Removed Columns\""
+  ],
+  "queryGroup": "Hjelpetabeller",
+  "lineageTag": "2b3b9855-37c0-4e2e-a106-2359a2900eed",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

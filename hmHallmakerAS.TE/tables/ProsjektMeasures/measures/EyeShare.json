@@ -1,0 +1,12 @@
+{
+  "name": "EyeShare",
+  "expression": "CALCULATE(DIVIDE(SUM(Regnskap[Belop2]),Faktorer[Rapportfaktor]),USERELATIONSHIP(Kalender[Dato],Regnskap[FakturaDato]))",
+  "formatString": "#,0",
+  "lineageTag": "7f5ba683-afbc-4684-b04e-f5f4a8919f63",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

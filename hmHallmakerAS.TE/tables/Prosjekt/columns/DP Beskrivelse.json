@@ -1,0 +1,13 @@
+{
+  "name": "DP Beskrivelse",
+  "dataType": "string",
+  "sourceColumn": "DP Beskrivelse",
+  "lineageTag": "6eedba0d-e70e-4cca-abc0-c81cf8650df3",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

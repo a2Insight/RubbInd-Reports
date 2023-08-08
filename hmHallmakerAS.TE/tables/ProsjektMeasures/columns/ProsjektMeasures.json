@@ -1,0 +1,19 @@
+{
+  "name": "ProsjektMeasures",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "ProsjektMeasures",
+  "lineageTag": "e5e0eecc-91c8-4be3-8404-754440e18a69",
+  "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "IsHidden"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Virkelig PER",
+  "expression": "CALCULATE([Resultat],Datasett[Sett]=\"Virkelig\")",
+  "formatString": "#,0",
+  "lineageTag": "9491ba13-59dc-4262-adcb-9c4d49dec321",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

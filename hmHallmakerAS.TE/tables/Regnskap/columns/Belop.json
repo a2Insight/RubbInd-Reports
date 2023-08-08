@@ -1,0 +1,14 @@
+{
+  "name": "Belop",
+  "dataType": "double",
+  "sourceColumn": "Belop",
+  "formatString": "#,0.00",
+  "lineageTag": "f7c07c74-99a0-49fa-b9a4-090ce2bd57bd",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

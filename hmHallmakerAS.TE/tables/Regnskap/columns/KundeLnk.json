@@ -1,0 +1,14 @@
+{
+  "name": "KundeLnk",
+  "dataType": "string",
+  "sourceColumn": "KundeLnk",
+  "lineageTag": "b8f4b958-ea2c-4bcb-a195-b0bf8c0026da",
+  "dataCategory": "PostalCode",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

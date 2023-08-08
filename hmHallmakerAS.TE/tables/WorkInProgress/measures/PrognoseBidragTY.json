@@ -1,0 +1,12 @@
+{
+  "name": "PrognoseBidragTY",
+  "expression": "[TotalBidragYTD]+[BidragsreserveTY]",
+  "formatString": "#,0",
+  "lineageTag": "5dbd0cc1-888c-4d31-985d-d62999954f0d",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

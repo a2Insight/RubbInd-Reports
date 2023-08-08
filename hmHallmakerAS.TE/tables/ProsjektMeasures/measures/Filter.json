@@ -1,0 +1,11 @@
+{
+  "name": "Filter",
+  "expression": "[Inntekt]*[Inntekt]+[Bidrag]*[Bidrag]",
+  "lineageTag": "f8d1c175-48f8-4c89-a399-03923981f7f4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

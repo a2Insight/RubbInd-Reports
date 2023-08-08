@@ -1,0 +1,17 @@
+{
+  "name": "Periode",
+  "dataType": "double",
+  "sourceColumn": "Periode",
+  "lineageTag": "0ade4c8d-1ea9-4232-b242-353d36200aa2",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

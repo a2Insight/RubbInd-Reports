@@ -1,0 +1,25 @@
+{
+  "name": "LiveProjectForecast-6b5691de-b6d2-4b19-9467-4a99b687452c",
+  "mode": "directQuery",
+  "queryGroup": "DirectQ",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = Sql.Database(\"a2insight.database.windows.net\", \"a2dmHallmaker\"),",
+      "    dbo_LU_Projects = Source{[Schema=\"dbo\",Item=\"LU_Projects\"]}[Data],",
+      "    dbo_LU_ProjectMgrs = Source{[Schema=\"dbo\",Item=\"LU_ProjectMgrs\"]}[Data],",
+      "    dbo_FA_ProjectForecastChanges = Source{[Schema=\"dbo\",Item=\"FA_ProjectForecastChanges\"]}[Data],",
+      "",
+      "    #\"Merged Queries\" = Table.NestedJoin(dbo_LU_Projects,{\"ProjectManagerId\"},dbo_LU_ProjectMgrs,{\"ProjectMgrId\"},\"dbo_LU_ProjectMgrs\",JoinKind.LeftOuter),",
+      "    #\"Expanded dbo_LU_ProjectMgrs\" = Table.ExpandTableColumn(#\"Merged Queries\", \"dbo_LU_ProjectMgrs\", {\"NickName\"}, {\"NickName\"}),",
+      "    #\"Grouped Rows\" = Table.Group(dbo_FA_ProjectForecastChanges, {\"ProjectId\"}, {{\"Revenue\", each List.Sum([Revenue]), type number}, {\"Cost\", each List.Sum([Cost]), type number}}),",
+      "    #\"Merged Queries1\" = Table.NestedJoin(#\"Expanded dbo_LU_ProjectMgrs\",{\"ProjectId\"},#\"Grouped Rows\",{\"ProjectId\"},\"Grouped Rows\",JoinKind.LeftOuter),",
+      "    #\"Expanded Grouped Rows\" = Table.ExpandTableColumn(#\"Merged Queries1\", \"Grouped Rows\", {\"Revenue\", \"Cost\"}, {\"Revenue\", \"Cost\"}),",
+      "    #\"Filtered Rows\" = Table.SelectRows(#\"Expanded Grouped Rows\", each ([CompanyId] = CompanyId)),",
+      "    #\"Removed Columns\" = Table.RemoveColumns(#\"Filtered Rows\",{\"ProjectNo\", \"Project\", \"ParentProjectNo\", \"PlanStart\", \"PlanFinish\", \"ActualStart\", \"ActualFinish\", \"SalesmenId\", \"ProjectCateoryId\", \"CustomerId\", \"DepartmentId\", \"CompanyId\", \"ProjectRef\"})",
+      "in",
+      "    #\"Removed Columns\""
+    ]
+  }
+}

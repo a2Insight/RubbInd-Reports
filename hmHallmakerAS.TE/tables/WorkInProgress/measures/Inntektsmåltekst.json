@@ -1,0 +1,5 @@
+{
+  "name": "Inntektsmåltekst",
+  "expression": "CONCATENATE(\"Inntektsmål for \",SELECTEDVALUE(Kalender[År]))",
+  "lineageTag": "2fc34985-bd6f-4284-ad02-c58c11321172"
+}

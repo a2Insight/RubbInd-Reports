@@ -1,0 +1,12 @@
+{
+  "name": "orTY",
+  "expression": "SUMX(VALUES(Prosjekt[HP Beskrivelse]),CALCULATE(IF(YEAR(MAX(HpPrognose[Slutt]))<=YEAR(MAX(Kalender[Dato])),[Ordrereserve],[Ordrereserve]*(1-DIVIDE(MAX(HpPrognose[Slutt])-DATE(YEAR(MAX(Kalender[Dato])),12,31),SUM(HpPrognose[Varighet]))))))",
+  "formatString": "#,0",
+  "lineageTag": "5173963c-b8a3-47c8-ba68-bf42cec9d685",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "KontoBeskrivelse",
+  "dataType": "string",
+  "sourceColumn": "KontoBeskrivelse",
+  "lineageTag": "7d39ff32-d77c-4e5f-8727-af7638595fb0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

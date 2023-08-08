@@ -1,0 +1,12 @@
+{
+  "name": "SalgYTD",
+  "expression": "TOTALYTD([Salg],Kalender[Dato])",
+  "formatString": "#,0",
+  "lineageTag": "c650d20f-f5d7-44f0-b9dd-2d7d227a42a4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

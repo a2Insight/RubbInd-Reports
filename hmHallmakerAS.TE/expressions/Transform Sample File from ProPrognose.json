@@ -1,0 +1,34 @@
+{
+  "name": "Transform Sample File from ProPrognose",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = Excel.Workbook(#\"Sample File Parameter1\", null, true),",
+    "    #\"Expanded Data\" = Table.ExpandTableColumn(Source, \"Data\", {\"Column1\", \"Column2\", \"Column3\", \"Column4\", \"Column5\", \"Column6\"}, {\"Column1\", \"Column2\", \"Column3\", \"Column4\", \"Column5\", \"Column6\"}),",
+    "    #\"Removed Columns\" = Table.RemoveColumns(#\"Expanded Data\",{\"Item\", \"Kind\", \"Hidden\"}),",
+    "    #\"Added Custom\" = Table.AddColumn(#\"Removed Columns\", \"Custom\", each if [Column1] = \"ProsjektId\" then \"Version\" else [Name]),",
+    "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Added Custom\",{\"Name\"}),",
+    "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Removed Columns1\", [PromoteAllScalars=true]),",
+    "    #\"Filtered Rows\" = Table.SelectRows(#\"Promoted Headers\", each ([ProsjektId] <> null and [ProsjektId] <> \"ProsjektId\")),",
+    "    #\"Added Custom1\" = Table.AddColumn(#\"Filtered Rows\", \"Date\", each if Text.Contains([Version], \"_\") then Text.AfterDelimiter([Version], \"_\") else [Version]),",
+    "    #\"Added Custom2\" = Table.AddColumn(#\"Added Custom1\", \"Custom\", each if Text.Contains([Version], \"_\") then Text.BeforeDelimiter([Version], \"_\") else null),",
+    "    #\"Removed Columns2\" = Table.RemoveColumns(#\"Added Custom2\",{\"Beskrivelse\", \"Version\"}),",
+    "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns2\",{{\"Custom\", \"Version\"}}),",
+    "    #\"Replaced Value\" = Table.ReplaceValue(#\"Renamed Columns\",null,0,Replacer.ReplaceValue,{\"Inntekter\", \"Kostnader\"}),",
+    "    #\"Multiplied Column\" = Table.TransformColumns(#\"Replaced Value\", {{\"Inntekter\", each _ * -1, type number}})",
+    "in",
+    "    #\"Multiplied Column\""
+  ],
+  "queryGroup": "Transform File from ProPrognose",
+  "lineageTag": "e7024818-aa4d-40a7-a681-5a752d55a813",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

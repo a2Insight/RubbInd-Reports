@@ -1,0 +1,13 @@
+{
+  "name": "KontoLnk",
+  "dataType": "string",
+  "sourceColumn": "KontoLnk",
+  "lineageTag": "558a620c-b0d4-44c8-ae35-1065bfc938b9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

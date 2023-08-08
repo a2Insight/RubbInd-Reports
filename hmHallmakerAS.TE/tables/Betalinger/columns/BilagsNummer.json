@@ -1,0 +1,14 @@
+{
+  "name": "BilagsNummer",
+  "dataType": "int64",
+  "sourceColumn": "BilagsNummer",
+  "formatString": "0",
+  "lineageTag": "5f602491-481c-4eeb-a75d-47d941a297d7",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

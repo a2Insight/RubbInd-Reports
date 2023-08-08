@@ -1,0 +1,5 @@
+{
+  "name": "Bidragstekst",
+  "expression": "CONCATENATE(\"Bidrag pr. \",COMBINEVALUES(\"-\",LOWER(SELECTEDVALUE(Kalender[Mnd])),SELECTEDVALUE(Kalender[År])) )",
+  "lineageTag": "082e76e1-31ef-4eba-93c0-c0ce0390a7b8"
+}

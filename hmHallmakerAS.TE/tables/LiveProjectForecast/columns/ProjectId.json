@@ -1,0 +1,16 @@
+{
+  "name": "ProjectId",
+  "dataType": "int64",
+  "isNullable": false,
+  "sourceColumn": "ProjectId",
+  "formatString": "0",
+  "sourceProviderType": "bigint",
+  "lineageTag": "21177a05-1166-4706-9744-fe634fc6e9f7",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

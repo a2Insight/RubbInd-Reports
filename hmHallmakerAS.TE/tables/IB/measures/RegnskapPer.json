@@ -1,0 +1,12 @@
+{
+  "name": "RegnskapPer",
+  "expression": "SUM(Regnskap[Belop])",
+  "formatString": "#,0",
+  "lineageTag": "ad7afb65-9a55-4ccf-bb45-9d6ae86902bd",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

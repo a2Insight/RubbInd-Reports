@@ -1,0 +1,13 @@
+{
+  "name": "Avdeling",
+  "dataType": "string",
+  "sourceColumn": "Avdeling",
+  "lineageTag": "b68e1fd8-c247-46a1-a47c-fe2a1d561d31",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

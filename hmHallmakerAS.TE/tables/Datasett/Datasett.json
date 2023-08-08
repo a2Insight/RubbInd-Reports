@@ -1,0 +1,18 @@
+{
+  "name": "Datasett",
+  "lineageTag": "3c98e2dd-ab24-4880-8529-e0d6c2f8cf71",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Varighet",
+  "expression": "(MAX(Prosjekt[PlanFerdigDato])-MAX(Prosjekt[StartDato]))*1",
+  "lineageTag": "66ab9c93-fc95-4b2b-8139-dbb2bd2d9521",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

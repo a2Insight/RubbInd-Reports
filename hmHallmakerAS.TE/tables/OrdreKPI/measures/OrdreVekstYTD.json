@@ -1,0 +1,6 @@
+{
+  "name": "OrdreVekstYTD",
+  "expression": "TOTALYTD([OrdreVekst],Kalender[Dato])",
+  "formatString": "#,0",
+  "lineageTag": "11bf267d-2a13-4208-b466-0194abe078df"
+}

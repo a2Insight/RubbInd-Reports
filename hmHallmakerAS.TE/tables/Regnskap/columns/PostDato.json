@@ -1,0 +1,18 @@
+{
+  "name": "PostDato",
+  "dataType": "dateTime",
+  "sourceColumn": "PostDato",
+  "formatString": "Long Date",
+  "lineageTag": "7a792272-69c0-434e-b8fd-ea913cf4634c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

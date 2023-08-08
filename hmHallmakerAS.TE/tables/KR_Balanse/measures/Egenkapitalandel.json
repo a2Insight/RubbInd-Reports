@@ -1,0 +1,23 @@
+{
+  "name": "Egenkapitalandel",
+  "expression": [
+    "DIVIDE (",
+    "    CALCULATE (",
+    "        [BalanseFraRegnskap],",
+    "        FILTER ( ALL ( Kontoplan ), Kontoplan[Nivå1] = \"Egenkapital\" )",
+    "    ),",
+    "    CALCULATE (",
+    "        [BalanseFraRegnskap],",
+    "        FILTER ( ALL ( Kontoplan ), Kontoplan[Side] = \"EIENDELER\" )",
+    "    )",
+    ")",
+    "    * 100"
+  ],
+  "lineageTag": "03ad69bf-d646-493f-9d09-60e2fc65dc90",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

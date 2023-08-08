@@ -1,0 +1,12 @@
+{
+  "name": "Inntektsreserve",
+  "expression": "[Inntektsprognose]-[Inntekt]",
+  "formatString": "#,0",
+  "lineageTag": "824bbb4e-804c-44f0-95f7-06751b3ebb97",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

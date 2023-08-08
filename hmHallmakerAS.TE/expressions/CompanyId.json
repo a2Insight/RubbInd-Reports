@@ -1,0 +1,17 @@
+{
+  "name": "CompanyId",
+  "kind": "m",
+  "expression": "2 meta [IsParameterQuery=true, List={1, 2, 3, 4, 5}, DefaultValue=..., Type=\"Number\", IsParameterQueryRequired=true]",
+  "queryGroup": "Parametere",
+  "lineageTag": "1aaf99de-3a9a-442c-bacf-24146d8b5eba",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Number"
+    }
+  ]
+}

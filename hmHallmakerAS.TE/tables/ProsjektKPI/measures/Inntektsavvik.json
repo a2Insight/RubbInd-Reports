@@ -1,0 +1,12 @@
+{
+  "name": "Inntektsavvik",
+  "expression": "[Inntektsprognose]-[Inntektsbudsjett]",
+  "formatString": "#,0",
+  "lineageTag": "fa9490f0-b986-4754-a503-54a7f3f7b720",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Bidrag fper",
+  "expression": "CALCULATE([Bidrag],DATEADD(Kalender[Dato],-1,MONTH))",
+  "formatString": "#,0",
+  "lineageTag": "6ec8d77c-5ec1-4dc1-8fbb-d6597759b8e4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

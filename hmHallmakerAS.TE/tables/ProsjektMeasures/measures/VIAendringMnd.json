@@ -1,0 +1,12 @@
+{
+  "name": "VIAendringMnd",
+  "expression": "[VIAakkumulert]-CALCULATE([VIAakkumulert],DATEADD(Kalender[Dato],-1,MONTH))",
+  "formatString": "#,0",
+  "lineageTag": "def1114e-b7e6-4c00-9d99-98cd7a630f24",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

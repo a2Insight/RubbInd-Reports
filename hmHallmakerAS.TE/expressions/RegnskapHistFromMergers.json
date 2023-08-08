@@ -1,0 +1,42 @@
+{
+  "name": "RegnskapHistFromMergers",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "//Procedure",
+    "    FilterSelskap = Table.NestedJoin(SQL_GeneralLedger,{\"FirmaId\", \"ProsjektId\"},SQL_ProjectFromMergers,{\"FirmaId\", \"ProsjektId\"},\"SQL_ProjectFromMergers\",JoinKind.Inner),",
+    "    #\"Expanded SQL_ProjectFromMergers\" = Table.ExpandTableColumn(FilterSelskap, \"SQL_ProjectFromMergers\", {\"CompanyId\", \"FromCompany\"}, {\"CompanyId\", \"FromCompany\"}),",
+    "    VelgKolonner = Table.RemoveColumns(#\"Expanded SQL_ProjectFromMergers\",{\"HovedbokId\", \"DimensjonA\", \"DimensjonB\", \"DimensjonC\", \"DimensjonD\", \"MomsKode\", \"MotkontoType\", \"MotKonto\", \"TekstKode\", \"Tekst\", \"Periode\", \"Aar\", \"BunkeNummer\", \"RegistreringId\", \"Mengde\", \"KontoLnk\", \"DimAlnk\", \"ProsjektLnk\"}),",
+    "    LevNummer = Table.TransformColumns(VelgKolonner, {{\"LevLnk\", each Text.AfterDelimiter(_, \"-\"), type text}}),",
+    "    KundeNr = Table.TransformColumns(LevNummer, {{\"KundeLnk\", each Text.AfterDelimiter(_, \"-\"), type text}}),",
+    "    KolonneNavn = Table.RenameColumns(KundeNr,{{\"Dato\", \"PostDato\"}, {\"DateLnk\", \"Dato\"}, {\"NettoBelop\", \"Belop\"}, {\"BilagsNummer\", \"BilagsId\"}, {\"LevLnk\", \"Lev\"}, {\"KundeLnk\", \"Kunde\"}}),",
+    "    Datatyper = Table.TransformColumnTypes(KolonneNavn,{{\"BilagsId\", type text}, {\"KontoId\", type text}}),",
+    "    NyKundeLnk = Table.AddColumn(Datatyper, \"KundeLnk\", each if Text.Length([Kunde])>0 then Text.From([FromCompany])&\"-\"&Text.From([Kunde]) else null, type text),",
+    "    NyLevLnk = Table.AddColumn(NyKundeLnk, \"LevLnk\", each if Text.Length([Lev])>0 then Text.From([FromCompany])&\"-\"&Text.From([Lev]) else null, type text),",
+    "    NyProsjektLnk = Table.AddColumn(NyLevLnk, \"ProsjektLnk\", each if [ProsjektId]<> null then Text.From([CompanyId])&\"-\"&Text.From([ProsjektId]) else null, type text),",
+    "    NyKontoLnk = Table.AddColumn(NyProsjektLnk, \"KontoLnk\", each if [KontoId]<> null then Text.From([FromCompany])&\"-\"&Text.From([KontoId]) else null, type text),",
+    "    fraEngelsk2Norsk = Table.RenameColumns(NyKontoLnk,{{\"CompanyId\", \"SelskapsId\"}}),",
+    "    FjernGmlLnkFelt = Table.RemoveColumns(fraEngelsk2Norsk,{\"ProsjektId\", \"Lev\", \"Kunde\", \"KontoId\"}),",
+    "    FiltrerResultat = Table.SelectRows(fraEngelsk2Norsk, each not Text.StartsWith([KontoId], \"1\") and not Text.StartsWith([KontoId], \"2\")),",
+    "    MinDato = Table.AddColumn(FiltrerResultat, \"MinDato\", each #date(SisteAar - AntallAar,1,1),type date),",
+    "    ProsjektPoster = Table.AddColumn(MinDato, \"NewDate\", each if Number.From([Dato]) < Number.From([MinDato]) then [MinDato] else [Dato], type date),",
+    "    #\"Removed Columns\" = Table.RemoveColumns(ProsjektPoster,{\"Dato\", \"MinDato\"}),",
+    "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns\",{{\"NewDate\", \"Dato\"}}),",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns\",{{\"Dato\", type date}, {\"PostDato\", type date}})",
+    "in",
+    "    #\"Changed Type\""
+  ],
+  "queryGroup": "Hjelpetabeller",
+  "lineageTag": "052dcc3b-3ea3-4300-bbab-2ad793cb38eb",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigasjon"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

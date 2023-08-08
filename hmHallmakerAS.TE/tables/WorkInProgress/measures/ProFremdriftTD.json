@@ -1,0 +1,6 @@
+{
+  "name": "ProFremdriftTD",
+  "expression": "IF(ISBLANK(DIVIDE([ProKostTD],[ProKostEst])),0,IF(DIVIDE([ProKostTD],[ProKostEst])>1,1,DIVIDE([ProKostTD],[ProKostEst],1)))",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "ba365d56-713c-4ea3-a592-3635222de87b"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Flagg",
+  "expression": [
+    "",
+    "VAR Down =",
+    "    UNICHAR ( 128681 )",
+    "VAR Up =",
+    "    UNICHAR ( 128176 )",
+    "RETURN",
+    "    IF ( ( [KostAkk]+[EyeShare] ) > ( [Kostnadsprognose] * 0.9) , IF ( ( [KostAkk]+[EyeShare] ) <= ( [Kostnadsprognose] ) , Down, CONCATENATE(Down, Down) ), \"\") "
+  ],
+  "lineageTag": "5ca73a4a-1a0a-480e-96d4-7e80988b1e01"
+}

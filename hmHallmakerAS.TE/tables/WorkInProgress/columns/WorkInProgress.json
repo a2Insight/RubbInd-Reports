@@ -1,0 +1,19 @@
+{
+  "name": "WorkInProgress",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "WorkInProgress",
+  "lineageTag": "4092f65b-d569-46c9-ae62-ba6769091c2b",
+  "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "IsHidden"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

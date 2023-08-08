@@ -1,0 +1,11 @@
+{
+  "name": "ProFremdriftTDnew",
+  "expression": "DIVIDE([ProKostTD],[ProKostEst],0)",
+  "lineageTag": "815bd19a-de77-4391-afcf-bd8c499160e8",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Bidrag",
+  "expression": [
+    "",
+    "SWITCH (",
+    "    MAX ( ProsjektStatus[Order] ),",
+    "    \"1\", [BidragPer] + [VIAendringMnd],",
+    "    \"2\", [BidragHIÅ] + [VIAendringYtd],",
+    "    \"3\", [FakturertAkk] - [KostAkk] + [VIAakkumulert] - [ForskuddAkk],",
+    "    \"4\", [Inntektsprognose]-[Kostnadsprognose] - ([FakturertAkk] - [KostAkk] + [VIAakkumulert] - [ForskuddAkk])",
+    ")"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "078ec09a-c77b-48f2-b5ea-0f17f1b2f8c8"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "InntektTY",
+  "expression": "[FakturertHIÅ] + [VIAendringYtd]",
+  "lineageTag": "0031c1ea-faea-4a55-997c-6bc1454d8fbd",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

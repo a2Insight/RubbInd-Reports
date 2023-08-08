@@ -1,0 +1,17 @@
+{
+  "name": "ProsjType",
+  "dataType": "double",
+  "sourceColumn": "ProsjType",
+  "lineageTag": "ac8d9cb4-df9b-4f21-9e46-cf13f6d500f3",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

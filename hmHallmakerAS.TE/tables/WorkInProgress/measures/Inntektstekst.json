@@ -1,0 +1,5 @@
+{
+  "name": "Inntektstekst",
+  "expression": "CONCATENATE(\"Inntekt pr. \",COMBINEVALUES(\"-\",LOWER(SELECTEDVALUE(Kalender[Mnd])),SELECTEDVALUE(Kalender[År])) )",
+  "lineageTag": "f54a1036-64c4-4a28-ab2e-d90847c15d33"
+}

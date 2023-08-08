@@ -1,0 +1,18 @@
+{
+  "name": "Slutt",
+  "dataType": "dateTime",
+  "sourceColumn": "Slutt",
+  "formatString": "Long Date",
+  "lineageTag": "f89fc05b-ac7e-4c58-8fb8-ee365ddcfc42",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "MaxDato",
+  "expression": "MAX(Kalender[Dato])",
+  "formatString": "General Date",
+  "lineageTag": "069d378e-b5e7-4579-b572-a88a1c272a6a"
+}

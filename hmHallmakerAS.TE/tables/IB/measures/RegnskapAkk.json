@@ -1,0 +1,12 @@
+{
+  "name": "RegnskapAkk",
+  "expression": "TOTALYTD([RegnskapPer],Kalender[Dato])",
+  "formatString": "#,0",
+  "lineageTag": "926a3bd0-bc58-4d4d-8129-3726ffd2a936",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

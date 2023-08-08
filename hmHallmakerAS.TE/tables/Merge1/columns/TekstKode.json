@@ -1,0 +1,17 @@
+{
+  "name": "TekstKode",
+  "dataType": "double",
+  "sourceColumn": "TekstKode",
+  "lineageTag": "38c0e2c5-ec4d-4a76-b926-3ed7f67b84eb",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

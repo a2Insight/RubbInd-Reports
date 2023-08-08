@@ -1,0 +1,12 @@
+{
+  "name": "Faktura reserve",
+  "expression": "ROUND([Inntektsprognose]-[Fakturert],2)",
+  "formatString": "#,0",
+  "lineageTag": "d2d54909-9394-4610-b55f-45b850c17bc0",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

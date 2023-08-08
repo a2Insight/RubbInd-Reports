@@ -1,0 +1,12 @@
+{
+  "name": "DB budsjett",
+  "expression": "[Inntektsbudsjett]-[Kostnadsbudsjett]",
+  "formatString": "#,0",
+  "lineageTag": "d469584b-230f-495f-92a9-24b6aca9352d",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "SQL_Customers",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"Kunder\",",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data]",
+    "",
+    "",
+    "in",
+    "    sqlTbl1"
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "0e7ebb48-c791-4c1f-b17b-0b075fcdda15",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

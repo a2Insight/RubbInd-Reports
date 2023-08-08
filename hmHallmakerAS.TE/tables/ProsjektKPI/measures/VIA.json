@@ -1,0 +1,21 @@
+{
+  "name": "VIA",
+  "expression": [
+    "",
+    "SWITCH (",
+    "    MAX ( ProsjektStatus[Order] ),",
+    "    \"1\", [VIAendringMnd],",
+    "    \"2\", [VIAendringYtd],",
+    "    \"3\", [VIAakkumulert],",
+    "    \"4\", - [VIAakkumulert]",
+    ")"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "0a399f40-e59a-4f6d-a696-d7e4f7a27207",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

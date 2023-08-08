@@ -1,0 +1,14 @@
+{
+  "name": "Status",
+  "dataType": "string",
+  "sourceColumn": "Status",
+  "sourceProviderType": "varchar(1)",
+  "lineageTag": "4a2e214c-4c56-47c8-bb32-e3a1f91229f7",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

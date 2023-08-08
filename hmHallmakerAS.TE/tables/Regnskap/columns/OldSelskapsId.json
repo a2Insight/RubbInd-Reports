@@ -1,0 +1,13 @@
+{
+  "name": "OldSelskapsId",
+  "dataType": "string",
+  "sourceColumn": "OldSelskapsId",
+  "lineageTag": "11471886-a89a-4e21-8bf2-a6127fa089b4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

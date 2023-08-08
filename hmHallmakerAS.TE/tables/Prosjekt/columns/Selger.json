@@ -1,0 +1,13 @@
+{
+  "name": "Selger",
+  "dataType": "string",
+  "sourceColumn": "Selger",
+  "lineageTag": "45589135-6c65-40ef-a627-cb99c98fad9a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

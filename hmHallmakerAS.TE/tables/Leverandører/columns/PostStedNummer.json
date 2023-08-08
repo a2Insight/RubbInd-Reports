@@ -1,0 +1,13 @@
+{
+  "name": "PostStedNummer",
+  "dataType": "string",
+  "sourceColumn": "PostStedNummer",
+  "lineageTag": "85172a06-73ef-43be-a630-085eac00e0a2",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Ferdig rest",
+  "expression": "1-[Opptjent %]",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "19c9341b-72f5-4a39-a0a2-c2af829bde95"
+}

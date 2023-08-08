@@ -1,0 +1,6 @@
+{
+  "name": "ForskuddAkk",
+  "expression": "CALCULATE([ForskuddPer],FILTER(ALL(Kalender),Kalender[Dato]<=MAX(Kalender[Dato])))",
+  "formatString": "#,0",
+  "lineageTag": "4a9ce22b-53ad-438d-84f1-26efc0927eaa"
+}

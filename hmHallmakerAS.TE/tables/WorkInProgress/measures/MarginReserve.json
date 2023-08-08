@@ -1,0 +1,6 @@
+{
+  "name": "MarginReserve",
+  "expression": "DIVIDE([Bidragsreserve],[Ordrereserve])",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "08a53b41-117b-4f76-8e01-7d4f5e186f33"
+}

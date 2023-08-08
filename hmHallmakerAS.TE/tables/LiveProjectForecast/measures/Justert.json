@@ -1,0 +1,11 @@
+{
+  "name": "Justert",
+  "expression": "ABS([Inntektsprognose]-[RevenueForecastLive])+ABS([Kostnadsprognose]-[CostForecastLive])",
+  "lineageTag": "bb2c1ed6-89b2-4c57-8172-de537d0f603d",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

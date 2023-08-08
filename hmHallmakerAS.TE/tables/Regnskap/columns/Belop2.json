@@ -1,0 +1,17 @@
+{
+  "name": "Belop2",
+  "dataType": "double",
+  "sourceColumn": "Belop2",
+  "lineageTag": "319c3026-ea22-4a0c-8dfe-e699962beb9c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Eliminering",
+  "dataType": "string",
+  "sourceColumn": "Eliminering",
+  "lineageTag": "e944bea4-11ee-4bd3-b669-6bb5435f4dd2",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

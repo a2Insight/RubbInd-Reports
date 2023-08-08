@@ -1,0 +1,12 @@
+{
+  "name": "KostAkk",
+  "expression": "CALCULATE([KostPer],FILTER(ALL(Kalender),Kalender[Dato]<=MAX(Kalender[Dato])))",
+  "formatString": "#,0",
+  "lineageTag": "43fe7f45-f6ff-4dde-a195-e4de21e93817",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

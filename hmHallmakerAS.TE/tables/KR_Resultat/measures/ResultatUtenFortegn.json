@@ -1,0 +1,11 @@
+{
+  "name": "ResultatUtenFortegn",
+  "expression": "DIVIDE(CALCULATE([RegnskapUtenFortegn]+[BudsjettUtenFortegn],Kontoplan[Rapport]=\"Resultat\"),[Rapportfaktor])",
+  "lineageTag": "c8627550-2f40-4df1-a247-dffb3c320727",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

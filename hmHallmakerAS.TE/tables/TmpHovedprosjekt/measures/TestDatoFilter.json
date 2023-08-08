@@ -1,0 +1,6 @@
+{
+  "name": "TestDatoFilter",
+  "expression": "FIRSTDATE(ProPrognose[Date])",
+  "formatString": "General Date",
+  "lineageTag": "b8b8ec5f-b2a0-47d8-958d-c016c2e87e0f"
+}

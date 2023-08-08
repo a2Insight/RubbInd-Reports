@@ -1,0 +1,18 @@
+{
+  "name": "Dato",
+  "dataType": "dateTime",
+  "sourceColumn": "Dato",
+  "formatString": "Long Date",
+  "lineageTag": "aa7310ef-7cc5-4600-a5a9-c183b6ef3b58",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

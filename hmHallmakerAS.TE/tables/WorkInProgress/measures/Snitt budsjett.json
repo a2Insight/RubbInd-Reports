@@ -1,0 +1,11 @@
+{
+  "name": "Snitt budsjett",
+  "expression": "DIVIDE([InntektsbudsjettYTD],SELECTEDVALUE(Kalender[MndNo]))",
+  "lineageTag": "ae001926-d69e-4adb-b964-da2cf7888aab",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

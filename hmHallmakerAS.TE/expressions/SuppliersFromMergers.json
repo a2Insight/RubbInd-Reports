@@ -1,0 +1,44 @@
+{
+  "name": "SuppliersFromMergers",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"Companies\",",
+    "    table2 =\"Leverandorer\",",
+    "",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
+    "    sqlTbl2 = sqlDatabase{[Schema=\"dbo\",Item=(table2)]}[Data],",
+    "",
+    "    Source = RegnskapHistFromMergers,",
+    "    #\"Removed Other Columns\" = Table.SelectColumns(Source,{\"LevLnk\"}),",
+    "    NewAccounts = Table.Distinct(#\"Removed Other Columns\"),",
+    "    RemoveNull = Table.SelectRows(NewAccounts, each ([LevLnk] <> null)),",
+    "    FromComp = Table.Distinct(Source, {\"FromCompany\"}),",
+    "    #\"Merged Queries\" = Table.NestedJoin(sqlTbl1,{\"CompanyId\"},FromComp,{\"FromCompany\"},\"Custom1\",JoinKind.Inner),",
+    "    #\"Removed Columns\" = Table.RemoveColumns(#\"Merged Queries\",{\"Custom1\"}),",
+    "    #\"Merged Queries1\" = Table.NestedJoin(sqlTbl2,{\"FirmaId\"},#\"Removed Columns\",{\"InfoEasyId\"},\"Removed Columns\",JoinKind.Inner),",
+    "    #\"Expanded Removed Columns\" = Table.ExpandTableColumn(#\"Merged Queries1\", \"Removed Columns\", {\"CompanyId\"}, {\"CompanyId\"}),",
+    "    #\"Added Custom\" = Table.AddColumn(#\"Expanded Removed Columns\", \"LLnk\", each Text.From([CompanyId])&\"-\"&Text.From([LevId])),",
+    "    #\"Merged Queries2\" = Table.NestedJoin(#\"Added Custom\",{\"LLnk\"},RemoveNull,{\"LevLnk\"},\"Added Custom\",JoinKind.Inner),",
+    "    #\"Added Custom1\" = Table.AddColumn(#\"Merged Queries2\", \"LeverandorBeskrivelse\", each Text.From([LevId])&\"HM - \"&Text.From([Leverandor])),",
+    "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Added Custom1\",{\"FirmaId\", \"LevLnk\", \"CompanyId\", \"Added Custom\"}),",
+    "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns1\",{{\"LLnk\", \"LevLnk\"}}),",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns\",{{\"LevLnk\", type text}, {\"LeverandorBeskrivelse\", type text}})",
+    "in",
+    "    #\"Changed Type\""
+  ],
+  "queryGroup": "Hjelpetabeller",
+  "lineageTag": "f446bbb8-3491-4249-ba71-9cd1ce535279",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

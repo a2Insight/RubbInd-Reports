@@ -1,0 +1,29 @@
+{
+  "name": "EliminationFromMergers",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"IN_EliminationMergers\",",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
+    "    FilterCompany = Table.NestedJoin(sqlTbl1,{\"CompanyId\"},SQL_Company,{\"CompanyId\"},\"SQL_Company\",JoinKind.Inner),",
+    "    CheckDate = Table.AddColumn(FilterCompany, \"Dato\", each if Date.Year([DateId]) < SisteAar - AntallAar then #date(SisteAar - AntallAar,1,1) else [DateId], type date),",
+    "    FilterCols = Table.RemoveColumns(CheckDate,{\"SQL_Company\", \"LineKey\", \"TransactionId\", \"DateId\"}),",
+    "    RenameCols = Table.RenameColumns(FilterCols,{{\"Comment\", \"BilagsId\"}, {\"NetAmt\", \"Belop\"}, {\"ProjectLnk\", \"ProsjektLnk\"}, {\"AccountLnk\", \"KontoLnk\"}, {\"CompanyId\", \"SelskapsId\"}})",
+    "in",
+    "    RenameCols"
+  ],
+  "queryGroup": "Hjelpetabeller",
+  "lineageTag": "4dedfeef-a0b9-4a67-89f5-26821bfa3c2c",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

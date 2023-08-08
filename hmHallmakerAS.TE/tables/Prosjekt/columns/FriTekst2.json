@@ -1,0 +1,13 @@
+{
+  "name": "FriTekst2",
+  "dataType": "string",
+  "sourceColumn": "FriTekst2",
+  "lineageTag": "f8568cc1-c2b8-410d-a4a1-b629f942ff75",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

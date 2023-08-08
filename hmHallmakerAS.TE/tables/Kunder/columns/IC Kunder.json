@@ -1,0 +1,14 @@
+{
+  "name": "IC Kunder",
+  "dataType": "boolean",
+  "sourceColumn": "IC Kunder",
+  "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+  "lineageTag": "265e63b8-29ea-46cc-a17c-10c6435f5669",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

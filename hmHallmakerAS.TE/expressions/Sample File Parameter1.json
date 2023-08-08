@@ -1,0 +1,13 @@
+{
+  "name": "Sample File Parameter1",
+  "kind": "m",
+  "expression": "#\"Sample File\" meta [IsParameterQuery=true, BinaryIdentifier=#\"Sample File\", Type=\"Binary\", IsParameterQueryRequired=true]",
+  "queryGroup": "Transform File from ProPrognose\\Sample Query",
+  "lineageTag": "37608113-1b54-49ae-82d5-1c8da39a2833",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Binary"
+    }
+  ]
+}

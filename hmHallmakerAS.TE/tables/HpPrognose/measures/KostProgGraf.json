@@ -1,0 +1,12 @@
+{
+  "name": "KostProgGraf",
+  "expression": "DIVIDE(SUM(HpPrognose[Kostnader]),Faktorer[Rapportfaktor])",
+  "formatString": "#,0",
+  "lineageTag": "4d83436a-f111-47ba-bd00-dfe56386d730",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

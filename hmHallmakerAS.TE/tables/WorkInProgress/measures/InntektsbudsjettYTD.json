@@ -1,0 +1,11 @@
+{
+  "name": "InntektsbudsjettYTD",
+  "expression": "TOTALYTD(CALCULATE(-[Budsjett],KR_Resultat[Nivå1]=\"Inntekter\"),Kalender[Dato])",
+  "lineageTag": "86a0aede-4dca-4e65-b943-491e151c0c3f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

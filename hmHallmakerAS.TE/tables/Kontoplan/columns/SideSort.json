@@ -1,0 +1,14 @@
+{
+  "name": "SideSort",
+  "dataType": "int64",
+  "sourceColumn": "SideSort",
+  "formatString": "0",
+  "lineageTag": "1633ec64-5c25-4d69-b91c-b10b28fab543",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "WorkInProgress",
+  "lineageTag": "6d09d89c-531e-41e2-b312-ba3c36d5fd2a",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "calculated",
+  "name": "SettId",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "expression": "\"Act\"",
+  "lineageTag": "c08fc187-2f5e-449a-b073-06b3f23612f4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

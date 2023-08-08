@@ -1,0 +1,35 @@
+{
+  "name": "KalenderORG",
+  "kind": "m",
+  "expression": [
+    "let",
+    "   ",
+    "table1 = \"Calendar\",",
+    "",
+    "    sqlDatabase = Sql.Database(\"a2insight.database.windows.net\", \"a2dmHallmaker\"),",
+    "",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
+    "    removeEnglishTxt = Table.RemoveColumns(sqlTbl1,{\"Month\", \"ShortMth\"}),",
+    "    columns2Norwegian = Table.RenameColumns(removeEnglishTxt,{{\"Date\", \"Dato\"}, {\"Quarter\", \"Kvartal\"}, {\"Year\", \"År\"}, {\"MonthNo\", \"MndNo\"}}),",
+    "    #\"Added Custom\" = Table.AddColumn(columns2Norwegian, \"YY-Tx\", each Text.End(Text.From([År]),2)&\"0\"&Text.End([Tertial],1)),",
+    "    #\"Added Custom1\" = Table.AddColumn(#\"Added Custom\", \"YYYYMM\", each [År]*100+[MndNo]),",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Added Custom1\",{{\"YY-Tx\", Int64.Type}}),",
+    "    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each [År] >= SisteAar - AntallAar and [År] <= SisteAar)",
+    "",
+    "",
+    "in",
+    "    #\"Filtered Rows\""
+  ],
+  "queryGroup": "Dimensjoner",
+  "lineageTag": "5fb45489-8c1f-42fb-bc34-6f3dbe31b7db",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigasjon"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Measure",
+  "expression": "CALCULATE(SUM(HpPrognose[Inntekter]),FIRSTDATE(Kalender[Dato])) ",
+  "lineageTag": "77473beb-31f4-47a8-8380-ea94e81701b4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

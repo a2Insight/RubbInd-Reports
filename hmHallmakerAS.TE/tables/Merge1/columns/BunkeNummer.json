@@ -1,0 +1,17 @@
+{
+  "name": "BunkeNummer",
+  "dataType": "double",
+  "sourceColumn": "BunkeNummer",
+  "lineageTag": "3b131579-7d8b-41fe-803e-73564ce6a70c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

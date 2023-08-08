@@ -1,0 +1,11 @@
+{
+  "name": "Fakturabeløp",
+  "expression": "[KostPer]+[EyeShare]",
+  "lineageTag": "726dc401-7dd5-446b-b676-fc0965ac8016",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

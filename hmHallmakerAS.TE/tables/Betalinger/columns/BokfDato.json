@@ -1,0 +1,14 @@
+{
+  "name": "BokfDato",
+  "dataType": "dateTime",
+  "sourceColumn": "BokfDato",
+  "formatString": "General Date",
+  "lineageTag": "203787ae-c46a-489d-a032-8a0db51a4d7c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Balanse",
+  "expression": [
+    "IF (",
+    "    AND (",
+    "        MAX ( KR_Balanse[Detaljer] ) = 0,",
+    "        ISFILTERED ( Kontoplan[Konto] ) || ISFILTERED ( Kontoplan[Kontonavn] )",
+    "            || ISFILTERED ( Kontoplan[Nivå3] )",
+    "    ),",
+    "    BLANK (),",
+    "    [BalNOK]",
+    ")"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "360aa39a-fc9f-4a2b-b830-6bdf380e7d58",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

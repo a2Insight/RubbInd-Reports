@@ -1,0 +1,6 @@
+{
+  "name": "Date1",
+  "expression": "CALCULATE(MAX(HpPrognose[Slutt]),ALL(Kalender))",
+  "formatString": "General Date",
+  "lineageTag": "10f567cd-f7e1-4a64-a230-f344e307c327"
+}

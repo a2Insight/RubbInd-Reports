@@ -1,0 +1,14 @@
+{
+  "name": "Enhet",
+  "dataType": "string",
+  "sourceColumn": "Enhet",
+  "sortByColumn": "Faktor",
+  "lineageTag": "381d9a16-1193-4c98-8214-da66ffe0dd7f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

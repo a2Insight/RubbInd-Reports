@@ -1,0 +1,39 @@
+{
+  "name": "SQL_Forecast",
+  "kind": "m",
+  "expression": [
+    "let",
+    "   ",
+    "    table1 = \"FA_ProjectForecastChanges\",",
+    "    table2 = \"LU_Projects\",",
+    "",
+    "    sqlDatabase = Sql.Database(\"a2insight.database.windows.net\", \"a2dmHallmaker\"),",
+    "",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
+    "    sqlTbl2 = sqlDatabase{[Schema=\"dbo\",Item=(table2)]}[Data],",
+    "    #\"Merged Queries\" = Table.NestedJoin(sqlTbl1,{\"ProjectId\"},sqlTbl2,{\"ProjectId\"},\"sqlTbl2\",JoinKind.LeftOuter),",
+    "    #\"Expanded sqlTbl2\" = Table.ExpandTableColumn(#\"Merged Queries\", \"sqlTbl2\", {\"ParentProjectNo\", \"CompanyId\", \"ProjectRef\"}, {\"ParentProjectNo\", \"CompanyId\", \"ProjectRef\"}),",
+    "    #\"Merged Queries1\" = Table.NestedJoin(#\"Expanded sqlTbl2\",{\"CompanyId\"},SQL_Company,{\"CompanyId\"},\"SQL_Company\",JoinKind.LeftOuter),",
+    "    #\"Expanded SQL_Company\" = Table.ExpandTableColumn(#\"Merged Queries1\", \"SQL_Company\", {\"Company\"}, {\"Company\"}),",
+    "    #\"Removed Columns\" = Table.RemoveColumns(#\"Expanded SQL_Company\",{\"ProjectId\", \"Comments\", \"UpdatedBy\", \"UpdatedDate\", \"LineKey\", \"CompanyId\"}),",
+    "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns\",{{\"ParentProjectNo\", \"Hovedarbeidsprosjekt\"}, {\"ProjectRef\", \"ProsjektId\"}, {\"Cost\", \"Kostnader\"}, {\"Revenue\", \"Inntekter\"}, {\"DateId\", \"Date\"}}),",
+    "    #\"Added Custom\" = Table.AddColumn(#\"Renamed Columns\", \"Version\", each null),",
+    "    #\"Added Custom1\" = Table.AddColumn(#\"Added Custom\", \"PlanStart\", each null),",
+    "    #\"Added Custom2\" = Table.AddColumn(#\"Added Custom1\", \"PlanSlutt\", each null),",
+    "    #\"Sorted Rows\" = Table.Sort(#\"Added Custom2\",{{\"Date\", Order.Ascending}})",
+    "in",
+    "    #\"Sorted Rows\""
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "6a85cee5-bb81-4802-bc2a-a2e004f30aa0",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

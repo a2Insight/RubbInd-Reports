@@ -1,0 +1,6 @@
+{
+  "name": "Opptjent %",
+  "expression": "DIVIDE([KostAkk],[Kostnadsprognose])",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "a1d46eae-4abf-4e92-9dbb-f71d88bd4552"
+}

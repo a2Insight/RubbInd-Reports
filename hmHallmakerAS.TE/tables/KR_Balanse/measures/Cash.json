@@ -1,0 +1,11 @@
+{
+  "name": "Cash",
+  "expression": "CALCULATE([BalanseFraRegnskap],Kontoplan[Nivå3] IN {\"Bankinnskudd\",\"Valutakonto\"})-CALCULATE([BalanseFraRegnskap],Kontoplan[Nivå3] = \"Kassekreditt DNB\")",
+  "lineageTag": "e956935e-c3d1-47af-8680-c44c8a6aa4bc",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

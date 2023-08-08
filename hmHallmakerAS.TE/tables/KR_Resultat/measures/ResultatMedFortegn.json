@@ -1,0 +1,11 @@
+{
+  "name": "ResultatMedFortegn",
+  "expression": "DIVIDE(CALCULATE(-[Regnskap]-[Budsjett],Kontoplan[Rapport]=\"Resultat\"),[Rapportfaktor])",
+  "lineageTag": "975c26f8-66d0-49a8-92dd-6ad431f29ba5",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

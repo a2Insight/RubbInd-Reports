@@ -1,0 +1,19 @@
+{
+  "type": "calculated",
+  "name": "Aar",
+  "dataType": "int64",
+  "isDataTypeInferred": true,
+  "expression": "YEAR(Regnskap[Dato])",
+  "lineageTag": "641c7858-fb6e-4319-bd61-fa136151a632",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

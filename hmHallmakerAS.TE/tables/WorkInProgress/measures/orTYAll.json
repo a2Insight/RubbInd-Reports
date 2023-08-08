@@ -1,0 +1,11 @@
+{
+  "name": "orTYAll",
+  "expression": "[orTY]+[SalgAlliå]",
+  "lineageTag": "2caac1a8-9356-49f6-896b-8a9ab1957014",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

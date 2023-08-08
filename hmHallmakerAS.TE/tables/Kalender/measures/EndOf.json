@@ -1,0 +1,11 @@
+{
+  "name": "EndOf",
+  "expression": "MAX(Kalender[Dato])",
+  "lineageTag": "a07bca7e-1196-48c0-b7c3-f1080edffcd5",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

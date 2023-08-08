@@ -1,0 +1,6 @@
+{
+  "name": "TestMaxDte",
+  "expression": "MAX((ProPrognose[Date]))",
+  "formatString": "General Date",
+  "lineageTag": "5c295fef-e62d-4b42-b86b-ee63efe605cb"
+}

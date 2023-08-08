@@ -1,0 +1,12 @@
+{
+  "name": "ProKostEst",
+  "expression": "SUM(HpPrognose[Kostnader]) ",
+  "formatString": "#,0",
+  "lineageTag": "f4a42719-ca1d-4354-b143-fed4d97c2c94",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

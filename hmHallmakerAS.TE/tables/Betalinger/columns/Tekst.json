@@ -1,0 +1,13 @@
+{
+  "name": "Tekst",
+  "dataType": "string",
+  "sourceColumn": "Tekst",
+  "lineageTag": "4e085aa7-5c74-4a52-9ba9-88c3fce738a2",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

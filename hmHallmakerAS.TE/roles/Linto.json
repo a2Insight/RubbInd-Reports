@@ -1,0 +1,16 @@
+{
+  "name": "Linto",
+  "modelPermission": "read",
+  "tablePermissions": [
+    {
+      "name": "Prosjekt",
+      "filterExpression": "[Avdeling] <> \"1\""
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "f607803994f44f3593b40bdae68d1d1a"
+    }
+  ]
+}

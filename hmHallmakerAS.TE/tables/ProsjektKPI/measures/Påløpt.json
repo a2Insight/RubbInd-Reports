@@ -1,0 +1,12 @@
+{
+  "name": "Påløpt",
+  "expression": "[KostAkk]+[EyeShare]",
+  "formatString": "#,0",
+  "lineageTag": "324354a5-fb5e-4ae9-9e6b-fbec759a3def",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

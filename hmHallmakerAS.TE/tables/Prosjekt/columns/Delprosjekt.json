@@ -1,0 +1,13 @@
+{
+  "name": "Delprosjekt",
+  "dataType": "string",
+  "sourceColumn": "Delprosjekt",
+  "lineageTag": "d48bd449-9e42-44cb-bf8d-c62321efc3ce",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

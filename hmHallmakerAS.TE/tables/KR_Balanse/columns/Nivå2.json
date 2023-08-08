@@ -1,0 +1,14 @@
+{
+  "name": "Nivå2",
+  "dataType": "string",
+  "sourceColumn": "Nivå2",
+  "sortByColumn": "Rekkefølge",
+  "lineageTag": "a5deada5-d799-4c8c-b226-17322efc2c8e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

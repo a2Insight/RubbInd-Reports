@@ -1,0 +1,27 @@
+{
+  "name": "SQL_ChartOfAccounts",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"Kontoplan\",",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data]",
+    "",
+    "",
+    "in",
+    "    sqlTbl1"
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "f0d7a0e2-68a0-43bb-a660-dce300d4fb89",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

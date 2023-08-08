@@ -1,0 +1,17 @@
+{
+  "name": "SQLdatabase1",
+  "kind": "m",
+  "expression": "\"a2dmHallmaker\" meta [IsParameterQuery=true, List={\"a2dmHallmaker\"}, DefaultValue=\"a2dmHallmaker\", Type=\"Text\", IsParameterQueryRequired=true]",
+  "queryGroup": "Parametere",
+  "lineageTag": "0e314bd8-b7fb-4b7a-9b00-5fcc08b49970",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    }
+  ]
+}

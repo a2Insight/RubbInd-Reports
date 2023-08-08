@@ -1,0 +1,6 @@
+{
+  "name": "ProgInntEndring",
+  "expression": "DIVIDE(SUM(ProPrognose[RevenueChange]),[Rapportfaktor])",
+  "formatString": "0",
+  "lineageTag": "823905d7-8ea3-421e-b274-0917e5e09231"
+}

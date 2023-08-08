@@ -1,0 +1,20 @@
+{
+  "name": "DB Avvik",
+  "expression": [
+    "",
+    "VAR Down =",
+    "    UNICHAR ( 128681 )",
+    "VAR Up =",
+    "    UNICHAR ( 128176 )",
+    "RETURN",
+    "    IF ( [DB Prognose] - [DB budsjett] >= 0 , [DB Prognose] - [DB budsjett] ,CONCATENATE(Down,CONCATENATE(\" \",FORMAT([DB Prognose] - [DB budsjett],\"# ### ##0\"))))"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "184c8d50-6e6f-452d-9604-a2c9feef3939",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

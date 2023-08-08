@@ -1,0 +1,12 @@
+{
+  "name": "WIP",
+  "expression": "[ProInntektTD]-[FakturertAkk]+[ForskuddAkk]",
+  "formatString": "#,0",
+  "lineageTag": "55644b68-a763-4a58-a8fb-8841d52587b3",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

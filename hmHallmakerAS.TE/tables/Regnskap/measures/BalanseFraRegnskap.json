@@ -1,0 +1,11 @@
+{
+  "name": "BalanseFraRegnskap",
+  "expression": "DIVIDE(CALCULATE(TOTALYTD([RegnskapUtenFortegn],Kalender[Dato]),Kontoplan[Rapport]=\"Balanse\")+CALCULATE([RegnskapUtenFortegn],Kontoplan[Rapport]=\"Balanse\",FILTER(ALL(Kalender),Kalender[År]=MAX(Kalender[År])-1),NOT(IB[IB]=\"IB\")),[Rapportfaktor])",
+  "lineageTag": "fa3adabc-4386-4e51-8970-cb0415a02f2d",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

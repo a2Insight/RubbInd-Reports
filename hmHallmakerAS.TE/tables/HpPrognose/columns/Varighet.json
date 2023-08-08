@@ -1,0 +1,14 @@
+{
+  "name": "Varighet",
+  "dataType": "int64",
+  "sourceColumn": "Varighet",
+  "formatString": "0",
+  "lineageTag": "8fac454c-19b1-4e7d-b9bb-634f60c0dec9",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "OrgVarighet",
+  "dataType": "int64",
+  "sourceColumn": "OrgVarighet",
+  "formatString": "0",
+  "lineageTag": "d547c8c9-5fb4-4cf5-af3b-a1df525f88ec",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

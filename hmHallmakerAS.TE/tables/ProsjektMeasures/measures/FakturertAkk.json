@@ -1,0 +1,12 @@
+{
+  "name": "FakturertAkk",
+  "expression": "CALCULATE([FaktturertPer],FILTER(ALL(Kalender),Kalender[Dato]<=MAX(Kalender[Dato])))",
+  "formatString": "#,0",
+  "lineageTag": "71d69b8d-f543-4703-b4b8-ba82c04140a8",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

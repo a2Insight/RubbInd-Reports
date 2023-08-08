@@ -1,0 +1,14 @@
+{
+  "name": "DimensjonC",
+  "dataType": "int64",
+  "sourceColumn": "DimensjonC",
+  "formatString": "0",
+  "lineageTag": "38e41fc8-46db-4abf-8aad-397ffcc7d323",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}
