@@ -9,23 +9,13 @@
       "   ",
       "//Procedure",
       "    #\"Merged Queries\" = Table.NestedJoin(SQL_CustomersAccounts,{\"FirmaId\"},SQL_Company,{\"InfoEasyId\"},\"Temp\",JoinKind.Inner),",
-      "    #\"Expanded Temp\" = Table.ExpandTableColumn(#\"Merged Queries\", \"Temp\", {\"CompanyId\"}, {\"CompanyId\"}),",
-      "    #\"Added Custom\" = Table.AddColumn(#\"Expanded Temp\", \"Custom\", each if Text.Length(Text.From([KundeId])) = 0 then null else Text.From([CompanyId])&\"-\"&Text.From([KundeId])),",
-      "    #\"Renamed Columns\" = Table.RenameColumns(#\"Added Custom\",{{\"Custom\", \"KundeLnk\"}}),",
-      "    #\"Sorted Rows\" = Table.Sort(#\"Renamed Columns\",{{\"Dato\", Order.Descending}}),",
-      "    Custom1 = Regnskap,",
-      "    #\"Extracted Text After Delimiter\" = Table.TransformColumns(Custom1, {{\"KontoLnk\", each Text.AfterDelimiter(_, \"-\"), type text}}),",
-      "    #\"Filtered Rows2\" = Table.SelectRows(#\"Extracted Text After Delimiter\", each Text.StartsWith([KontoLnk], \"3\")),",
-      "    #\"Merged Queries1\" = Table.NestedJoin(#\"Renamed Columns\",{\"CompanyId\", \"BilagsNummer\"},#\"Filtered Rows2\",{\"SelskapsId\", \"BilagsId\"},\"Regnskap\",JoinKind.LeftOuter),",
-      "    #\"Expanded Regnskap\" = Table.ExpandTableColumn(#\"Merged Queries1\", \"Regnskap\", {\"Belop\", \"ProsjektLnk\"}, {\"Belop\", \"ProsjektLnk\"}),",
-      "    #\"Filtered Rows\" = Table.SelectRows(#\"Expanded Regnskap\", each ([ProsjektLnk] <> null)),",
-      "    #\"Inserted Year\" = Table.AddColumn(#\"Filtered Rows\", \"Old\", each if Date.Year([Dato]) < (SisteAar - AntallAar) then #date(SisteAar - AntallAar,1,1) else [Dato]),",
+      "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Merged Queries\",{\"Temp\"}),",
+      "    #\"Inserted Year\" = Table.AddColumn(#\"Removed Columns1\", \"Old\", each if Date.Year([Dato]) < (SisteAar - AntallAar) then #date(SisteAar - AntallAar,1,1) else [Dato]),",
       "    #\"Removed Columns\" = Table.RemoveColumns(#\"Inserted Year\",{\"Dato\"}),",
-      "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"Old\", type date}}),",
-      "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Changed Type\",{{\"Old\", \"Dato\"}}),",
-      "    #\"Appended Query\" = Table.Combine({#\"Renamed Columns1\", PaymentsFromMergers})",
+      "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"Old\", type date}, {\"ForfallsDato\", type date}, {\"BokfDato\", type date}}),",
+      "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Changed Type\",{{\"Old\", \"Dato\"}})",
       "in",
-      "    #\"Appended Query\""
+      "    #\"Renamed Columns1\""
     ]
   }
 }

@@ -1,0 +1,14 @@
+{
+  "name": "VelgInnhold",
+  "lineageTag": "4c863a92-88d3-470f-828e-28e27de5118a",
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "fc1b56e6f92c422a8e5ecaf5018becbb"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

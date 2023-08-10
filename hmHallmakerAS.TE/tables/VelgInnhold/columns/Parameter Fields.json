@@ -1,0 +1,28 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "Parameter Fields",
+  "dataType": "string",
+  "isNameInferred": false,
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "sourceColumn": "[Value2]",
+  "sortByColumn": "Parameter Order",
+  "lineageTag": "feace058-82be-4aef-9221-992833a0743a",
+  "summarizeBy": "none",
+  "extendedProperties": [
+    {
+      "type": "json",
+      "name": "ParameterMetadata",
+      "value": {
+        "version": 3,
+        "kind": 2
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

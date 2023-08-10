@@ -22,7 +22,10 @@
       "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
       "*/",
       "//Procedure",
-      "    #\"Merged Queries\" = Table.NestedJoin(SQL_Projects,{\"FirmaId\"},SQL_Company,{\"InfoEasyId\"},\"Companies\",JoinKind.Inner),",
+      "",
+      "    Source = Sql.Database(SQLserver1, SQLdatabase1, [Query=\"EXEC NewProjectsHallmaker\"]),",
+      "",
+      "    #\"Merged Queries\" = Table.NestedJoin(Table.SelectRows(SQL_Projects, each [Prosjekt] <> Source[Filter]{0}),{\"FirmaId\"},SQL_Company,{\"InfoEasyId\"},\"Companies\",JoinKind.Inner),",
       "    #\"Expanded Companies\" = Table.ExpandTableColumn(#\"Merged Queries\", \"Companies\", {\"CompanyId\"}, {\"CompanyId\"}),",
       "    #\"Sorted Rows1\" = Table.Sort(#\"Expanded Companies\",{{\"ProsjektId\", Order.Ascending}}),",
       "    #\"Renamed Columns\" = Table.RenameColumns(#\"Sorted Rows1\",{{\"ProsjektLnk\", \"ProsjektLnkOld\"}}),",
@@ -43,10 +46,9 @@
       "    #\"Added Custom5\" = Table.AddColumn(#\"Added Custom4\", \"DelprosjektNummer\", each Text.AfterDelimiter([ProsjektNummer], \"-\", {0, RelativePosition.FromEnd})),",
       "    #\"Added Custom6\" = Table.AddColumn(#\"Added Custom5\", \"DP Beskrivelse\", each if [HovedArbeidProsjektNr] = [DelprosjektNummer] then \" \"&[DelprosjektNummer] &\"   \"&[Delprosjekt] else [DelprosjektNummer]&\"-\"&[Delprosjekt], type text),",
       "    #\"Added Custom7\" = Table.AddColumn(#\"Added Custom6\", \"OrgVarighet\", each if [StartDato] = null then 0 else if [PlanFerdigDato] = null then 0 else Number.From([PlanFerdigDato])-Number.From([StartDato])),",
-      "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Added Custom7\",{{\"StartDato\", type date}, {\"PlanFerdigDato\", type date}, {\"FerdigDato\", type date}, {\"OrgVarighet\", Int64.Type}, {\"HovedArbeidProsjektNr\", type text}, {\"HP Beskrivelse\", type text}, {\"HovedProsjekt\", type text}, {\"ProsjektLnk\", type text}, {\"Avdeling\", type text}}),",
-      "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Changed Type\",{\"OrdreDato\"})",
+      "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Added Custom7\",{{\"StartDato\", type date}, {\"PlanFerdigDato\", type date}, {\"FerdigDato\", type date}, {\"OrgVarighet\", Int64.Type}, {\"HovedArbeidProsjektNr\", type text}, {\"HP Beskrivelse\", type text}, {\"HovedProsjekt\", type text}, {\"ProsjektLnk\", type text}, {\"Avdeling\", type text}})",
       "in",
-      "    #\"Removed Columns1\""
+      "    #\"Changed Type\""
     ]
   }
 }

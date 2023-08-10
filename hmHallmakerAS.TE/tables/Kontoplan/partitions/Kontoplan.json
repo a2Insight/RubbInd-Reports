@@ -14,11 +14,10 @@
       "    KontoLnk = Table.AddColumn(CompanyId, \"KontoLnk\", each Text.From([CompanyId])&\"-\"&Text.From([Konto]), type text),",
       "    RemoveColumns = Table.RemoveColumns(KontoLnk,{\"SelskapsId\", \"CompanyId\", \"TransferDate\"}),",
       "    AddAccountFilter = Table.AddColumn(RemoveColumns, \"KontoFilter\", each Number.From(Text.Start([Konto],1)), Int64.Type),",
-      "    AddAccountDesc = Table.AddColumn(AddAccountFilter, \"KontoBeskrivelse\", each Text.From([Konto])&\" - \"&[Kontonavn]),",
-      "    #\"Sorted Rows\" = Table.Sort(AddAccountDesc,{{\"Konto\", Order.Ascending}}),",
-      "    #\"Appended Query\" = Table.Combine({#\"Sorted Rows\", AccountFromMergers})",
+      "    AddAccountDesc = Table.AddColumn(AddAccountFilter, \"KontoBeskrivelse\", each Text.From([Konto])&\" - \"&[Kontonavn], type text),",
+      "    #\"Sorted Rows\" = Table.Sort(AddAccountDesc,{{\"Konto\", Order.Ascending}})",
       "in",
-      "    #\"Appended Query\""
+      "    #\"Sorted Rows\""
     ]
   }
 }

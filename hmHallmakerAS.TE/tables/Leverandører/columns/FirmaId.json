@@ -1,9 +1,9 @@
 {
-  "name": "SelskapsId",
+  "name": "FirmaId",
   "dataType": "int64",
-  "sourceColumn": "SelskapsId",
+  "sourceColumn": "FirmaId",
   "formatString": "0",
-  "lineageTag": "78c01311-e78a-492b-9a5a-0c5767326660",
+  "lineageTag": "346a8720-a58d-4d2d-ab10-b100806f79ae",
   "summarizeBy": "none",
   "annotations": [
     {

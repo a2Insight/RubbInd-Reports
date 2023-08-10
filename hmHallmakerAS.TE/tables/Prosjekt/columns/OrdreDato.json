@@ -1,9 +1,9 @@
 {
-  "name": "BokfDato",
+  "name": "OrdreDato",
   "dataType": "dateTime",
-  "sourceColumn": "BokfDato",
+  "sourceColumn": "OrdreDato",
   "formatString": "Long Date",
-  "lineageTag": "203787ae-c46a-489d-a032-8a0db51a4d7c",
+  "lineageTag": "175316ff-6384-4d90-9748-ff48a1525d3a",
   "summarizeBy": "none",
   "annotations": [
     {

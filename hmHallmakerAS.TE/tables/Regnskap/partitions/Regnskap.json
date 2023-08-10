@@ -51,10 +51,9 @@
       "    #\"398\" = Table.ReplaceValue(#\"Multiplied Column1\",\"2900\",\"398\",Replacer.ReplaceText,{\"KontoLnk\"}),",
       "    #\"Multiplied Column\" = Table.TransformColumns(#\"398\", {{\"Belop\", each _ * -1, type number}}),",
       "    #\"399\" = Table.ReplaceValue(#\"Multiplied Column\",\"398\",\"399\",Replacer.ReplaceText,{\"KontoLnk\"}),",
-      "    #\"Appended Query1\" = Table.Combine({#\"ORG\", #\"398\", #\"399\"}),",
-      "    #\"Appended Query2\" = Table.Combine({#\"Appended Query1\", ProjectHistFromMergers})",
+      "    #\"Appended Query1\" = Table.Combine({#\"ORG\", #\"398\", #\"399\"})",
       "in",
-      "    #\"Appended Query2\""
+      "    #\"Appended Query1\""
     ]
   }
 }

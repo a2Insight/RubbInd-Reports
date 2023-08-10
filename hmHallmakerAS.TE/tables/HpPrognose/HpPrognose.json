@@ -7,10 +7,6 @@
       "value": "Table"
     },
     {
-      "name": "PBI_NavigationStepName",
-      "value": "Navigation"
-    },
-    {
       "name": "TabularEditor_Relationships",
       "value": [
         "[",

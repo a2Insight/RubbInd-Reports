@@ -20,9 +20,10 @@
     "    #\"Added Custom\" = Table.AddColumn(#\"Renamed Columns\", \"Version\", each null),",
     "    #\"Added Custom1\" = Table.AddColumn(#\"Added Custom\", \"PlanStart\", each null),",
     "    #\"Added Custom2\" = Table.AddColumn(#\"Added Custom1\", \"PlanSlutt\", each null),",
-    "    #\"Sorted Rows\" = Table.Sort(#\"Added Custom2\",{{\"Date\", Order.Ascending}})",
+    "    #\"Sorted Rows\" = Table.Sort(#\"Added Custom2\",{{\"Date\", Order.Ascending}}),",
+    "    #\"Filtered Rows\" = Table.SelectRows(#\"Sorted Rows\", each ([Company] = \"Hallmaker AS\"))",
     "in",
-    "    #\"Sorted Rows\""
+    "    #\"Filtered Rows\""
   ],
   "queryGroup": "DataSources",
   "lineageTag": "6a85cee5-bb81-4802-bc2a-a2e004f30aa0",

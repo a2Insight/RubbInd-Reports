@@ -223,6 +223,15 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "VelgInnhold",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
@@ -518,7 +527,7 @@
       "ordinal": 2,
       "scrollPosition": {
         "x": 0,
-        "y": 471.22625732421875
+        "y": 217
       },
       "nodes": [
         {
@@ -596,6 +605,32 @@
           "nodeLineageTag": "127f54a5-c3b0-4072-969c-248e600964b7",
           "size": {
             "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1141,
+            "y": 287
+          },
+          "nodeIndex": "Kunder",
+          "nodeLineageTag": "8935626e-f0eb-4460-91c9-cfa7e4d55ffc",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1412,
+            "y": 571
+          },
+          "nodeIndex": "Leverandører",
+          "nodeLineageTag": "68882e3b-f240-4049-819b-bad1ce2ffccf",
+          "size": {
+            "height": 248,
             "width": 234
           },
           "zIndex": 0

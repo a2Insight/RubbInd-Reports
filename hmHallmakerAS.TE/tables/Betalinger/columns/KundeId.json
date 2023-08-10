@@ -1,10 +1,9 @@
 {
   "name": "KundeId",
-  "dataType": "int64",
+  "dataType": "string",
   "sourceColumn": "KundeId",
-  "formatString": "0",
   "lineageTag": "97e1a98d-10db-4544-948a-af969d4ca587",
-  "summarizeBy": "count",
+  "summarizeBy": "none",
   "annotations": [
     {
       "name": "SummarizationSetBy",
