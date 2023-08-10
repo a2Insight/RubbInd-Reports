@@ -1,0 +1,13 @@
+{
+  "name": "Hovedarbeidsprosjekt",
+  "dataType": "string",
+  "sourceColumn": "Hovedarbeidsprosjekt",
+  "lineageTag": "d5081b6e-3829-4185-b19d-c40fb540f65f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

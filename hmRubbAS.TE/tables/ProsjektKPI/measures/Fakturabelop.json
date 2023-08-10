@@ -1,0 +1,10 @@
+{
+  "name": "Fakturabelop",
+  "expression": [
+    "",
+    "SUM('KundePoster'[FaktBelopNorsk])"
+  ],
+  "formatString": "#,##0",
+  "displayFolder": "Kunder",
+  "lineageTag": "00a6a112-ebfa-440a-bcc2-c0b19c927037"
+}

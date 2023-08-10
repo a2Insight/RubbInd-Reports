@@ -1,0 +1,19 @@
+{
+  "name": "Konto",
+  "dataType": "int64",
+  "sourceColumn": "Konto",
+  "formatString": "0",
+  "lineageTag": "d41b6a68-ed56-4cce-8ae2-61f26224f053",
+  "summarizeBy": "sum",
+  "changedProperties": [
+    {
+      "property": "DataType"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

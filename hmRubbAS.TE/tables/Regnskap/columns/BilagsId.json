@@ -1,0 +1,15 @@
+{
+  "name": "BilagsId",
+  "dataType": "int64",
+  "sourceColumn": "BilagsId",
+  "formatString": "0",
+  "lineageTag": "6ab8dd44-08b8-4374-bd13-465b1d05d8d6",
+  "dataCategory": "PostalCode",
+  "summarizeBy": "count",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "OrdreKPI",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "OrdreKPI",
+  "lineageTag": "667537f5-04e2-4175-bb04-3ef32929a3bb",
+  "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "IsHidden"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

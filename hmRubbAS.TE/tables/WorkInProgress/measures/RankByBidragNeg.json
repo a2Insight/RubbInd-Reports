@@ -1,0 +1,11 @@
+{
+  "name": "RankByBidragNeg",
+  "expression": "CALCULATE([ProBidragYTD],FILTER(TmpHovedprosjekt,IF(NOT(ISBLANK([ProBidragYTD])),RANKX(ALL(TmpHovedprosjekt),-[ProBidragYTD])<=3)))",
+  "lineageTag": "d1cba7aa-2450-40c1-912a-5b21aa7467b8",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

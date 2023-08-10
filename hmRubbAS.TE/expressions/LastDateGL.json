@@ -1,0 +1,23 @@
+{
+  "name": "LastDateGL",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = GetLastDateGL(companyId),",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Date\", type date}})",
+    "in",
+    "    #\"Changed Type\""
+  ],
+  "queryGroup": "Hjelpetabeller",
+  "lineageTag": "5871a80c-9e3d-4eb6-901e-752622ce41a7",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

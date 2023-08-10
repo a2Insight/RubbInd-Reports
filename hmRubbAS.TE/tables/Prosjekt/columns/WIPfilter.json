@@ -1,0 +1,16 @@
+{
+  "type": "calculated",
+  "name": "WIPfilter",
+  "dataType": "int64",
+  "isDataTypeInferred": true,
+  "expression": "IF(ISBLANK(LOOKUPVALUE(ProPrognose[Hovedarbeidsprosjekt],ProPrognose[Hovedarbeidsprosjekt],Prosjekt[HovedArbeidProsjektNr])),0,1) ",
+  "formatString": "0",
+  "lineageTag": "90921cf2-616b-4150-8f0d-c477355bf93b",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

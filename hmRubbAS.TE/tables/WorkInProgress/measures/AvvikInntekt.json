@@ -1,0 +1,11 @@
+{
+  "name": "AvvikInntekt",
+  "expression": "[TotalInntektYTD]-[InntektsbudsjettYTD]",
+  "lineageTag": "753d4efe-040e-4034-829f-a89f057dbc2b",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "AvgDaysOverdue",
+  "expression": "AVERAGE('KundePoster'[DaysOverdue])",
+  "formatString": "#,0.00",
+  "displayFolder": "Kunder",
+  "lineageTag": "40a6245c-6fdf-4af7-b72f-e17706ff64f8",
+  "changedProperties": [
+    {
+      "property": "FormatString"
+    }
+  ]
+}

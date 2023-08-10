@@ -1,0 +1,17 @@
+{
+  "name": "SQLserver1",
+  "kind": "m",
+  "expression": "\"a2insight.database.windows.net\" meta [IsParameterQuery=true, List={\"a2insight.database.windows.net\"}, DefaultValue=\"a2insight.database.windows.net\", Type=\"Text\", IsParameterQueryRequired=true]",
+  "queryGroup": "Parametere",
+  "lineageTag": "6325de2b-214e-41ac-bbb8-47a1f3d5963e",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    }
+  ]
+}

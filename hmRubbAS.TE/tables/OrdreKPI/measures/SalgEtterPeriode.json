@@ -1,0 +1,12 @@
+{
+  "name": "SalgEtterPeriode",
+  "expression": "CALCULATE([Salg],ALL(Kalender[KortMnd]))-[SalgYTD]",
+  "formatString": "#,0",
+  "lineageTag": "a2ec1e65-ec00-4675-bed3-2a652a611cb4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

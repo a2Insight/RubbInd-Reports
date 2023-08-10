@@ -1,0 +1,48 @@
+{
+  "name": "ProjectRevenueForecast",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = ForecastFromForecast,",
+    "    #\"Removed Columns\" = Table.RemoveColumns(Source,{\"Index\"}),",
+    "",
+    "    Calc_Running_Total = Table.Group(",
+    "                                      #\"Removed Columns\",                                                                           // table as table",
+    "                                     {\"Hovedarbeidsprosjekt\"},                                                                       // key as any",
+    "                                                                                                                       // aggregatedColumns as list ",
+    "                                        {{\"Data\",                                                                           // name of new column to be created",
+    "                                    // Function Call",
+    "                                        (Input as table) as table =>                                                        // data for function",
+    "                                        let",
+    "                                        Call_Function = fn_cumulative_revenue(Input),",
+    "                                    // End of Function Call",
+    "",
+    "                                        result = Table.FromColumns(                                                         // putting all together",
+    "                                                                    Table.ToColumns(Input)&{Call_Function},",
+    "                                                                        Value.Type(",
+    "                                                                                   Table.AddColumn(",
+    "                                                                                                    Input, \"Saldo\", each null, type number",
+    "                                                                                                   )",
+    "                                                                                )",
+    "                                                                       )",
+    "                                        in",
+    "                                            result,",
+    "",
+    "",
+    "                                    type table}}                                                                    // transform into table",
+    "                                    ),",
+    "    #\"Expanded Data\" = Table.ExpandTableColumn(Calc_Running_Total, \"Data\", {\"Dato\", \"Inntekter\", \"Saldo\"}, {\"Date\", \"Revenue\", \"RevenueAcc\"}),",
+    "    ",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded Data\",{{\"Hovedarbeidsprosjekt\", type text}, {\"Date\", type date}, {\"Revenue\", Int64.Type}, {\"RevenueAcc\", Int64.Type}})",
+    "in",
+    "    #\"Changed Type\""
+  ],
+  "queryGroup": "WorkInProgress",
+  "lineageTag": "225f1eb3-ca46-4781-bde5-ed4212b2fadb",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Exception"
+    }
+  ]
+}

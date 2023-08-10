@@ -1,0 +1,11 @@
+{
+  "name": "Fakturert Bidrag",
+  "expression": "[Fakturert]-[Kostnad]",
+  "lineageTag": "a7d382f3-cbab-446f-b334-4048dab7f596",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

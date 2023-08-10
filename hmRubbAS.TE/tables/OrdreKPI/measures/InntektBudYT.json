@@ -1,0 +1,12 @@
+{
+  "name": "InntektBudYT",
+  "expression": "CALCULATE([Budsjett YT],Kontoplan[Nivå1]=\"Inntekter\") ",
+  "formatString": "#,0",
+  "lineageTag": "a290b747-7469-4bf2-a37d-a319d79b8d13",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

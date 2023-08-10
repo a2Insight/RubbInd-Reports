@@ -1,0 +1,11 @@
+{
+  "name": "Snitt reserve",
+  "expression": "DIVIDE([orTY],12-SELECTEDVALUE(Kalender[MndNo]))",
+  "lineageTag": "a72340fe-6e74-43dc-807f-7e84cfc2f1c6",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

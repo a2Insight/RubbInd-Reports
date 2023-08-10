@@ -1,0 +1,24 @@
+{
+  "name": "BilagProsjektLink",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    dbo_KundeReskontro = Source{[Schema=\"dbo\",Item=\"Hovedbok\"]}[Data],",
+    "    #\"Merged Queries\" = Table.NestedJoin(dbo_KundeReskontro, {\"FirmaId\"}, SQL_Company, {\"InfoEasyId\"}, \"SQL_Company\", JoinKind.LeftOuter),",
+    "    #\"Expanded SQL_Company\" = Table.ExpandTableColumn(#\"Merged Queries\", \"SQL_Company\", {\"InfoEasyId\"}, {\"InfoEasyId\"}),",
+    "    #\"Filtered Rows1\" = Table.SelectRows(#\"Expanded SQL_Company\", each [InfoEasyId] <> null),",
+    "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Filtered Rows1\",{\"BilagsNummer\", \"ProsjektId\"}),",
+    "    #\"Filtered Rows\" = Table.SelectRows(#\"Removed Other Columns\", each ([ProsjektId] <> null)),",
+    "    #\"Removed Duplicates\" = Table.Distinct(#\"Filtered Rows\", {\"BilagsNummer\"})",
+    "in",
+    "    #\"Removed Duplicates\""
+  ],
+  "lineageTag": "8b1d82c0-97e7-4edb-ace9-c045cf063a55",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

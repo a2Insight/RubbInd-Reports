@@ -1,0 +1,11 @@
+{
+  "name": "ProBidragEst",
+  "expression": "-SUM(HpPrognose[Inntekter])-SUM(HpPrognose[Kostnader])",
+  "lineageTag": "fecf9142-927e-4fcd-94ee-223255e52597",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

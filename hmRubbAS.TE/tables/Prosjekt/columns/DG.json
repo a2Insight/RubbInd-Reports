@@ -1,0 +1,17 @@
+{
+  "name": "DG",
+  "dataType": "double",
+  "sourceColumn": "DG",
+  "lineageTag": "591fe7ea-c9a5-4544-86ca-3294bb8e433c",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

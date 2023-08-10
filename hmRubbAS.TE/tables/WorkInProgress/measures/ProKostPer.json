@@ -1,0 +1,19 @@
+{
+  "name": "ProKostPer",
+  "expression": [
+    "CALCULATE (",
+    "            SUMX (",
+    "                CALCULATETABLE ( VALUES ( Prosjekt[ProsjektNummer] ),Prosjekt[WIPfilter]=1), ",
+    "                [Regnskap] / MIN ( Faktorer[Faktor] )",
+    "            ),",
+    "            Kontoplan[Rapport] = \"Resultat\",Kontoplan[Nivå1]<>\"Inntekter\"   ",
+    "        )"
+  ],
+  "lineageTag": "64e42299-a757-40b7-ad28-47a6cfe9c190",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Leverandørgjeld",
+  "expression": "CALCULATE([BalanseFraRegnskap],SEARCH(\"Leverandørgjeld\",Kontoplan[Nivå3],1,0)>0)",
+  "lineageTag": "e089a93b-51d9-4c34-980e-a8ca8cfcb29d",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

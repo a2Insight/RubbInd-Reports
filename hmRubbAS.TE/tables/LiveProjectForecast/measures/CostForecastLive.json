@@ -1,0 +1,12 @@
+{
+  "name": "CostForecastLive",
+  "expression": "SUM(LiveProjectForecast[Cost])",
+  "formatString": "#,0",
+  "lineageTag": "3eb54b59-dff0-4533-b470-30a094f84c76",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

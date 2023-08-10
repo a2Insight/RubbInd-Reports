@@ -1,0 +1,20 @@
+{
+  "name": "Resultat",
+  "expression": [
+    "IF (",
+    "    AND (",
+    "        MAX ( KR_Resultat[Detaljer] ) = 0,",
+    "        ISFILTERED ( Kontoplan[Konto] ) || ISFILTERED ( Kontoplan[Kontonavn] )|| ISFILTERED ( Kontoplan[Nivå3])|| ISFILTERED ( Kontoplan[Nivå2] ) || ISFILTERED ( Kontoplan[Kontonavn] )",
+    "    ),",
+    "    BLANK (),",
+    "    [ResultatRapport]",
+    ")"
+  ],
+  "lineageTag": "74e56cab-18d0-4c59-9be5-802d7a4b7b87",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

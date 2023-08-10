@@ -1,0 +1,14 @@
+{
+  "name": "Comments",
+  "dataType": "string",
+  "sourceColumn": "Comments",
+  "sourceProviderType": "varchar(max)",
+  "lineageTag": "ff3f33d8-0fdc-45c5-9206-38b912e91057",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

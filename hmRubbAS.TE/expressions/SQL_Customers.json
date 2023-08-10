@@ -1,0 +1,29 @@
+{
+  "name": "SQL_Customers",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"Kunder\",",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
+    "    #\"Merged Queries\" = Table.NestedJoin(sqlTbl1, {\"FirmaId\"}, SQL_Company, {\"InfoEasyId\"}, \"SQL_Company\", JoinKind.LeftOuter),",
+    "    #\"Expanded SQL_Company\" = Table.ExpandTableColumn(#\"Merged Queries\", \"SQL_Company\", {\"InfoEasyId\"}, {\"InfoEasyId\"}),",
+    "    #\"Filtered Rows\" = Table.SelectRows(#\"Expanded SQL_Company\", each [InfoEasyId] <> null),",
+    "    #\"Removed Columns\" = Table.RemoveColumns(#\"Filtered Rows\",{\"InfoEasyId\"})",
+    "in",
+    "    #\"Removed Columns\""
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "b41f8870-b977-405b-8b2f-406d0de84026",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

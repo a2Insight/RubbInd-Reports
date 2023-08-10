@@ -1,0 +1,22 @@
+{
+  "name": "Inntekt",
+  "expression": [
+    "",
+    "SWITCH (",
+    "    MAX ( ProsjektStatus[Order] ),",
+    "    \"1\", [FaktturertPer] + [VIAendringMnd] - [ForskuddPer],",
+    "    \"2\", [FakturertHIÅ] + [VIAendringYtd],",
+    "    \"3\", [FakturertAkk] + [VIAakkumulert] - [ForskuddAkk],",
+    "    \"4\", [Inntektsprognose] - ([FakturertAkk] + [VIAakkumulert] - [ForskuddAkk]),",
+    "    [FakturertAkk] + [VIAakkumulert] - [ForskuddAkk]",
+    ")"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "ab2c5ab1-f301-45c0-98aa-ea722dff8b01",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

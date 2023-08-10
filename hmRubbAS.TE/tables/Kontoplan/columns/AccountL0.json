@@ -1,0 +1,13 @@
+{
+  "name": "AccountL0",
+  "dataType": "string",
+  "sourceColumn": "AccountL0",
+  "lineageTag": "1f433da0-520b-4af9-86ef-b9ca51937f3b",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

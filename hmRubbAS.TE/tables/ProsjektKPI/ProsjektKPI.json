@@ -1,0 +1,14 @@
+{
+  "name": "ProsjektKPI",
+  "lineageTag": "f8b2ea3a-f85f-4281-9825-aac60fce883b",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "OrdreinngangYT",
+  "expression": "[Ordreinngang]+[SalgEtterPeriode]",
+  "lineageTag": "c10fb821-cf8d-43c8-8b46-c3db61dfa5e7",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

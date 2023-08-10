@@ -1,0 +1,17 @@
+{
+  "name": "SharePointSite1",
+  "kind": "m",
+  "expression": "\"https://hallmakergruppenas.sharepoint.com/sites/archive-2020-05-23T114054Z/finance\" meta [IsParameterQuery=true, List={\"https://hallmakergruppenas.sharepoint.com/finance/\", \"https://hallmakergruppenas.sharepoint.com/sites/archive-2020-05-23T114054Z/finance\"}, DefaultValue=\"https://hallmakergruppenas.sharepoint.com/sites/archive-2020-05-23T114054Z/finance\", Type=\"Any\", IsParameterQueryRequired=true]",
+  "queryGroup": "Parametere",
+  "lineageTag": "d07bf7e6-49d3-4005-990e-a03b62abe2b3",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    }
+  ]
+}

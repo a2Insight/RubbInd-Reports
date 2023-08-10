@@ -1,0 +1,17 @@
+{
+  "name": "RevenueAcc",
+  "dataType": "double",
+  "sourceColumn": "RevenueAcc",
+  "lineageTag": "cf5346eb-3d77-43c2-9a1b-19271f214f49",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

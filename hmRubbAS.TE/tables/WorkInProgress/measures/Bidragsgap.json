@@ -1,0 +1,11 @@
+{
+  "name": "Bidragsgap",
+  "expression": "[PrognoseBidragTY]-[BidragsBudYT]",
+  "lineageTag": "ec6ca9fe-0235-4302-9679-45f0dc43bbdb",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

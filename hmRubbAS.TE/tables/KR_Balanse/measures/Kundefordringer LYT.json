@@ -1,0 +1,11 @@
+{
+  "name": "Kundefordringer LYT",
+  "expression": "CALCULATE([Kundefordringer],FILTER(ALL(Kalender),Kalender[År]=MAX(Kalender[År])-1),Kalender[MndNo]=12) ",
+  "lineageTag": "a45f88d0-adea-43fb-a000-a9a6f4ce63d0",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

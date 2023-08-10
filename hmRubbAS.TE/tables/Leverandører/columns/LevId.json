@@ -1,0 +1,14 @@
+{
+  "name": "LevId",
+  "dataType": "int64",
+  "sourceColumn": "LevId",
+  "formatString": "0",
+  "lineageTag": "c317f44b-ff34-41a3-ba29-9d18960ffae8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

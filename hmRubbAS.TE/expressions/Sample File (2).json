@@ -1,0 +1,24 @@
+{
+  "name": "Sample File (2)",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = SharePoint.Files(SharePointSite1, [ApiVersion = 15]),",
+    "    #\"Filtered Rows\" = Table.SelectRows(Source, each ([Folder Path] = SharePointSite1 & \"/Shared Documents/EndringProsjektPoster/\")),",
+    "    Navigation1 = #\"Filtered Rows\"{0}[Content]",
+    "in",
+    "    Navigation1"
+  ],
+  "queryGroup": "Transform File from ProNummerEndring\\Sample Query",
+  "lineageTag": "0682ac01-dc77-4833-a81e-8150887b8975",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Binary"
+    }
+  ]
+}

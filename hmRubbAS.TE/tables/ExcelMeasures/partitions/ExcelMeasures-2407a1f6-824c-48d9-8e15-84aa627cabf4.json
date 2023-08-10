@@ -1,0 +1,13 @@
+{
+  "name": "ExcelMeasures-2407a1f6-824c-48d9-8e15-84aa627cabf4",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = \"\"",
+      "in",
+      "    Source"
+    ]
+  }
+}

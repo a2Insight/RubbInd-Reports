@@ -1,0 +1,29 @@
+{
+  "name": "KundePoster",
+  "lineageTag": "b07ece1d-549b-4690-8042-19a82e1daa3c",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": [
+        "[",
+        "  {",
+        "    \"fromTable\": \"KundePoster\",",
+        "    \"fromColumn\": \"ProsjektId\",",
+        "    \"toTable\": \"Prosjekt\",",
+        "    \"toColumn\": \"ProsjektNummer\"",
+        "  },",
+        "  {",
+        "    \"fromTable\": \"KundePoster\",",
+        "    \"fromColumn\": \"ReskontroNummer\",",
+        "    \"toTable\": \"Kunder\",",
+        "    \"toColumn\": \"KundeId\"",
+        "  }",
+        "]"
+      ]
+    }
+  ]
+}

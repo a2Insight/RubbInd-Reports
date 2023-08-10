@@ -1,0 +1,12 @@
+{
+  "name": "Virkelig YTD",
+  "expression": "TOTALYTD([Virkelig PER],Kalender[Dato])",
+  "formatString": "#,0",
+  "lineageTag": "cc3bc7ea-e97f-4705-a489-a4cbe924075c",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

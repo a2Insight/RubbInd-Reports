@@ -1,0 +1,29 @@
+{
+  "name": "SQL_EyeShare",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"EyeShare\",",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(sqlTbl1,{{\"FirmaId\", Int64.Type}}),",
+    "    #\"Grouped Rows\" = Table.Group(#\"Changed Type\", {\"FirmaId\", \"LevId\", \"FakturaId\", \"FakturaDato\", \"KontoId\", \"ProsjektId\", \"EyeShare\"}, {{\"EstNetAmount\", each List.Sum([EstNetAmount]), type number}})",
+    "",
+    "",
+    "in",
+    "    #\"Grouped Rows\""
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "161b0dcd-31da-4fbb-9a20-af9cd2058d48",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

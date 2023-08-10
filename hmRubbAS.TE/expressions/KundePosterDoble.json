@@ -1,0 +1,25 @@
+{
+  "name": "KundePosterDoble",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    dbo_KundeReskontro = Source{[Schema=\"dbo\",Item=\"PostMotPostLogg\"]}[Data],",
+    "    #\"Merged Queries\" = Table.NestedJoin(dbo_KundeReskontro, {\"F_FIRMA\", \"ReskontroNummer\"}, SQL_Customers, {\"FirmaId\", \"KundeId\"}, \"SQL_Company\", JoinKind.LeftOuter),",
+    "    #\"Expanded SQL_Company\" = Table.ExpandTableColumn(#\"Merged Queries\", \"SQL_Company\", {\"KundeId\"}, {\"KundeId\"}),",
+    "    #\"Filtered Rows\" = Table.SelectRows(#\"Expanded SQL_Company\", each [KundeId] <> null),",
+    "    Poster = Table.SelectRows(#\"Filtered Rows\", each ([DatoSisteAvreg] = null) and ([Belop] <> 0)),",
+    "    #\"Kept Duplicates\" = let columnNames = {\"BilagsNummer\"}, addCount = Table.Group(Poster, columnNames, {{\"Count\", Table.RowCount, type number}}), selectDuplicates = Table.SelectRows(addCount, each [Count] > 1), removeCount = Table.RemoveColumns(selectDuplicates, \"Count\") in Table.Join(Poster, columnNames, removeCount, columnNames, JoinKind.Inner),",
+    "    #\"Sorted Rows\" = Table.Sort(#\"Kept Duplicates\",{{\"FaktBelopOrginal\", Order.Ascending}}),",
+    "    #\"Removed Duplicates\" = Table.Distinct(#\"Sorted Rows\", {\"BilagsNummer\"})",
+    "in",
+    "    #\"Removed Duplicates\""
+  ],
+  "lineageTag": "552a4b21-b042-4c75-8a27-cfc1dd394cb2",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

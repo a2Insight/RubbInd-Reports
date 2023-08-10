@@ -1,0 +1,19 @@
+{
+  "name": "ResultatRapport",
+  "expression": [
+    "SWITCH (",
+    "    [RegneType],",
+    "    BLANK (), BLANK (),",
+    "    1 , [ResultatUtenFortegn],",
+    "    2 , [ResultatSummer],",
+    "    3, [ProsentAvInntekt]",
+    ")"
+  ],
+  "lineageTag": "197d18ee-e924-4c18-9231-1be0c6b94aea",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

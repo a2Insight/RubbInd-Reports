@@ -1,0 +1,14 @@
+{
+  "name": "LevLnk",
+  "dataType": "string",
+  "sourceColumn": "LevLnk",
+  "lineageTag": "3cbf8166-5aa4-4d5e-a40a-851f96359018",
+  "dataCategory": "PostalCode",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

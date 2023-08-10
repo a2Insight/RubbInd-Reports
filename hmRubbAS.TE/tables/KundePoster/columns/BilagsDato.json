@@ -1,0 +1,18 @@
+{
+  "name": "BilagsDato",
+  "dataType": "dateTime",
+  "sourceColumn": "BilagsDato",
+  "formatString": "Long Date",
+  "lineageTag": "d92abbae-7683-41c8-8492-0e4300348928",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

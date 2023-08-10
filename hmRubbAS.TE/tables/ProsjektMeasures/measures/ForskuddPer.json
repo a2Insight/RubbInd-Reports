@@ -1,0 +1,14 @@
+{
+  "name": "ForskuddPer",
+  "expression": [
+    "CALCULATE (",
+    "                    SUMX (",
+    "                        CALCULATETABLE ( VALUES ( Prosjekt[ProsjektNummer] ), Prosjekt[WIPfilter]=1),",
+    "                        - [Regnskap] / MIN ( Faktorer[Faktor] )",
+    "                    ),",
+    "                    Kontoplan[Konto] = 398",
+    "                )"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "2407c6bd-95dc-429f-930e-cc656b8ef6fe"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Kostnad",
+  "expression": [
+    "",
+    "SWITCH (",
+    "    MAX ( ProsjektStatus[Order] ),",
+    "    \"1\", [KostPer],",
+    "    \"2\", [KostHIÅ],",
+    "    \"3\", [KostAkk]",
+    "    ",
+    ")"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "c88d2f90-daa8-4859-a6c1-60182d095f9b",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Prosjekt bidrag",
+  "expression": [
+    "",
+    "[Prosjekt inntekt] + [Prosjekt kostnad]"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "dd0aa948-538d-4c96-b10b-bced37c8aba1"
+}

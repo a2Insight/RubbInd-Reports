@@ -1,0 +1,11 @@
+{
+  "name": "ProKostYTD",
+  "expression": "TOTALYTD([ProKostPer],Kalender[Dato])",
+  "lineageTag": "1d5c105e-c795-4c4e-9e14-44161bef804e",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

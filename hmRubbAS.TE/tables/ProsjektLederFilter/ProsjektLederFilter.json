@@ -1,0 +1,14 @@
+{
+  "name": "ProsjektLederFilter",
+  "lineageTag": "11d2095e-3515-4b2f-a337-dbadba95d44c",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

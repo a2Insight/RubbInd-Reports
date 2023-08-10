@@ -1,0 +1,37 @@
+{
+  "name": "KalendarDynamisk",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = (SisteAar),",
+    "    #\"Converted to Table\" = #table(1, {{Source}}),",
+    "    #\"Added Custom\" = Table.AddColumn(#\"Converted to Table\", \"Dato\", each List.Dates(#date(SisteAar-AntallAar + 1, 1, 1),366*AntallAar,#duration(1,0,0,0))),",
+    "    #\"Expanded Dato\" = Table.ExpandListColumn(#\"Added Custom\", \"Dato\"),",
+    "    #\"Removed Columns\" = Table.RemoveColumns(#\"Expanded Dato\",{\"Column1\"}),",
+    "    Dato = Table.TransformColumnTypes(#\"Removed Columns\",{{\"Dato\", type date}}),",
+    "    År = Table.AddColumn(Dato, \"År\", each Date.Year([Dato]), Int64.Type),",
+    "    #\"Filtered Rows\" = Table.SelectRows(År, each [År] <= SisteAar),",
+    "    MndNo = Table.AddColumn(#\"Filtered Rows\", \"MndNo\", each Date.Month([Dato]), Int64.Type),",
+    "    Mnd = Table.AddColumn(MndNo, \"Mnd\", each Date.MonthName([Dato]), type text),",
+    "    #\"Capitalized Each Word\" = Table.TransformColumns(Mnd,{{\"Mnd\", Text.Proper, type text}}),",
+    "    KortMnd = Table.AddColumn(#\"Capitalized Each Word\", \"KortMnd\", each Text.Start([Mnd], 3), type text),",
+    "    Kvartal = Table.AddColumn(KortMnd, \"Kvartal\", each \"Q\"&Text.From(Number.RoundUp( [MndNo] / 3 ) ), type text ),",
+    "    Tertial = Table.AddColumn(Kvartal, \"Tertial\", each \"T\"&Text.From(Number.RoundUp( [MndNo] / 4 ) ), type text ),",
+    "    TxYY = Table.AddColumn(Tertial, \"TxYY\", each [Tertial]&\"-\"&Text.End(Text.From([År]),2), type text),",
+    "    YYYYMM = Table.AddColumn(TxYY, \"Custom\", each [År]*100 + [MndNo], Int64.Type)",
+    "in",
+    "    YYYYMM"
+  ],
+  "queryGroup": "Dimensjoner",
+  "lineageTag": "20cd0cc8-54f5-4b3f-9260-50710a8d04c5",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

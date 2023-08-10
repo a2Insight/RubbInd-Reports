@@ -1,0 +1,11 @@
+{
+  "name": "ProBidragYTD",
+  "expression": "[ProBidragTD] - CALCULATE([ProBidragTD],FILTER(ALL(Kalender),Kalender[År]=YEAR(MAX(Kalender[Dato]))-1),Kalender[MndNo]=12)",
+  "lineageTag": "decb7f74-9008-4980-8c58-cf7ebffb0526",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

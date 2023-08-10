@@ -1,0 +1,6 @@
+{
+  "name": "Date2",
+  "expression": "CALCULATE(MAX(HpPrognose[Varighet]),ALL(Kalender))",
+  "formatString": "0",
+  "lineageTag": "ef5184fa-c23e-434c-88cb-00ad54b69ce3"
+}

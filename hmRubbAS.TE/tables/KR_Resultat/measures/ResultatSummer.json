@@ -1,0 +1,21 @@
+{
+  "name": "ResultatSummer",
+  "expression": [
+    "IF (",
+    "    HASONEFILTER (KR_Resultat[Nivå1]),",
+    "    CALCULATE (",
+    "        [ResultatMedFortegn],",
+    "        ALL ( KR_Resultat[Nivå1] ),",
+    "        KR_Resultat[Rekkefølge] < VALUES ( KR_Resultat[Rekkefølge])",
+    "    ),",
+    "    BLANK ()",
+    ")"
+  ],
+  "lineageTag": "c94e1963-bcbe-4f7a-ae70-a3b267515275",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

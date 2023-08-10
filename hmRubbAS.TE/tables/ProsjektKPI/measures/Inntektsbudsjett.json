@@ -1,0 +1,6 @@
+{
+  "name": "Inntektsbudsjett",
+  "expression": "CALCULATE([ProgInntEndring],ALL(Kalender),ProPrognose[Type]=\"Kalkyle\")",
+  "formatString": "#,0",
+  "lineageTag": "397c39ce-1302-4605-9bca-273d79c93986"
+}

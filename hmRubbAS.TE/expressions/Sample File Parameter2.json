@@ -1,0 +1,13 @@
+{
+  "name": "Sample File Parameter2",
+  "kind": "m",
+  "expression": "#\"Sample File (2)\" meta [IsParameterQuery=true, BinaryIdentifier=#\"Sample File (2)\", Type=\"Binary\", IsParameterQueryRequired=true]",
+  "queryGroup": "Transform File from ProNummerEndring\\Sample Query",
+  "lineageTag": "11e3b850-355d-4b49-a33e-247938be6666",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Binary"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Fakturert fper",
+  "expression": "CALCULATE([Fakturert],DATEADD(Kalender[Dato],-1,MONTH))",
+  "formatString": "#,0",
+  "lineageTag": "cda0c3d9-770e-44cf-a628-3a8d2248d04a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Slett2",
+  "expression": "CALCULATE([BalanseFraRegnskap],Kontoplan[Nivå2]=\"Kortsiktig gjeld\",Kontoplan[Nivå3]<>\"Anlegg under utførelse (opptjent ikke fakturert)\",Kontoplan[Nivå3]<>\"Skattetrekkskonto\")",
+  "lineageTag": "6ffeadcc-3cda-4ae3-932b-f901b139359b",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

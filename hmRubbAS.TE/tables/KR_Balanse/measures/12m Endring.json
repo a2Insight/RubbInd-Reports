@@ -1,0 +1,12 @@
+{
+  "name": "12m Endring",
+  "expression": "[Balanse] - CALCULATE([Balanse],SAMEPERIODLASTYEAR(Kalender[Dato]))",
+  "formatString": "#,0",
+  "lineageTag": "72038da5-b284-49d4-aeda-096d0eb6a1f4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

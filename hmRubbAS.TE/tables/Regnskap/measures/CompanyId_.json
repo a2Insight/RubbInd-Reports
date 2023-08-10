@@ -1,0 +1,11 @@
+{
+  "name": "CompanyId_",
+  "expression": "CONCATENATE(\"\",MAX(Regnskap[SelskapsId]))",
+  "lineageTag": "1952d958-fdcd-49c7-b7af-965ed0889cb0",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

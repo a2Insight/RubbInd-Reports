@@ -1,0 +1,6 @@
+{
+  "name": "Fakturert DG%",
+  "expression": "DIVIDE([Fakturert Bidrag],[Fakturert])",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "42ab9e15-059f-4590-9020-bdac46004a15"
+}

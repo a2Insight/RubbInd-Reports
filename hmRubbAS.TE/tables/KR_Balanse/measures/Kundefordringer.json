@@ -1,0 +1,11 @@
+{
+  "name": "Kundefordringer",
+  "expression": "CALCULATE([BalanseFraRegnskap],SEARCH(\"Kundefordring\",Kontoplan[Nivå3],1,0)>0)",
+  "lineageTag": "a454b458-1517-4ebe-a82d-b55d8b794d4d",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

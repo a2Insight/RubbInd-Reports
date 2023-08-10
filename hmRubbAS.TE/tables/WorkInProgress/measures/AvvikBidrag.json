@@ -1,0 +1,11 @@
+{
+  "name": "AvvikBidrag",
+  "expression": "[TotalBidragYTD]-[BudsjettBidragYTD]",
+  "lineageTag": "e6aea704-c536-46fe-aa33-d60a36bd5154",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

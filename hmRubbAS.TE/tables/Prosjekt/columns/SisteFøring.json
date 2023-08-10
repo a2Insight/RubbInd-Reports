@@ -1,0 +1,13 @@
+{
+  "name": "SisteFøring",
+  "dataType": "string",
+  "sourceColumn": "SisteFøring",
+  "lineageTag": "759aecfa-eba9-47b3-a621-5e437dca2ac5",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

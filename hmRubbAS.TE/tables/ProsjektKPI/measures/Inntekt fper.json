@@ -1,0 +1,12 @@
+{
+  "name": "Inntekt fper",
+  "expression": "CALCULATE([Inntekt],DATEADD(Kalender[Dato],-1,MONTH))",
+  "formatString": "#,0",
+  "lineageTag": "df6c6cae-1ece-40e2-9506-32714da06241",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

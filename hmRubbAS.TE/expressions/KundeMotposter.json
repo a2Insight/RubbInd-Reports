@@ -1,0 +1,25 @@
+{
+  "name": "KundeMotposter",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = Sql.Database(SQLserver1 , SQLdatabase1),",
+    "    dbo_KundeReskontro = Source{[Schema=\"dbo\",Item=\"PostMotPostLogg\"]}[Data],",
+    "    #\"Merged Queries1\" = Table.NestedJoin(dbo_KundeReskontro, {\"F_FIRMA\", \"ReskontroNummer\"}, SQL_Customers, {\"FirmaId\", \"KundeId\"}, \"SQL_Customers\", JoinKind.LeftOuter),",
+    "    #\"Expanded SQL_Customers\" = Table.ExpandTableColumn(#\"Merged Queries1\", \"SQL_Customers\", {\"KundeId\"}, {\"KundeId\"}),",
+    "    #\"Filtered Rows\" = Table.SelectRows(#\"Expanded SQL_Customers\", each [KundeId] <> null),",
+    "    Poster = Table.SelectRows(#\"Filtered Rows\", each ([DatoSisteAvreg] <> null)),",
+    "    #\"Appended Query\" = Table.Combine({Poster, #\"KundePosterDoble\"}),",
+    "    #\"Merged Queries\" = Table.NestedJoin(#\"Appended Query\", {\"BilagsNummer\"}, BilagProsjektLink, {\"BilagsNummer\"}, \"BilagProsjektLink\", JoinKind.LeftOuter),",
+    "    #\"Expanded BilagProsjektLink\" = Table.ExpandTableColumn(#\"Merged Queries\", \"BilagProsjektLink\", {\"ProsjektId\"}, {\"ProsjektId\"})",
+    "in",
+    "    #\"Expanded BilagProsjektLink\""
+  ],
+  "lineageTag": "67562a11-430b-4e0d-812c-fca3937c46be",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

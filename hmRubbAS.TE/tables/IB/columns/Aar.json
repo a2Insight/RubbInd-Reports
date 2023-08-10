@@ -1,0 +1,17 @@
+{
+  "name": "Aar",
+  "dataType": "double",
+  "sourceColumn": "Aar",
+  "lineageTag": "0050a87b-f671-42be-a260-a116319b2096",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

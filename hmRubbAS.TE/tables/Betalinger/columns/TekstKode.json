@@ -1,0 +1,14 @@
+{
+  "name": "TekstKode",
+  "dataType": "int64",
+  "sourceColumn": "TekstKode",
+  "formatString": "0",
+  "lineageTag": "25387fc1-dd71-4c09-9e26-ee86d7241d95",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Fortegn",
+  "dataType": "int64",
+  "sourceColumn": "Fortegn",
+  "formatString": "0",
+  "lineageTag": "df6446b8-83ac-4813-9f2f-29209898bafa",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

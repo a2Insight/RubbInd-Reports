@@ -1,0 +1,13 @@
+{
+  "name": "Nivå",
+  "dataType": "string",
+  "sourceColumn": "Nivå",
+  "lineageTag": "2a0fba3c-46b7-47c6-b46e-02f1b2fd7594",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

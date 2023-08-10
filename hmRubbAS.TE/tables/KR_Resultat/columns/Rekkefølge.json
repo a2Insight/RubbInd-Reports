@@ -1,0 +1,17 @@
+{
+  "name": "Rekkefølge",
+  "dataType": "int64",
+  "sourceColumn": "Rekkefølge",
+  "lineageTag": "86ab787e-35bf-4fb2-b532-cb8cc3a13235",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

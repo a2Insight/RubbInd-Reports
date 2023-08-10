@@ -1,0 +1,18 @@
+{
+  "name": "PlanSlutt",
+  "dataType": "dateTime",
+  "sourceColumn": "PlanSlutt",
+  "formatString": "Long Date",
+  "lineageTag": "3634d767-5c0d-4d82-9a7e-77f1ba6f4e77",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

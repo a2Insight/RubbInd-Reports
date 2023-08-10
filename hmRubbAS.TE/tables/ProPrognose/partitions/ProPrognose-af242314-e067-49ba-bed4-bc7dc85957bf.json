@@ -1,0 +1,29 @@
+{
+  "name": "ProPrognose-af242314-e067-49ba-bed4-bc7dc85957bf",
+  "mode": "import",
+  "queryGroup": "Fakta",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "//Per",
+      "    #\"_1Merged Queries1\" = Table.NestedJoin(SQL_Forecast,{\"Company\"},SQL_Company,{\"Company\"},\"Added Custom3\",JoinKind.Inner),",
+      "    #\"_Expanded Added Custom3\" = Table.ExpandTableColumn(#\"_1Merged Queries1\", \"Added Custom3\", {\"CompanyId\"}, {\"CompanyId\"}),",
+      "    #\"Changed Type\" = Table.TransformColumnTypes(#\"_Expanded Added Custom3\",{{\"Date\", type date}}),",
+      "    #\"Appended Query\" = Table.Combine({#\"Changed Type\", Ordreinngang}),",
+      "    #\"Removed Columns\" = Table.RemoveColumns(#\"Appended Query\",{\"ProsjektLnk\"}),",
+      "",
+      "    #\"_Changed Type\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"Date\", type date}, {\"ProsjektId\", type text}}),",
+      "    Custom1 = Table.AddColumn(#\"_Changed Type\", \"SortSales\", each if [Version] = \"Sales\" then 0 else 1),",
+      "    #\"Renamed Columns\" = Table.RenameColumns(Custom1,{{\"Inntekter\", \"RevenueChange\"}, {\"Kostnader\", \"CostChange\"}}),",
+      "#\"_Added Custom2\" = Table.AddColumn(#\"Renamed Columns\", \"Filter\", each [RevenueChange]*[RevenueChange]+[CostChange]*[CostChange]),",
+      "    #\"_1Added Custom4\" = Table.AddColumn(#\"_Added Custom2\", \"ProsjektLnk\", each Text.From([CompanyId])&\"-\"&Text.From([ProsjektId])),",
+      "    #\"_Filtered Rows\" = Table.SelectRows(#\"_1Added Custom4\", each ([Filter] <> 0)),",
+      "    #\"_1Removed Columns1\" = Table.RemoveColumns(#\"_Filtered Rows\",{\"Filter\", \"Company\", \"ProsjektId\", \"Version\", \"SortSales\"}),",
+      "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"_1Removed Columns1\",{{\"Date\", type date}, {\"CompanyId\", Int64.Type}, {\"RevenueChange\", type number}, {\"CostChange\", type number}, {\"ProsjektLnk\", type text}, {\"PlanStart\", type date}, {\"PlanSlutt\", type date}}),",
+      "    #\"Inserted Day\" = Table.AddColumn(#\"Changed Type1\", \"Type\", each if Date.Day([Date]) = 1 then \"Kalkyle\" else \"Prognose\", type text)",
+      "in",
+      "    #\"Inserted Day\""
+    ]
+  }
+}

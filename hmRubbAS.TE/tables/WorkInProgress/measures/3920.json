@@ -1,0 +1,12 @@
+{
+  "name": "3920",
+  "expression": "-[2865]-[1530]",
+  "formatString": "#,0",
+  "lineageTag": "7fb21e9a-10a8-4270-aee9-468637d28f85",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

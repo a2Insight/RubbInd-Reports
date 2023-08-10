@@ -1,0 +1,14 @@
+{
+  "name": "FakturaDato",
+  "dataType": "dateTime",
+  "sourceColumn": "FakturaDato",
+  "formatString": "General Date",
+  "lineageTag": "d7234918-23da-4f6a-b09e-67ede1a4ebca",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

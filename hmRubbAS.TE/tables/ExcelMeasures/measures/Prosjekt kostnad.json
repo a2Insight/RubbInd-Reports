@@ -1,0 +1,18 @@
+{
+  "name": "Prosjekt kostnad",
+  "expression": [
+    "",
+    "CALCULATE(",
+    "    SUMX(",
+    "        CALCULATETABLE(",
+    "            VALUES( 'Prosjekt'[ProsjektNummer] ),",
+    "            'Prosjekt'[WIPfilter] = 1",
+    "        ),",
+    "        -[Regnskap] / MIN( 'Faktorer'[Faktor] )",
+    "    ),",
+    "    'Kontoplan'[Nivå1] <> \"Inntekter\"",
+    ")"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "c0df767c-bf47-4c47-b2b8-b61b1ca71c37"
+}

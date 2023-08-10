@@ -1,0 +1,36 @@
+{
+  "name": "Prosjekt",
+  "lineageTag": "e885331f-04f4-4721-b91f-efcd504c4d0d",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": [
+        "[",
+        "  {",
+        "    \"fromTable\": \"Prosjekt\",",
+        "    \"fromColumn\": \"HovedArbeidProsjektNr\",",
+        "    \"toTable\": \"Tmp_ProsjektPowerApps\",",
+        "    \"toColumn\": \"HovedArbeidProsjektNr\",",
+        "    \"crossFilteringBehavior\": \"bothDirections\"",
+        "  },",
+        "  {",
+        "    \"fromCardinality\": \"one\",",
+        "    \"fromTable\": \"Prosjekt\",",
+        "    \"fromColumn\": \"ProjectId\",",
+        "    \"toTable\": \"LiveProjectForecast\",",
+        "    \"toColumn\": \"ProjectId\",",
+        "    \"crossFilteringBehavior\": \"bothDirections\"",
+        "  }",
+        "]"
+      ]
+    }
+  ]
+}

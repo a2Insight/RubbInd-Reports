@@ -1,0 +1,18 @@
+{
+  "name": "ResultatLinjeNr",
+  "expression": [
+    "",
+    "",
+    "VAR  Test = SELECTEDVALUE(KR_Resultat[Nivå1])",
+    "RETURN",
+    "",
+    "SWITCH(TRUE(),",
+    "    Test = \"Dekningsbidrag\",1,",
+    "    Test = \"DG\",2,",
+    "    Test = \"Driftsresultat\",1,",
+    "    Test = \"Resultat før skatt\",1",
+    ")"
+  ],
+  "formatString": "0",
+  "lineageTag": "c93f0f63-c397-4d9b-bc7e-29a31cdc5230"
+}

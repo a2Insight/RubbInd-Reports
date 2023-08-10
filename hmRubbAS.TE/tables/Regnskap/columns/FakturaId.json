@@ -1,0 +1,13 @@
+{
+  "name": "FakturaId",
+  "dataType": "string",
+  "sourceColumn": "FakturaId",
+  "lineageTag": "3fbe2d07-ab54-4f32-b9b1-8df4d5ede977",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

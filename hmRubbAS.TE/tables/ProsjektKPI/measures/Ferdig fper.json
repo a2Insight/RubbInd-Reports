@@ -1,0 +1,6 @@
+{
+  "name": "Ferdig fper",
+  "expression": "CALCULATE([Opptjent %],DATEADD(Kalender[Dato],-1,MONTH))",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "c4387f9e-6253-4a6f-b065-32c8c4e9bf35"
+}

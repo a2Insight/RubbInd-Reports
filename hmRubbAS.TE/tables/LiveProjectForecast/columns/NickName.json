@@ -1,0 +1,14 @@
+{
+  "name": "NickName",
+  "dataType": "string",
+  "sourceColumn": "NickName",
+  "sourceProviderType": "varchar(50)",
+  "lineageTag": "d7bbb503-6fd8-4563-a5b3-b367c38c819f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

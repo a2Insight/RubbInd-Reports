@@ -1,0 +1,11 @@
+{
+  "name": "RegneType",
+  "expression": "MIN(KR_Resultat[Type])",
+  "lineageTag": "4a315f94-0b6d-4001-8d4e-69c777a7ff65",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

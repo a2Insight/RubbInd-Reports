@@ -1,0 +1,12 @@
+{
+  "name": "Endring iår",
+  "expression": "[Balanse]-[BT-1]",
+  "formatString": "#,0",
+  "lineageTag": "0a9d7f66-d502-479e-a2f0-6c3abda2651d",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

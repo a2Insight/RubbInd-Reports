@@ -1,0 +1,6 @@
+{
+  "name": "GrossMarginForecastAdj",
+  "expression": "IF([Justert]>0,DIVIDE([GrossContributionForecastAdj],[RevenueForecastAdj]),\" \")",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "a18ff142-3df0-4d8c-9181-5cea4b981c16"
+}

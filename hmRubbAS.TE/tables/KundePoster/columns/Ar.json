@@ -1,0 +1,17 @@
+{
+  "name": "Ar",
+  "dataType": "double",
+  "sourceColumn": "Ar",
+  "lineageTag": "137e602b-7e16-4e4c-b634-f2248a1b17f8",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

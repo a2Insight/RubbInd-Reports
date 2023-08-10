@@ -1,0 +1,12 @@
+{
+  "name": "Saldobalanse",
+  "expression": "DIVIDE([SaldoResultat]+[SaldoBal],[Rapportfaktor])",
+  "formatString": "#,0",
+  "lineageTag": "37410272-a289-45e1-a6a3-4e71c22bd8b7",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "RestBelopOrginal",
+  "dataType": "double",
+  "sourceColumn": "RestBelopOrginal",
+  "lineageTag": "c21dbaad-87fd-4ea9-92fd-42b26703bf56",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

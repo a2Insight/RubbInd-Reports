@@ -1,0 +1,6 @@
+{
+  "name": "dgAll",
+  "expression": "DIVIDE([BidragALL],[InntektALL])",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "b53298c1-78ba-49e9-93d1-95e51a193cb3"
+}

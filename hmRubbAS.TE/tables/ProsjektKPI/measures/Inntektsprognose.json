@@ -1,0 +1,12 @@
+{
+  "name": "Inntektsprognose",
+  "expression": "CALCULATE([ProgInntEndring],FILTER(ALL(Kalender),Kalender[Dato]<=MAX(Kalender[Dato])))",
+  "formatString": "#,0",
+  "lineageTag": "7b796bb7-bf6c-458e-ae92-f9ffb8be73cc",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

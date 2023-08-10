@@ -1,0 +1,24 @@
+{
+  "name": "Sample File",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = SharePoint.Files(\"https://hallmakergruppenas.sharepoint.com/finance/\", [ApiVersion = 15]),",
+    "    #\"Filtered Rows\" = Table.SelectRows(Source, each Text.Contains([Folder Path], companyId)),",
+    "    Navigation1 = #\"Filtered Rows\"{0}[Content]",
+    "in",
+    "    Navigation1"
+  ],
+  "queryGroup": "Transform File from ProPrognose\\Sample Query",
+  "lineageTag": "1cd1f7ae-bda9-414b-a853-a01175b63793",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Binary"
+    }
+  ]
+}

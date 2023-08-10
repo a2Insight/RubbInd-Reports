@@ -1,0 +1,11 @@
+{
+  "name": "BidragHIÅ",
+  "expression": "TOTALYTD([BidragPer],Kalender[Dato])",
+  "lineageTag": "86205f8b-3e9a-4493-a037-9c153cd668f5",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

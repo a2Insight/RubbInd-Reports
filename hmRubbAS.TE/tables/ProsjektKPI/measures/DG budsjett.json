@@ -1,0 +1,6 @@
+{
+  "name": "DG budsjett",
+  "expression": "DIVIDE([DB budsjett],[Inntektsbudsjett])",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "a349ec93-b4f6-4d8b-b2c3-234cf37307a5"
+}

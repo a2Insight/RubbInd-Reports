@@ -1,0 +1,27 @@
+{
+  "name": "SQL_GeneralLedger",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"Hovedbok\",",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data]",
+    "",
+    "",
+    "in",
+    "    sqlTbl1"
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "e82474f7-cb01-43f0-a9fb-3cebfeb62704",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "DB Prognose",
+  "expression": "[Inntektsprognose]-[Kostnadsprognose]",
+  "formatString": "#,0",
+  "lineageTag": "7da816b8-725e-4778-b43d-f610a069da96",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

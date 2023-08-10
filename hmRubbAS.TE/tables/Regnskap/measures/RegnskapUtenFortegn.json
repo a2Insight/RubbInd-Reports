@@ -1,0 +1,11 @@
+{
+  "name": "RegnskapUtenFortegn",
+  "expression": "SUMX(Regnskap,Regnskap[Belop]*RELATED(Kontoplan[Fortegn]))",
+  "lineageTag": "f5003bd8-b422-46d8-94f6-51523b9b13aa",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

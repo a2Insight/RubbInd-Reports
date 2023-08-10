@@ -1,0 +1,14 @@
+{
+  "name": "ReskontroNummer",
+  "dataType": "int64",
+  "sourceColumn": "ReskontroNummer",
+  "formatString": "0",
+  "lineageTag": "2e42300b-5516-4ca5-91a2-7bc90dd7c059",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

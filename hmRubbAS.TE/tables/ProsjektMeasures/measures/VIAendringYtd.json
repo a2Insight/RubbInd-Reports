@@ -1,0 +1,11 @@
+{
+  "name": "VIAendringYtd",
+  "expression": "[VIAakkumulert]-CALCULATE([VIAakkumulert],FILTER(ALL(Kalender),Kalender[År]=MAX(Kalender[År])-1),Kalender[MndNo]=12)",
+  "lineageTag": "667b73a7-1866-416d-8cea-473a56ab5b75",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

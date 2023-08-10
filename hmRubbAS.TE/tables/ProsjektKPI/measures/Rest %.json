@@ -1,0 +1,6 @@
+{
+  "name": "Rest %",
+  "expression": "1-DIVIDE([KostAkk]+[EyeShare],[Kostnadsprognose]) ",
+  "formatString": "0\\ %;-0\\ %;0\\ %",
+  "lineageTag": "fa3d839b-749a-4e5a-bf59-34319664987e"
+}

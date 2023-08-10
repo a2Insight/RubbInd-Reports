@@ -1,0 +1,12 @@
+{
+  "name": "InntektsGap",
+  "expression": "[InntektBudYT]-[InntektTY]-[orTY]",
+  "formatString": "#,0",
+  "lineageTag": "e584d7ee-083d-49c0-9528-be31013c3a14",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

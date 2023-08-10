@@ -1,0 +1,11 @@
+{
+  "name": "FilterVIA",
+  "expression": "ROUNDDOWN([VIAakkumulert]*[VIAakkumulert]+[VIAendringMnd]*[VIAendringMnd],0)",
+  "lineageTag": "c78fc95d-4794-40fb-ad01-e90f56c77275",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

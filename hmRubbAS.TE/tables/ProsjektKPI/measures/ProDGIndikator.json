@@ -1,0 +1,19 @@
+{
+  "name": "ProDGIndikator",
+  "expression": [
+    "",
+    "",
+    "VAR Up =",
+    "    UNICHAR ( 9650 )",
+    "VAR Down =",
+    "    UNICHAR ( 9660 )",
+    "VAR Test =     ",
+    "    [ProgDGEndring]",
+    "RETURN ",
+    "    ",
+    "    IF(HASONEVALUE(Prosjekt[HovedArbeidProsjektNr]),",
+    "    MAXX(VALUES(ProPrognose[Hovedarbeidsprosjekt]),",
+    "    IF ( Test > 1 , Up , IF ( Test < -1 , Down , BLANK()))),BLANK())"
+  ],
+  "lineageTag": "fd33d2be-414c-4249-900c-a15d19b99322"
+}

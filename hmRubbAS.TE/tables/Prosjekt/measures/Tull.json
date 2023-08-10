@@ -1,0 +1,6 @@
+{
+  "name": "Tull",
+  "expression": "CALCULATE(COUNT(HpPrognose[HovedArbeidProsjektNr]),ALLEXCEPT(Prosjekt,Prosjekt[HovedArbeidProsjektNr]))",
+  "formatString": "0",
+  "lineageTag": "358fa454-d72d-413a-b272-ceaba9bbebdc"
+}

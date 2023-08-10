@@ -1,0 +1,17 @@
+{
+  "name": "Faktor",
+  "dataType": "int64",
+  "sourceColumn": "Faktor",
+  "lineageTag": "7843c5e3-014e-4101-9cf7-ec864f8d48ef",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

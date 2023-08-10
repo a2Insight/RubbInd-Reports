@@ -1,0 +1,13 @@
+{
+  "name": "TransferDate",
+  "dataType": "string",
+  "sourceColumn": "TransferDate",
+  "lineageTag": "fa22ffb1-80d4-4b56-83c0-7d5d5e8d4b90",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "PrognoseOrdre",
+  "expression": "[ProInntektYTD]+[orTY]",
+  "formatString": "#,0",
+  "lineageTag": "abd3d53d-d53c-4415-ae4e-a627af128977",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

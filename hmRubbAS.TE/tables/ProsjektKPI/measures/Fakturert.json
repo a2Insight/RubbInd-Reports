@@ -1,0 +1,21 @@
+{
+  "name": "Fakturert",
+  "expression": [
+    "",
+    "SWITCH (",
+    "    MAX ( ProsjektStatus[Order] ),",
+    "    \"1\", [FaktturertPer],",
+    "    \"2\", [FakturertHIÅ],",
+    "    \"3\", [FakturertAkk]",
+    "    ",
+    ")"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "6ef8c69d-1b49-4101-a130-2e091ad73eb2",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

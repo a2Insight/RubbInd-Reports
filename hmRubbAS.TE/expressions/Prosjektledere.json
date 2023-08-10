@@ -1,0 +1,23 @@
+{
+  "name": "Prosjektledere",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = Table.NestedJoin(SQL_ProjectMgrs,{\"CompanyId\"},SQL_Company,{\"CompanyId\"},\"SQL_Company\",JoinKind.Inner),",
+    "    #\"Removed Columns\" = Table.RemoveColumns(Source,{\"SQL_Company\"})",
+    "in",
+    "    #\"Removed Columns\""
+  ],
+  "queryGroup": "Dimensjoner",
+  "lineageTag": "14e83083-4f88-4f62-8e1a-aa77bcdf4913",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

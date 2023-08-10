@@ -1,0 +1,11 @@
+{
+  "name": "BidragsBudYT",
+  "expression": "CALCULATE([Budsjett YT],KR_Resultat[Rekkefølge]=1) - CALCULATE([Budsjett YT],KR_Resultat[Rekkefølge]=2) ",
+  "lineageTag": "9d468b68-8ebc-4db3-82cb-69b361816d05",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

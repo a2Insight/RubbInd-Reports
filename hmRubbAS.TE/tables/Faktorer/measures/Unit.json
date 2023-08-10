@@ -1,0 +1,11 @@
+{
+  "name": "Unit",
+  "expression": "MAX(Faktorer[Faktor])",
+  "lineageTag": "191f2c2d-d379-4967-ac9a-6918cc32e2c1",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

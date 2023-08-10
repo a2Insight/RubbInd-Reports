@@ -1,0 +1,19 @@
+{
+  "name": "ProjectId",
+  "dataType": "double",
+  "isNullable": false,
+  "sourceColumn": "ProjectId",
+  "sourceProviderType": "float",
+  "lineageTag": "5a1964af-64bc-4490-b5c4-79b0eccb9c88",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

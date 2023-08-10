@@ -1,0 +1,13 @@
+{
+  "name": "Select",
+  "dataType": "string",
+  "sourceColumn": "Select",
+  "lineageTag": "1316d0d9-5121-48cf-997f-8ceb4de84542",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

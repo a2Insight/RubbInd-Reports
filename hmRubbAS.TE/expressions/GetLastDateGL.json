@@ -1,0 +1,30 @@
+{
+  "name": "GetLastDateGL",
+  "kind": "m",
+  "expression": [
+    "let  ",
+    "  ",
+    "SQLSource = (companyId as text) =>  ",
+    "  ",
+    "let  ",
+    "  ",
+    "//Source = Sql.Database(SQLserver1, SQLdatabase1, [Query=\"EXEC uspTest '\"& Text.Upper(companyId)&\"' #(lf)#(lf)#(lf)\"])  ",
+    "Source = Sql.Database(SQLserver1, SQLdatabase1, [Query=\"EXEC uspTest '\"& Text.Upper(companyId)&\"'\"])  ",
+    "  ",
+    "in  ",
+    "  ",
+    "Source  ",
+    "  ",
+    "in  ",
+    "  ",
+    "SQLSource"
+  ],
+  "queryGroup": "Parametere",
+  "lineageTag": "af62a4f2-8c9e-410c-ad2f-a0f79dad442c",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Function"
+    }
+  ]
+}

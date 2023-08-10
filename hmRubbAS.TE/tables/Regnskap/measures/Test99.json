@@ -1,0 +1,16 @@
+{
+  "name": "Test99",
+  "expression": [
+    "CALCULATE (",
+    "        SUM ( Regnskap[Belop] ),",
+    "        CALCULATETABLE ( VALUES ( Prosjekt[HovedArbeidProsjektNr] ), ProPrognose )",
+    "    )"
+  ],
+  "lineageTag": "341b388b-0f20-4613-af96-74148d1b43e4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

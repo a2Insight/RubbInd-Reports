@@ -1,0 +1,14 @@
+{
+  "name": "ForfallsDato",
+  "dataType": "dateTime",
+  "sourceColumn": "ForfallsDato",
+  "formatString": "General Date",
+  "lineageTag": "bea205a1-f668-42c5-a26a-20da1fca51f7",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

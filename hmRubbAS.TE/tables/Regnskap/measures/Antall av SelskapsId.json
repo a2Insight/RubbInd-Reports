@@ -1,0 +1,11 @@
+{
+  "name": "Antall av SelskapsId",
+  "expression": "COUNTA('Regnskap'[SelskapsId])",
+  "lineageTag": "d982230d-51fc-4939-a553-a85f6b712ba5",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

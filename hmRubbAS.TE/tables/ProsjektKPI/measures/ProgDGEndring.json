@@ -1,0 +1,11 @@
+{
+  "name": "ProgDGEndring",
+  "expression": "ROUND(DIVIDE([Inntektsprognose]-[Kostnadsprognose],[Inntektsprognose])*10000,0)-CALCULATE( ROUND(DIVIDE([Inntektsprognose]-[Kostnadsprognose],[Inntektsprognose])*10000,0),DATEADD(Kalender[Dato],-1,MONTH))",
+  "lineageTag": "6ab76a64-94e8-4bbe-933e-aa292485d43a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

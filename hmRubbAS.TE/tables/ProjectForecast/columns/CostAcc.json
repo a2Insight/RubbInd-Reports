@@ -1,0 +1,17 @@
+{
+  "name": "CostAcc",
+  "dataType": "double",
+  "sourceColumn": "CostAcc",
+  "lineageTag": "cd50b644-625f-44c6-9682-b3134e17bb81",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

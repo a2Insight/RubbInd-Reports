@@ -1,0 +1,14 @@
+{
+  "name": "OrdreKPI",
+  "lineageTag": "78fe2eec-e6dc-4ddf-bf7e-136f1c914cef",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

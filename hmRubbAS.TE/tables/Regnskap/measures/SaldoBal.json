@@ -1,0 +1,12 @@
+{
+  "name": "SaldoBal",
+  "expression": "SUMX(VALUES(Kontoplan),CALCULATE(TOTALYTD(SUM(Regnskap[Belop]),Kalender[Dato]),Kontoplan[Rapport]=\"Balanse\")+CALCULATE(SUM(Regnskap[Belop]),Kontoplan[Rapport]=\"Balanse\",FILTER(ALL(Kalender),Kalender[År]=MAX(Kalender[År])-1),NOT(IB[IB]=\"IB\")))",
+  "formatString": "#,0",
+  "lineageTag": "8de18b17-438d-4ba1-8630-6176de850705",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

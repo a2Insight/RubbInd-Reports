@@ -1,0 +1,13 @@
+{
+  "name": "BalanseStatus",
+  "expression": [
+    "",
+    "VAR Down =",
+    "    UNICHAR ( 128681 )",
+    "VAR Up =",
+    "    UNICHAR ( 128176 )",
+    "RETURN",
+    "    IF ( ROUND(CALCULATE([Balanse],ALL(KR_Balanse),KR_Balanse[Nivå2]=\"Sum EIENDELER\"),0) = ROUND(CALCULATE([Balanse],ALL(KR_Balanse),KR_Balanse[Nivå2]=\"Sum GJELD OG EGENKAPITAL\"),0), \"\" ,CONCATENATE(Down,\" - Avvik balanseposter\"))"
+  ],
+  "lineageTag": "f86581d2-fea9-482f-aea1-6532ecec7e6c"
+}

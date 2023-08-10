@@ -1,0 +1,11 @@
+{
+  "name": "Ordreinngang",
+  "expression": "[SalgYTD]+[OrdreVekstYTD]",
+  "lineageTag": "b2186c1c-2c85-4d55-8f36-a2737801ad38",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "RappSort",
+  "dataType": "int64",
+  "sourceColumn": "RappSort",
+  "formatString": "0",
+  "lineageTag": "5dd1580f-3fe2-463b-941d-7b71a2f22ce6",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "OrdrereserveAll",
+  "expression": "[Ordrereserve]+[SalgEtterPeriode]",
+  "lineageTag": "f739e522-4c57-4fd6-a0b6-4c5101e743c1",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

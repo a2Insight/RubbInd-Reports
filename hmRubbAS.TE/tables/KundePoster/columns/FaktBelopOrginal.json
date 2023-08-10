@@ -1,0 +1,17 @@
+{
+  "name": "FaktBelopOrginal",
+  "dataType": "double",
+  "sourceColumn": "FaktBelopOrginal",
+  "lineageTag": "412a0972-975d-476d-a1d8-125f7ae6e7fd",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

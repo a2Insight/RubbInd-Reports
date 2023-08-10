@@ -1,0 +1,12 @@
+{
+  "name": "AvgDaysOutstanding",
+  "expression": "AVERAGE('KundePoster'[Kredittid])",
+  "formatString": "#,##0.0",
+  "displayFolder": "Kunder",
+  "lineageTag": "b4f61493-513a-495d-9ac4-9b5e2e43a03a",
+  "changedProperties": [
+    {
+      "property": "FormatString"
+    }
+  ]
+}

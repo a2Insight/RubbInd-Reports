@@ -1,0 +1,6 @@
+{
+  "name": "DGprogGraf",
+  "expression": "DIVIDE([InntProgGraf]-[KostProgGraf],[InntProgGraf])",
+  "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+  "lineageTag": "4fa7e6d8-737a-417f-9d32-f5d4a1c0a94b"
+}

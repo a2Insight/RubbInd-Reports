@@ -1,0 +1,14 @@
+{
+  "name": "Kostnader",
+  "dataType": "int64",
+  "sourceColumn": "Kostnader",
+  "formatString": "0",
+  "lineageTag": "569ed7f1-8be9-4092-b634-3d2377d9eb7f",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

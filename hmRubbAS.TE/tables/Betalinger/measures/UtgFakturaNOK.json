@@ -1,0 +1,11 @@
+{
+  "name": "UtgFakturaNOK",
+  "expression": "CALCULATE(-SUM(Betalinger[Belop]),FILTER(Betalinger,Betalinger[TekstKode] in {3, 4, 43}))",
+  "lineageTag": "09cea8db-0590-41c2-96f7-904af1918389",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

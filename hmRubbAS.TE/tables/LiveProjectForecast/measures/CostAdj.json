@@ -1,0 +1,12 @@
+{
+  "name": "CostAdj",
+  "expression": "[CostForecastLive]-[Kostnadsprognose]",
+  "formatString": "#,0",
+  "lineageTag": "1518fe9a-8570-46e4-9c93-4d6833b3023f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

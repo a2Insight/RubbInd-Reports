@@ -1,0 +1,5 @@
+{
+  "name": "ORtekstiår",
+  "expression": "CONCATENATE(\"reserve for \",SELECTEDVALUE(Kalender[År]))",
+  "lineageTag": "073d005c-cbef-43c0-8f89-508c958cedf8"
+}

@@ -1,0 +1,29 @@
+{
+  "version": "1.8.9",
+  "author": {
+    "name": "dataviz.boutique",
+    "email": "info@dataviz.boutique"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/ultimateWaterfall9712E1351D4E4FA89077ED4D9351DC71.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "ultimateWaterfall9712E1351D4E4FA89077ED4D9351DC71",
+    "name": "UltimateWaterfall1.8.9Free",
+    "displayName": "Ultimate Waterfall 1.8.9 Free Version",
+    "version": "1.8.9",
+    "description": "The Ultimate Waterfall Chart supports horizontal and vertical orientation, small multiples, sub totals and many more features. Custom colors for contribution, sub totals and totals. More Details http://dataviz.boutique/",
+    "supportUrl": "http://dataviz.boutique/",
+    "gitHubUrl": "",
+    "visualClassName": "ChordChart"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}

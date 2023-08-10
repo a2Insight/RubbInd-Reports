@@ -1,0 +1,13 @@
+{
+  "name": "CompanyId",
+  "dataType": "string",
+  "sourceColumn": "CompanyId",
+  "lineageTag": "c5992281-5ea6-41bd-bbf5-c7333f58fa40",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

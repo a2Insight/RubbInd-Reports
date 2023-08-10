@@ -1,0 +1,5 @@
+{
+  "name": "OItekstiår",
+  "expression": "CONCATENATE(\"inngang i \",SELECTEDVALUE(Kalender[År]))",
+  "lineageTag": "006e6ecd-cc92-4015-a629-68a2febea05c"
+}

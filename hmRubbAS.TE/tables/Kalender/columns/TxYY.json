@@ -1,0 +1,13 @@
+{
+  "name": "TxYY",
+  "dataType": "string",
+  "sourceColumn": "TxYY",
+  "lineageTag": "59fd7738-1e53-4b8d-8ae1-a7f06287df9b",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

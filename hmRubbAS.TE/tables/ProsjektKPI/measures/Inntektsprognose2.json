@@ -1,0 +1,15 @@
+{
+  "name": "Inntektsprognose2",
+  "expression": [
+    "CALCULATE (",
+    "            - SUM ( ProPrognose[RevenueChange] ),",
+    "            DATESBETWEEN (",
+    "                Kalender[Dato],",
+    "                FIRSTDATE ( ProPrognose[Date]+0 ),",
+    "                LASTDATE ( Kalender[Dato] )",
+    "            )",
+    "        ) / MIN(Faktorer[Faktor])"
+  ],
+  "formatString": "0",
+  "lineageTag": "0e257fec-93a8-442f-b599-67958301f866"
+}

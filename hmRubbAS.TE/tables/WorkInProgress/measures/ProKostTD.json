@@ -1,0 +1,11 @@
+{
+  "name": "ProKostTD",
+  "expression": "CALCULATE([ProKostPer],FILTER(ALL(Kalender),Kalender[Dato]<=MAX(Kalender[Dato])))",
+  "lineageTag": "82944f6a-9860-44b5-8a66-076ba8015dad",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

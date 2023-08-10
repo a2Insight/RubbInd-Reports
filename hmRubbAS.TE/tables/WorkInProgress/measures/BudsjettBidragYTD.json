@@ -1,0 +1,11 @@
+{
+  "name": "BudsjettBidragYTD",
+  "expression": "TOTALYTD(CALCULATE(-[Budsjett],KR_Resultat[Rekkefølge]<4),Kalender[Dato])",
+  "lineageTag": "2a8553cd-e621-4186-93f6-606b09f4d4a6",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

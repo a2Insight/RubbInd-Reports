@@ -1,0 +1,6 @@
+{
+  "name": "Kostnadsprognose",
+  "expression": "CALCULATE([ProgKostEndring],FILTER(ALL(Kalender),Kalender[Dato]<=MAX(Kalender[Dato])))",
+  "formatString": "#,0",
+  "lineageTag": "15cf2292-4164-44b5-b6a6-bb58159d360e"
+}

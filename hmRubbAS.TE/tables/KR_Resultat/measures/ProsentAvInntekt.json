@@ -1,0 +1,11 @@
+{
+  "name": "ProsentAvInntekt",
+  "expression": "DIVIDE([ResultatSummer],CALCULATE(KR_Resultat[ResultatMedFortegn],FILTER(ALL(KR_Resultat),KR_Resultat[Rekkefølge]=1)))*100",
+  "lineageTag": "578d4586-2686-4074-87eb-f92eb99bffc4",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

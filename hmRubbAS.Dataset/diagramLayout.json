@@ -1,0 +1,805 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1424.1398032563393,
+            "y": 297.59722863225284
+          },
+          "nodeIndex": "Betalinger",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 744.86822346017073,
+            "y": 1236.7296507214935
+          },
+          "nodeIndex": "Budsjett",
+          "size": {
+            "height": 270,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 876.13980325633918,
+            "y": 659.71096493387188
+          },
+          "nodeIndex": "Datasett",
+          "size": {
+            "height": 137,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2386.2487583668621,
+            "y": 607.2608993082049
+          },
+          "nodeIndex": "Faktorer",
+          "size": {
+            "height": 175,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2127.7391768112343,
+            "y": 945.20928305911116
+          },
+          "nodeIndex": "HpPrognose",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 631.823489859495,
+            "y": 268.36185616958232
+          },
+          "nodeIndex": "IB",
+          "size": {
+            "height": 175,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2034.4953078706835,
+            "y": 286.20409596098739
+          },
+          "nodeIndex": "IN_ProjectForecast",
+          "size": {
+            "height": 251,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 328.13980325633918,
+            "y": 560.88491668287088
+          },
+          "nodeIndex": "KR_Balanse",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 792.92129082140377
+          },
+          "nodeIndex": "KR_Resultat",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 166.79956669265323,
+            "y": 148.67108069587289
+          },
+          "nodeIndex": "Kalender",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 602.13980325633918,
+            "y": 657.09482276288645
+          },
+          "nodeIndex": "Kontoplan",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1706.3555046143445,
+            "y": 37.835777501415464
+          },
+          "nodeIndex": "Kunder",
+          "size": {
+            "height": 175,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1066.3498529717483,
+            "y": 0
+          },
+          "nodeIndex": "Leverandører",
+          "size": {
+            "height": 213,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1825.8891247937504,
+            "y": 788.84803974661031
+          },
+          "nodeIndex": "LiveProjectForecast",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 792.34985297174831,
+            "y": 91.361856169582325
+          },
+          "nodeIndex": "NyeKontoer",
+          "size": {
+            "height": 137,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2714.388561623201,
+            "y": 526.2608993082049
+          },
+          "nodeIndex": "OrdreKPI",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 277.03453143484376,
+            "y": 1089.2364014942652
+          },
+          "nodeIndex": "Ordreinngang",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1462.4565164120377,
+            "y": 1069.6680268093548
+          },
+          "nodeIndex": "ProPrognose",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3042.5283648795403,
+            "y": 588.2608993082049
+          },
+          "nodeIndex": "ProjectForecast",
+          "size": {
+            "height": 213,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1706.3555046143445,
+            "y": 411.84803974661031
+          },
+          "nodeIndex": "Prosjekt",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3370.6681681358796,
+            "y": 526.2608993082049
+          },
+          "nodeIndex": "ProsjektKPI",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3698.8079713922189,
+            "y": 626.2608993082049
+          },
+          "nodeIndex": "ProsjektLederFilter",
+          "size": {
+            "height": 137,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4026.9477746485582,
+            "y": 526.2608993082049
+          },
+          "nodeIndex": "ProsjektMeasures",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4355.0875779048974,
+            "y": 626.2608993082049
+          },
+          "nodeIndex": "ProsjektStatus",
+          "size": {
+            "height": 137,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1150.1398032563393,
+            "y": 344.183090709484
+          },
+          "nodeIndex": "Regnskap",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 876.13980325633918,
+            "y": 950.58984746515443
+          },
+          "nodeIndex": "Selskap",
+          "size": {
+            "height": 175,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2099.8891247937504,
+            "y": 648.34389921732645
+          },
+          "nodeIndex": "Tmp_ProsjektPowerApps",
+          "size": {
+            "height": 118,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4683.2273811612367,
+            "y": 526.2608993082049
+          },
+          "nodeIndex": "WorkInProgress",
+          "size": {
+            "height": 337,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5034.2,
+            "y": 0
+          },
+          "nodeIndex": "ExcelMeasures",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5398,
+            "y": 0
+          },
+          "nodeIndex": "Prosjektoversikt",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5830.7,
+            "y": 0
+          },
+          "nodeIndex": "KundePoster",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {},
+          "nodeIndex": "Utestående",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1677.4893718462181,
+            "y": 1034.8633787542988
+          },
+          "nodeIndex": "Betalinger",
+          "size": {
+            "height": 255,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 581.48937184621809,
+            "y": 320.58548964963245
+          },
+          "nodeIndex": "Budsjett",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 855.48937184621809,
+            "y": 542.23261826287671
+          },
+          "nodeIndex": "Datasett",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2225.4893718462181,
+            "y": 620.72223877218744
+          },
+          "nodeIndex": "Faktorer",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1677.4893718462181,
+            "y": 371.87737591866329
+          },
+          "nodeIndex": "HpPrognose",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 18.443289226368279,
+            "y": 1112.7778906449757
+          },
+          "nodeIndex": "IB",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 33.489371846218091,
+            "y": 375.86071710354844
+          },
+          "nodeIndex": "KR_Balanse",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1.1368683772161603E-13,
+            "y": 675.13938156132076
+          },
+          "nodeIndex": "KR_Resultat",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2499.4893718462181,
+            "y": 620.72223877218744
+          },
+          "nodeIndex": "Kalender",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 307.48937184621809,
+            "y": 553.26852186444557
+          },
+          "nodeIndex": "Kontoplan",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1403.4893718462181,
+            "y": 962.6424611640266
+          },
+          "nodeIndex": "Kunder",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 347.66420681664056,
+            "y": 987.96105445256865
+          },
+          "nodeIndex": "Leverandører",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 705.03821936620659,
+            "y": 1126.2953989599296
+          },
+          "nodeIndex": "NyeKontoer",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2773.4893718462181,
+            "y": 620.72223877218744
+          },
+          "nodeIndex": "OrdreKPI",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 822.78780588221036,
+            "y": -1.1368683772161603E-13
+          },
+          "nodeIndex": "Ordreinngang",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1403.4893718462181,
+            "y": 369.22091759027205
+          },
+          "nodeIndex": "ProPrognose",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3047.4893718462181,
+            "y": 620.72223877218744
+          },
+          "nodeIndex": "ProjectForecast",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1403.4893718462181,
+            "y": 665.6424611640266
+          },
+          "nodeIndex": "Prosjekt",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3321.4893718462181,
+            "y": 620.72223877218744
+          },
+          "nodeIndex": "ProsjektKPI",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3595.4893718462181,
+            "y": 620.72223877218744
+          },
+          "nodeIndex": "ProsjektMeasures",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3878.3143715041278,
+            "y": 620.72223877218744
+          },
+          "nodeIndex": "ProsjektStatus",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1129.4893718462181,
+            "y": 782.10779279423446
+          },
+          "nodeIndex": "Regnskap",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1129.4893718462181,
+            "y": 364.68059208430634
+          },
+          "nodeIndex": "Selskap",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1951.4893718462181,
+            "y": 504.80144073724477
+          },
+          "nodeIndex": "Tmp_ProsjektPowerApps",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4207.5352890944005,
+            "y": 620.72223877218744
+          },
+          "nodeIndex": "WorkInProgress",
+          "size": {
+            "height": 257,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "StarSchema",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    },
+    {
+      "ordinal": 1,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 607,
+            "y": 520
+          },
+          "nodeIndex": "KundePoster",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 761,
+            "y": 94
+          },
+          "nodeIndex": "Prosjekt",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 494,
+            "y": 86
+          },
+          "nodeIndex": "Kunder",
+          "size": {
+            "height": 311,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 285,
+            "y": 516
+          },
+          "nodeIndex": "Regnskap",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 938,
+            "y": 521
+          },
+          "nodeIndex": "Betalinger",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1022,
+            "y": 93
+          },
+          "nodeIndex": "Kalender",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Layout 1",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Layout 1",
+  "defaultDiagram": "All tables"
+}

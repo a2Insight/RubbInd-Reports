@@ -1,0 +1,25 @@
+{
+  "name": "Transform File from ProNummerEndring",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = (#\"Sample File Parameter2\" as binary) => let",
+    "    Source = Excel.Workbook(#\"Sample File Parameter2\", null, true),",
+    "    #\"Filtered Rows\" = Table.SelectRows(Source, each ([Kind] = \"Table\")),",
+    "    #\"Expanded Data\" = Table.ExpandTableColumn(#\"Filtered Rows\", \"Data\", {\"GLEntryNo\", \"VendorId\", \"ProjectId\"}, {\"GLEntryNo\", \"VendorId\", \"ProjectId\"}),",
+    "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Expanded Data\",{\"GLEntryNo\", \"VendorId\", \"ProjectId\"})",
+    "in",
+    "    #\"Removed Other Columns\"",
+    "in",
+    "    Source"
+  ],
+  "queryGroup": "Transform File from ProNummerEndring",
+  "mAttributes": "[ FunctionQueryBinding = \"{\"\"exemplarFormulaName\"\":\"\"Transform Sample File from ProNummerEndring\"\"}\" ]",
+  "lineageTag": "140bc254-d2b4-4e13-9c9b-4285c7272f41",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Function"
+    }
+  ]
+}

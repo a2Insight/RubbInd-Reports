@@ -1,0 +1,36 @@
+{
+  "name": "SP_ProNummerEndring",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "//SharePoint",
+    "",
+    "    SharePointFiles = SharePoint.Files(SharePointSite1, [ApiVersion = 15]),",
+    "",
+    "//Procedure",
+    "    #\"Filtered Rows\" = Table.SelectRows(SharePointFiles, each ([Folder Path] = SharePointSite1 & \"/Shared Documents/EndringProsjektPoster/\")),",
+    "    #\"Filtered Hidden Files1\" = Table.SelectRows(#\"Filtered Rows\", each [Attributes]?[Hidden]? <> true),",
+    "    #\"Invoke Custom Function2\" = Table.AddColumn(#\"Filtered Hidden Files1\", \"Transform File from ProNummerEndring\", each #\"Transform File from ProNummerEndring\"([Content])),",
+    "    #\"Renamed Columns3\" = Table.RenameColumns(#\"Invoke Custom Function2\", {\"Name\", \"Source.Name\"}),",
+    "    #\"Removed Other Columns2\" = Table.SelectColumns(#\"Renamed Columns3\", {\"Source.Name\", \"Transform File from ProNummerEndring\"}),",
+    "    #\"Expanded Table Column2\" = Table.ExpandTableColumn(#\"Removed Other Columns2\", \"Transform File from ProNummerEndring\", Table.ColumnNames(#\"Transform File from ProNummerEndring\"(#\"Sample File (2)\"))),",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded Table Column2\",{{\"Source.Name\", type text}, {\"GLEntryNo\", type text}, {\"VendorId\", Int64.Type}, {\"ProjectId\", type text}}),",
+    "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"Source.Name\", \"CompanyId\"}}),",
+    "    #\"Extracted Text Before Delimiter\" = Table.TransformColumns(#\"Renamed Columns\", {{\"CompanyId\", each Text.BeforeDelimiter(_, \".\"), type text}})",
+    "in",
+    "    #\"Extracted Text Before Delimiter\""
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "52cc36a3-5e40-4913-ad92-984802ff0b2a",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

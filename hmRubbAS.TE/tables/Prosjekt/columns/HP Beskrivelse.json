@@ -1,0 +1,13 @@
+{
+  "name": "HP Beskrivelse",
+  "dataType": "string",
+  "sourceColumn": "HP Beskrivelse",
+  "lineageTag": "431c6b4e-a0a1-4303-8022-32d670aa82b2",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

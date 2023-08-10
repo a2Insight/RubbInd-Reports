@@ -1,0 +1,22 @@
+{
+  "name": "Selskap-4b2f9948-7c94-4e5a-885c-5f7ee325a4f2",
+  "mode": "import",
+  "queryGroup": "Dimensjoner",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    //SharePoint",
+      "",
+      "    SharePoint = SharePoint.Tables(SharePointSite1, [ApiVersion = 15]),",
+      "    Company = SharePoint{[Id=\"c6c05096-82a1-486e-af74-d9aca84f2740\"]}[Items],",
+      "    SelectColumns = Table.SelectColumns(Company,{\"Title\", \"CompanyId\"}),",
+      "    RenameColumns = Table.RenameColumns(SelectColumns,{{\"Title\", \"Company\"}, {\"CompanyId\", \"SelskapsId\"}}),",
+      "    #\"Filtered Rows\" = Table.SelectRows(RenameColumns, each [Company] = companyId),",
+      "    #\"Renamed Columns\" = Table.RenameColumns(#\"Filtered Rows\",{{\"Company\", \"SelskapNavn\"}}),",
+      "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Renamed Columns\",{{\"SelskapNavn\", type text}, {\"SelskapsId\", Int64.Type}})",
+      "in",
+      "    #\"Changed Type\""
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ValutaKurs",
+  "dataType": "double",
+  "sourceColumn": "ValutaKurs",
+  "lineageTag": "400832e9-264b-4ee9-a5a5-46b8f4ecab16",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

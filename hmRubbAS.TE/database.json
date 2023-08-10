@@ -1,0 +1,146 @@
+{
+  "name": "hmRubbAS",
+  "compatibilityLevel": 1567,
+  "model": {
+    "defaultMode": "directQuery",
+    "culture": "nb-NO",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "discourageImplicitMeasures": true,
+    "sourceQueryCulture": "nb-NO",
+    "queryGroups": [
+      {
+        "folder": "Parametere",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "folder": "Dimensjoner",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "folder": "Fakta",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "folder": "Hjelpetabeller",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "folder": "Transform File from ProPrognose",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "6"
+          }
+        ]
+      },
+      {
+        "folder": "Transform File from ProPrognose\\Sample Query",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "folder": "Transform File from ProNummerEndring",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "folder": "Transform File from ProNummerEndring\\Sample Query",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "folder": "DataSources",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "folder": "WorkInProgress",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "8"
+          }
+        ]
+      },
+      {
+        "folder": "DirectQ",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "1"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.119.986.0 (23.07)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"companyId\",\"SisteAar\",\"AntallAar\",\"Kontoplan\",\"KR_Resultat\",\"KR_Balanse\",\"Kalender\",\"Prosjekt\",\"Faktorer\",\"Datasett\",\"Ordreinngang\",\"Regnskap\",\"Budsjett\",\"IB\",\"NyeKontoer\",\"ProPrognose\",\"HpPrognose\",\"Sample File Parameter1\",\"Transform Sample File from ProPrognose\",\"Sample File\",\"Transform File from ProPrognose\",\"OrdreKPI\",\"ProsjektKPI\",\"ProsjektStatus\",\"ProsjektMeasures\",\"WorkInProgress\",\"ExcelMeasures\",\"Tertial\",\"SP_ProNummerEndring\",\"Sample File Parameter2\",\"Transform Sample File from ProNummerEndring\",\"Sample File (2)\",\"Transform File from ProNummerEndring\",\"Eyeshare\",\"Leverandører\",\"Kunder\",\"Betalinger\",\"SQLserver1\",\"SQLdatabase1\",\"SharePointSite1\",\"Selskap\",\"GetLastDateGL\",\"LastDateGL\",\"ForecastFromForecast\",\"SQL_Company\",\"SQL_Forecast\",\"SQL_Suppliers\",\"SQL_Projects\",\"SQL_Customers\",\"SQL_ChartOfAccounts\",\"SQL_ReportingCOA\",\"SQL_CustomersAccounts\",\"SQL_GeneralLedger\",\"SQL_EyeShare\",\"SQL_Budget\",\"DatesFromForecast\",\"DatesFromProjects\",\"ProjectForecast\",\"ProjectRevenueForecast\",\"ProjectCostForecast\",\"fn_cumulative_revenue\",\"fn_cumulative_cost\",\"HpPrognoseOld\",\"Tmp_ProsjektPowerApps\",\"ProsjektLederFilter\",\"IN_ProjectForecast\",\"SQL_ProjectMgrs\",\"Prosjektledere\",\"LiveProjectForecast\",\"Tekstkoder\",\"KalendarDynamisk\",\"KalenderORG\",\"KundePoster\",\"KundePosterDoble\",\"KundeMotposter\",\"BilagProsjektLink\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      },
+      {
+        "name": "TabularEditor_SerializeOptions",
+        "value": "{\"IgnoreInferredObjects\":true,\"IgnoreInferredProperties\":true,\"IgnoreTimestamps\":true,\"IgnoreIncrementalRefreshPartitions\":true,\"SplitMultilineStrings\":true,\"PrefixFilenames\":false,\"LocalTranslations\":true,\"LocalPerspectives\":true,\"LocalRelationships\":true,\"Levels\":[\"Data Sources\",\"Perspectives\",\"Relationships\",\"Roles\",\"Shared Expressions\",\"Tables\",\"Tables/CalculationItems\",\"Tables/Columns\",\"Tables/Hierarchies\",\"Tables/Measures\",\"Tables/Partitions\",\"Translations\"]}"
+      },
+      {
+        "name": "TabularEditor_Cultures",
+        "value": "[\"nb-NO\"]"
+      },
+      {
+        "name": "TabularEditor_Perspectives",
+        "value": "[]"
+      }
+    ]
+  }
+}

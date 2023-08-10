@@ -1,0 +1,13 @@
+{
+  "name": "ProsjektlederId",
+  "dataType": "string",
+  "sourceColumn": "ProsjektlederId",
+  "lineageTag": "40509ba2-e6b0-4326-8ab6-4a731db35838",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

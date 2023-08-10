@@ -1,0 +1,12 @@
+{
+  "name": "Budsjett YT",
+  "expression": "CLOSINGBALANCEYEAR([Budsjett YTD],Kalender[Dato])",
+  "formatString": "#,0",
+  "lineageTag": "51c26471-5916-46a2-9e21-ff6567cef38c",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

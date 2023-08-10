@@ -1,0 +1,13 @@
+{
+  "name": "HovedArbeidProsjektNr",
+  "dataType": "string",
+  "sourceColumn": "HovedArbeidProsjektNr",
+  "lineageTag": "7f9f7920-804e-43bc-b66b-8374fb4854a9",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "KostPerOther",
+  "expression": [
+    "CALCULATE (",
+    "            SUMX (",
+    "                CALCULATETABLE ( VALUES ( Prosjekt[ProsjektNummer] ),Prosjekt[WIPfilter]=0), ",
+    "                [Regnskap] / MIN ( Faktorer[Faktor] )",
+    "            ),",
+    "            Kontoplan[Rapport] = \"Resultat\",Kontoplan[Nivå1]<>\"Inntekter\"   ",
+    "        )"
+  ],
+  "lineageTag": "1da41122-ff8f-4237-8405-7d99ea55cac3",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

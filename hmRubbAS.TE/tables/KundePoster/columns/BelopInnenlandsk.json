@@ -1,0 +1,17 @@
+{
+  "name": "BelopInnenlandsk",
+  "dataType": "double",
+  "sourceColumn": "BelopInnenlandsk",
+  "lineageTag": "10ea48d7-c202-44b7-ba1c-816b260b3ce5",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

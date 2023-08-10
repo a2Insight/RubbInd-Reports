@@ -1,0 +1,12 @@
+{
+  "name": "Rest",
+  "expression": "[Kostnadsprognose]-[Påløpt]",
+  "formatString": "#,0",
+  "lineageTag": "c40a264b-9892-4444-a581-776fb9363464",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

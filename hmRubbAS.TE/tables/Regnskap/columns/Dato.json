@@ -1,0 +1,23 @@
+{
+  "name": "Dato",
+  "dataType": "dateTime",
+  "sourceColumn": "Dato",
+  "formatString": "Short Date",
+  "lineageTag": "3a585baf-7935-4a8e-ad9b-79ddc1660824",
+  "summarizeBy": "none",
+  "changedProperties": [
+    {
+      "property": "FormatString"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    }
+  ]
+}

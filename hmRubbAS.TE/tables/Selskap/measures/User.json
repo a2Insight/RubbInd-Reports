@@ -1,0 +1,5 @@
+{
+  "name": "User",
+  "expression": "USERPRINCIPALNAME()",
+  "lineageTag": "1bc109bd-4ab2-4b9d-92cc-a5e84ffbc0ee"
+}

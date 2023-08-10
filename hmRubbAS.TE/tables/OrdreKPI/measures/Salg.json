@@ -1,0 +1,12 @@
+{
+  "name": "Salg",
+  "expression": "-SUM(Ordreinngang[Inntekter]) / MIN ( Faktorer[Faktor] )",
+  "formatString": "#,0",
+  "lineageTag": "b33481c4-4b5e-4aaa-9abc-4b50ec3b1ac1",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

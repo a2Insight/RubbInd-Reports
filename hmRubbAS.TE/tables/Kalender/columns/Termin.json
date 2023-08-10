@@ -1,0 +1,19 @@
+{
+  "type": "calculated",
+  "name": "Termin",
+  "dataType": "double",
+  "isDataTypeInferred": true,
+  "expression": "ROUND(Kalender[MndNo] / 2, 0) ",
+  "lineageTag": "7ac16342-6348-46c4-b4a4-0ef62f675bd6",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

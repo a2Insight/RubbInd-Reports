@@ -1,0 +1,6 @@
+{
+  "name": "DG% prognose",
+  "expression": "DIVIDE([Inntektsprognose]-[Kostnadsprognose],[Inntektsprognose])",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "34a9a223-5f4b-4a49-ba66-802e1026c4c1"
+}

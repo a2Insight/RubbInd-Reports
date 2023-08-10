@@ -1,0 +1,13 @@
+{
+  "name": "Statusperioder",
+  "dataType": "string",
+  "sourceColumn": "Statusperioder",
+  "lineageTag": "c15d69f9-fb63-4bed-b967-8fe9dace9c56",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

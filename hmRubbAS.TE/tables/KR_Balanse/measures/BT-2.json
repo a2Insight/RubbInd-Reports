@@ -1,0 +1,12 @@
+{
+  "name": "BT-2",
+  "expression": "CLOSINGBALANCEYEAR(CALCULATE([BT-1],PREVIOUSYEAR(Kalender[Dato])),Kalender[Dato])",
+  "formatString": "#,0",
+  "lineageTag": "445de08d-4eee-4802-8278-911d4bd7352b",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

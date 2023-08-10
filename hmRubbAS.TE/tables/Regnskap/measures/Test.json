@@ -1,0 +1,6 @@
+{
+  "name": "Test",
+  "expression": "CALCULATE([RegnskapUtenFortegn],Kontoplan[Rapport]=\"Balanse\",FILTER(ALL(Kalender),Kalender[År]=MAX(Kalender[År])-1),NOT(IB[IB]=\"IB\"))",
+  "formatString": "#,0",
+  "lineageTag": "f3e0e20f-a9ab-4321-8cff-e4374493fd15"
+}

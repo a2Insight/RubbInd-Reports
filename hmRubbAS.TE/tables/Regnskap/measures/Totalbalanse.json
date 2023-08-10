@@ -1,0 +1,11 @@
+{
+  "name": "Totalbalanse",
+  "expression": "CALCULATE([RegnskapUtenFortegn],Kontoplan[Konto]<>\"99\")-CALCULATE([Regnskap],Kontoplan[Konto]=\"99\")",
+  "lineageTag": "b7f5f053-60ae-4570-a181-7ab35db45ed2",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

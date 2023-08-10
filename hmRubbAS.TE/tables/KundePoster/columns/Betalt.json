@@ -1,0 +1,17 @@
+{
+  "name": "Betalt",
+  "dataType": "double",
+  "sourceColumn": "Betalt",
+  "lineageTag": "491ff12d-fd30-45d8-891b-48685ce72b6e",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

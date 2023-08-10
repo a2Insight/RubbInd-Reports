@@ -1,0 +1,17 @@
+{
+  "name": "companyId",
+  "kind": "m",
+  "expression": "\"Rubb AS\" meta [IsParameterQuery=true, List={\"Hallmaker AS\", \"Byggservice AS\", \"Linto AS\", \"Rubb AS\", \"Utleie AS\"}, DefaultValue=..., Type=\"Text\", IsParameterQueryRequired=true]",
+  "queryGroup": "Parametere",
+  "lineageTag": "51b9acd6-24d1-4882-94bf-c0c6d9fa4a68",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigasjon"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    }
+  ]
+}

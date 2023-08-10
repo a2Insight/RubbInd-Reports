@@ -1,0 +1,6 @@
+{
+  "name": "Endring% iår",
+  "expression": "IF(MAX(KR_Balanse[Type])=4,BLANK(),DIVIDE([Endring iår],[Balanse])*100)",
+  "formatString": "#,0.0",
+  "lineageTag": "381ed822-c26a-4b1f-a324-7fa7038268cc"
+}

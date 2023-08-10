@@ -1,0 +1,23 @@
+{
+  "name": "NyeKontoer-24a616d6-9528-4b96-b60b-0f8888837c79",
+  "mode": "import",
+  "queryGroup": "Hjelpetabeller",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "",
+      "",
+      "    SelskapsKontoplan = Table.NestedJoin(SQL_ChartOfAccounts,{\"FirmaId\"},SQL_Company,{\"InfoEasyId\"},\"sqlTbl2\",JoinKind.Inner),",
+      "    #\"Expanded sqlTbl2\" = Table.ExpandTableColumn(SelskapsKontoplan, \"sqlTbl2\", {\"Company\", \"CompanyId\"}, {\"Company\", \"CompanyId\"}),",
+      "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded sqlTbl2\",{{\"KontoId\", type text}, {\"Company\", type text}}),",
+      "    Source1 = Table.NestedJoin(#\"Changed Type\",{\"Company\",\"KontoId\"},SQL_ReportingCOA,{\"SelskapsId\",\"Konto\"},\"Kontoplan\",JoinKind.LeftAnti),",
+      "    #\"Added Custom\" = Table.AddColumn(Source1, \"KontoLnk1\", each Text.From([CompanyId])&\"-\"&Text.From([KontoId])),",
+      "    #\"Added Custom1\" = Table.AddColumn(#\"Added Custom\", \"KontoBeskrivelse\", each Text.From([KontoId])&\" - \"&Text.From([Konto])),",
+      "    #\"Removed Columns\" = Table.RemoveColumns(#\"Added Custom1\",{\"FirmaId\", \"Type\", \"KontoLnk\", \"Company\", \"CompanyId\", \"Kontoplan\", \"KontoId\", \"Konto\"})",
+      "",
+      "in",
+      "    #\"Removed Columns\""
+    ]
+  }
+}

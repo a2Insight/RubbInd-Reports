@@ -1,0 +1,15 @@
+{
+  "type": "calculated",
+  "name": "KortÅr",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "expression": "RIGHT(Kalender[År],2)",
+  "lineageTag": "0499e4e0-7540-4771-a2ad-c4b0c6ff2f38",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Rapportfaktor",
+  "expression": "CALCULATE(Min(Faktorer[Faktor]),FILTER(Faktorer, Faktorer[Faktor]=[Unit]))",
+  "lineageTag": "6fc71449-4f50-4ddb-acb5-ada4f9d7b94b",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "ProjectCostForecast",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = ForecastFromForecast,",
+    "    #\"Removed Columns\" = Table.RemoveColumns(Source,{\"Index\"}),",
+    "",
+    "    Calc_Running_Total = Table.Group(",
+    "                                      #\"Removed Columns\",                                                                           // table as table",
+    "                                     {\"Hovedarbeidsprosjekt\"},                                                                       // key as any",
+    "                                                                                                                       // aggregatedColumns as list ",
+    "                                        {{\"Data\",                                                                           // name of new column to be created",
+    "                                    // Function Call",
+    "                                        (Input as table) as table =>                                                        // data for function",
+    "                                        let",
+    "                                        Call_Function = fn_cumulative_cost(Input),",
+    "                                    // End of Function Call",
+    "",
+    "                                        result = Table.FromColumns(                                                         // putting all together",
+    "                                                                    Table.ToColumns(Input)&{Call_Function},",
+    "                                                                        Value.Type(",
+    "                                                                                   Table.AddColumn(",
+    "                                                                                                    Input, \"Saldo\", each null, type number",
+    "                                                                                                   )",
+    "                                                                                )",
+    "                                                                       )",
+    "                                        in",
+    "                                            result,",
+    "",
+    "",
+    "                                    type table}}                                                                    // transform into table",
+    "                                    ),",
+    "    #\"Expanded Data\" = Table.ExpandTableColumn(Calc_Running_Total, \"Data\", {\"Dato\", \"Kostnader\", \"Saldo\"}, {\"Date\", \"Cost\", \"CostAcc\"}),",
+    "    ",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Expanded Data\",{{\"Hovedarbeidsprosjekt\", type text}, {\"Date\", type date}, {\"Cost\", Int64.Type}, {\"CostAcc\", Int64.Type}})",
+    "in",
+    "    #\"Changed Type\""
+  ],
+  "queryGroup": "WorkInProgress",
+  "lineageTag": "4d84594b-3800-4804-953f-e12773e1a7e0",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

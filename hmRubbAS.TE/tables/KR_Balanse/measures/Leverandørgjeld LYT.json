@@ -1,0 +1,11 @@
+{
+  "name": "Leverandørgjeld LYT",
+  "expression": "CALCULATE([Leverandørgjeld],FILTER(ALL(Kalender),Kalender[År]=MAX(Kalender[År])-1),Kalender[MndNo]=12)",
+  "lineageTag": "96a89037-1866-4be2-8ae9-8fbc52572a5f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

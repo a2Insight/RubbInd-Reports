@@ -1,0 +1,11 @@
+{
+  "name": "InntProgGraf",
+  "expression": "DIVIDE(SUM(HpPrognose[Inntekter]),Faktorer[Rapportfaktor])",
+  "lineageTag": "581ebee1-31e7-4fd4-a604-bf21062fe9db",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

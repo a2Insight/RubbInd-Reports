@@ -1,0 +1,19 @@
+{
+  "name": "Year",
+  "dataType": "double",
+  "isNullable": false,
+  "sourceColumn": "Year",
+  "sourceProviderType": "float",
+  "lineageTag": "780c9ab9-57d1-4afc-a9a9-d70940dae663",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

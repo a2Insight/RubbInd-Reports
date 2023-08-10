@@ -1,0 +1,5 @@
+{
+  "name": "Valgt HP",
+  "expression": "SELECTEDVALUE(Prosjekt[HP Beskrivelse])",
+  "lineageTag": "21990824-7ecd-4ac4-a98e-9e28258b77a4"
+}

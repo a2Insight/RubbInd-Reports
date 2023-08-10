@@ -1,0 +1,20 @@
+{
+  "name": "BalanseLinjeNr",
+  "expression": [
+    "",
+    "",
+    "VAR  Test = SELECTEDVALUE(KR_Balanse[Nivå2])",
+    "RETURN",
+    "",
+    "SWITCH(TRUE(),",
+    "    Test = \"Sum omløpsmidler\",1,",
+    "    Test = \"Sum anleggsmidler\",1,",
+    "    Test = \"Sum egenkapital\",1,",
+    "    Test = \"Sum gjeld\",1,",
+    "    Test = \"Sum EIENDELER\",2,",
+    "    Test = \"Sum GJELD OG EGENKAPITAL\",2",
+    ")"
+  ],
+  "formatString": "0",
+  "lineageTag": "7ca9642d-f239-4941-a67b-92cef173dcbf"
+}

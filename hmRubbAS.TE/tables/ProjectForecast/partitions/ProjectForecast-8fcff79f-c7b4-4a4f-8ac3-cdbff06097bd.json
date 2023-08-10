@@ -1,0 +1,15 @@
+{
+  "name": "ProjectForecast-8fcff79f-c7b4-4a4f-8ac3-cdbff06097bd",
+  "mode": "import",
+  "queryGroup": "WorkInProgress",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = Table.Combine({ProjectRevenueForecast, ProjectCostForecast}),",
+      "    #\"Grouped Rows\" = Table.Group(Source, {\"Hovedarbeidsprosjekt\", \"Date\"}, {{\"Revenue\", each List.Sum([Revenue]), type number}, {\"RevenueAcc\", each List.Sum([RevenueAcc]), type number}, {\"Cost\", each List.Sum([Cost]), type number}, {\"CostAcc\", each List.Sum([CostAcc]), type number}})",
+      "in",
+      "    #\"Grouped Rows\""
+    ]
+  }
+}

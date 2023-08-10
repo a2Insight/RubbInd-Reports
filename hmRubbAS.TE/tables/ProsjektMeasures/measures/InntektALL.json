@@ -1,0 +1,15 @@
+{
+  "name": "InntektALL",
+  "expression": [
+    "CALCULATE (",
+    "                    SUMX (",
+    "                        CALCULATETABLE ( VALUES ( Prosjekt[ProsjektNummer] ), Prosjekt[WIPfilter]=1),",
+    "                        - [Regnskap] / MIN ( Faktorer[Faktor] )",
+    "                    ),",
+    "                    Kontoplan[Nivå1] = \"Inntekter\"",
+    "                    ,ALL(Kalender)",
+    "                )"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "2269c012-7d30-4014-888b-17555c59e05a"
+}

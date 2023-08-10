@@ -1,0 +1,11 @@
+{
+  "name": "InntektsGapYT",
+  "expression": "[PrognoseOrdre]-[InntektBudYT] ",
+  "lineageTag": "eb51d8d8-cb0c-4386-8747-7aed2ca59064",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

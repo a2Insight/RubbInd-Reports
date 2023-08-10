@@ -1,0 +1,18 @@
+{
+  "name": "Tekstkoder",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = Betalinger,",
+    "    #\"Grouped Rows\" = Table.Group(Source, {\"TekstKode\", \"Tekst\"}, {{\"Count\", each Table.RowCount(_), type number}})",
+    "in",
+    "    #\"Grouped Rows\""
+  ],
+  "lineageTag": "d1d93d25-bfb6-4248-bcbd-fb570059a63c",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

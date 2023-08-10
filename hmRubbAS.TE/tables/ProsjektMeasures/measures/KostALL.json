@@ -1,0 +1,12 @@
+{
+  "name": "KostALL",
+  "expression": "CALCULATE([KostPer],ALL(Kalender))",
+  "formatString": "#,0",
+  "lineageTag": "5ab63fa4-8ef2-437f-955b-0ba78b1f6952",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

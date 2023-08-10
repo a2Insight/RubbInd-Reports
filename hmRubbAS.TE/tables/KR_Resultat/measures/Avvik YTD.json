@@ -1,0 +1,23 @@
+{
+  "name": "Avvik YTD",
+  "expression": [
+    "( [Virkelig YTD] - [Budsjett YTD] )",
+    "    * IF (",
+    "        ( MAX ( Kontoplan[Nivå1] ) IN { \"Inntekter\", \"Kostnader\" } ),",
+    "        1,",
+    "        IF (",
+    "            MAX ( KR_Resultat[Type] ) = 1,",
+    "            -1,",
+    "            IF ( MAX ( KR_Resultat[Type] ) = 3, BLANK (), 1 )",
+    "        )",
+    "    )"
+  ],
+  "formatString": "#,0",
+  "lineageTag": "a5a33103-5a5b-4953-9aa8-75098e0182cc",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

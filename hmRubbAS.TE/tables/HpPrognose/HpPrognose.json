@@ -1,0 +1,33 @@
+{
+  "name": "HpPrognose",
+  "lineageTag": "a8626a3a-36d0-4c30-bae1-8d7163082f3a",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Exception"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": [
+        "[",
+        "  {",
+        "    \"fromTable\": \"HpPrognose\",",
+        "    \"fromColumn\": \"Dato\",",
+        "    \"toTable\": \"Kalender\",",
+        "    \"toColumn\": \"Dato\"",
+        "  },",
+        "  {",
+        "    \"fromTable\": \"HpPrognose\",",
+        "    \"fromColumn\": \"HovedArbeidProsjektNr\",",
+        "    \"toTable\": \"Prosjekt\",",
+        "    \"toColumn\": \"ProsjektNummer\"",
+        "  }",
+        "]"
+      ]
+    }
+  ]
+}

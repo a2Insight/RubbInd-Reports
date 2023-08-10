@@ -1,0 +1,13 @@
+{
+  "name": "Tertial",
+  "dataType": "string",
+  "sourceColumn": "Tertial",
+  "lineageTag": "2432bc08-65a4-4150-a767-bbbac4ecf947",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

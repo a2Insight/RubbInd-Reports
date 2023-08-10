@@ -1,0 +1,14 @@
+{
+  "name": "ExcelMeasures",
+  "lineageTag": "52e62fe3-609b-432a-8ff8-5c06fc355bcd",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

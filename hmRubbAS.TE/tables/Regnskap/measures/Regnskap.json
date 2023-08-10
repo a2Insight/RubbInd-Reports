@@ -1,0 +1,6 @@
+{
+  "name": "Regnskap",
+  "expression": "SUM(Regnskap[Belop])",
+  "formatString": "#,0",
+  "lineageTag": "d8cd861d-59d0-4c4d-b689-fa5cdac3b990"
+}

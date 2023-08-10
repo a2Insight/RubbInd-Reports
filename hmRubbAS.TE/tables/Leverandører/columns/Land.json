@@ -1,0 +1,13 @@
+{
+  "name": "Land",
+  "dataType": "string",
+  "sourceColumn": "Land",
+  "lineageTag": "061cb071-630d-4062-9d22-3d365d828f5a",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "IB",
+  "dataType": "string",
+  "sourceColumn": "IB",
+  "lineageTag": "58561557-8807-46b9-8696-b4cfa24c0896",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "InntektsbudsjettPeriode",
+  "expression": "CALCULATE(-[Budsjett],KR_Resultat[Nivå1]=\"Inntekter\")",
+  "lineageTag": "e143f821-d7e9-48ae-a56b-04baf63531bb",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

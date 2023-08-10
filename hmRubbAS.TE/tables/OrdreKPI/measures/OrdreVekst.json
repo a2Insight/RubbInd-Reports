@@ -1,0 +1,6 @@
+{
+  "name": "OrdreVekst",
+  "expression": "-SUM(ProPrognose[RevenueChange])",
+  "formatString": "0",
+  "lineageTag": "6578eeb6-b4fd-4038-9c08-d5d76fa1048a"
+}

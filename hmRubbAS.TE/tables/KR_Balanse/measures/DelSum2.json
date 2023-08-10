@@ -1,0 +1,21 @@
+{
+  "name": "DelSum2",
+  "expression": [
+    "IF (",
+    "    HASONEFILTER(KR_Balanse[Nivå2]),",
+    "    CALCULATE (",
+    "        [BalanseFraRegnskap],",
+    "        ALL ( KR_Balanse[Nivå2] ),",
+    "        KR_Balanse[Rekkefølge] < VALUES ( KR_Balanse[Rekkefølge]),KR_Balanse[Grp2]=VALUES(KR_Balanse[Grp2])",
+    "    ),",
+    "    BLANK ()",
+    ")"
+  ],
+  "lineageTag": "cb9ad2c6-dfd8-4563-bdb4-f2948b9a341a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

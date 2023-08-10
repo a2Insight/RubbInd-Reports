@@ -1,0 +1,28 @@
+{
+  "name": "ForecastFromForecast",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = SQL_Forecast,",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Date\", type date}}),",
+    "    #\"Inserted Start of Month\" = Table.AddColumn(#\"Changed Type\", \"Dato\", each Date.StartOfMonth([Date]), type date),",
+    "    #\"Grouped Rows\" = Table.Group(#\"Inserted Start of Month\", {\"Hovedarbeidsprosjekt\", \"Dato\"}, {{\"Inntekter\", each List.Sum([Inntekter]), type number}, {\"Kostnader\", each List.Sum([Kostnader]), type number}}),",
+    "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Grouped Rows\",{{\"Hovedarbeidsprosjekt\", type text}, {\"Dato\", type date}, {\"Inntekter\", type number}, {\"Kostnader\", type number}}),",
+    "    #\"Sorted Rows1\" = Table.Sort(#\"Changed Type1\",{{\"Hovedarbeidsprosjekt\", Order.Ascending}, {\"Dato\", Order.Ascending}}),",
+    "    #\"Added Index2\" = Table.AddIndexColumn(#\"Sorted Rows1\", \"Index\", 0, 1)",
+    "in",
+    "    #\"Added Index2\""
+  ],
+  "queryGroup": "Hjelpetabeller",
+  "lineageTag": "8470b767-0ebb-4be0-8636-e66a011624af",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

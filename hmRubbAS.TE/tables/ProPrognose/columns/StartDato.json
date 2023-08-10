@@ -1,0 +1,14 @@
+{
+  "name": "StartDato",
+  "dataType": "dateTime",
+  "sourceColumn": "StartDato",
+  "formatString": "General Date",
+  "lineageTag": "7385cca3-f7db-46bb-a16d-d995c5c430ba",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

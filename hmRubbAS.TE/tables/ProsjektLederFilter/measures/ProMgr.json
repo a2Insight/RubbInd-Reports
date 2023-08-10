@@ -1,0 +1,6 @@
+{
+  "name": "ProMgr",
+  "expression": "IF(SELECTEDVALUE(ProsjektLederFilter[Select],\"ME\")=\"ME\",IF(USERPRINCIPALNAME()=MAX(Prosjekt[ProsjektlederId]),0,BLANK()),0)",
+  "formatString": "0",
+  "lineageTag": "c693aaa9-3beb-4881-b3e6-5878fb671dcb"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "DimensjonA",
+  "dataType": "int64",
+  "sourceColumn": "DimensjonA",
+  "formatString": "0",
+  "lineageTag": "d9849cf6-629c-40b8-868e-48102130f1d7",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

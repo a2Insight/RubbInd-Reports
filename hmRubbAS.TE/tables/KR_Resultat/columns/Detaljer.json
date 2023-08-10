@@ -1,0 +1,17 @@
+{
+  "name": "Detaljer",
+  "dataType": "int64",
+  "sourceColumn": "Detaljer",
+  "lineageTag": "125d1956-4978-4c2f-bbc2-3c23ddee7df4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

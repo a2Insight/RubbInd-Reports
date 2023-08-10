@@ -1,0 +1,14 @@
+{
+  "name": "IN_ProjectForecast-69dc90f5-2b43-44f4-a9f4-96d90ac7ef49",
+  "mode": "directQuery",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = Sql.Database(\"a2insight.database.windows.net\", \"a2dmHallmaker\"),",
+      "    dbo_IN_ProjectForecast = Source{[Schema=\"dbo\",Item=\"IN_ProjectForecast\"]}[Data]",
+      "in",
+      "    dbo_IN_ProjectForecast"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "TotalInntektYTD",
+  "expression": "CALCULATE(-[RegnskapAkk],KR_Resultat[Nivå1]=\"Inntekter\")",
+  "lineageTag": "e438737a-28f1-4d30-8d72-84047dd536ee",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

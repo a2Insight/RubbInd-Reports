@@ -1,0 +1,5 @@
+{
+  "name": "Selskap",
+  "expression": "MAX(Selskap[SelskapNavn])",
+  "lineageTag": "ad597cc3-a035-4c62-8c50-eac9b469d745"
+}

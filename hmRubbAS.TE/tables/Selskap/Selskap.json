@@ -1,0 +1,14 @@
+{
+  "name": "Selskap",
+  "lineageTag": "22b2107b-53b8-4dd7-958d-913003d5dab9",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

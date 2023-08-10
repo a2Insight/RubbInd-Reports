@@ -1,0 +1,13 @@
+{
+  "name": "LevLnk",
+  "dataType": "string",
+  "sourceColumn": "LevLnk",
+  "lineageTag": "db612218-2491-4768-83fa-d5c56c5b2f77",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

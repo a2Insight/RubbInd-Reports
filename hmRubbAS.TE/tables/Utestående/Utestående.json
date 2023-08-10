@@ -1,0 +1,95 @@
+{
+  "name": "Utestående",
+  "lineageTag": "765f224d-ab84-4f66-a059-f875c2262bdb",
+  "calculationGroup": {
+    "precedence": 1,
+    "calculationItems": [
+      {
+        "name": "Ikke forfalt",
+        "expression": [
+          "",
+          "VAR _To = 0",
+          "RETURN",
+          "    CALCULATE(",
+          "        [SaldoNet],",
+          "        'KundePoster'[DaysOverdue] <= _To",
+          "    )"
+        ],
+        "ordinal": 1
+      },
+      {
+        "name": "< 30 dager",
+        "expression": [
+          "",
+          "VAR _From = 1",
+          "VAR _To = 29",
+          "RETURN",
+          "    CALCULATE(",
+          "        [SaldoNet],",
+          "        'KundePoster'[DaysOverdue] >= _From,",
+          "        'KundePoster'[DaysOverdue] <= _To",
+          "    )"
+        ],
+        "ordinal": 2
+      },
+      {
+        "name": "< 60 dager",
+        "expression": [
+          "",
+          "VAR _From = 30",
+          "VAR _To = 59",
+          "RETURN",
+          "    CALCULATE(",
+          "        [SaldoNet],",
+          "        'KundePoster'[DaysOverdue] >= _From,",
+          "        'KundePoster'[DaysOverdue] <= _To",
+          "    )"
+        ],
+        "ordinal": 3
+      },
+      {
+        "name": "< 90 dager",
+        "expression": [
+          "",
+          "VAR _From = 60",
+          "VAR _To = 89",
+          "RETURN",
+          "    CALCULATE(",
+          "        [SaldoNet],",
+          "        'KundePoster'[DaysOverdue] >= _From,",
+          "        'KundePoster'[DaysOverdue] <= _To",
+          "    )"
+        ],
+        "ordinal": 4
+      },
+      {
+        "name": ">= 90 dager",
+        "expression": [
+          "",
+          "VAR _From = 90",
+          "",
+          "RETURN",
+          "    CALCULATE(",
+          "        [SaldoNet],",
+          "        'KundePoster'[DaysOverdue] >= _From",
+          "    )"
+        ],
+        "ordinal": 5
+      },
+      {
+        "name": "Utestående",
+        "expression": [
+          "",
+          "SELECTEDMEASURE()"
+        ],
+        "ordinal": 0
+      }
+    ]
+  },
+  "annotations": [
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

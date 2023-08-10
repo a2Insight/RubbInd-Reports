@@ -1,0 +1,17 @@
+{
+  "name": "NOK",
+  "dataType": "double",
+  "sourceColumn": "NOK",
+  "lineageTag": "d647a303-14fd-46eb-8780-9b0bd97902cc",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Test2",
+  "expression": "CALCULATE([Balanse],ALL(KR_Balanse),KR_Balanse[Nivå2]=\"Sum GJELD OG EGENKAPITAL\")",
+  "lineageTag": "54302109-937f-46e7-9707-9cc4364e4539",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

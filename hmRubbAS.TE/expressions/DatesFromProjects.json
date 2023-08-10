@@ -1,0 +1,25 @@
+{
+  "name": "DatesFromProjects",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = Prosjekt,",
+    "    AddHPFilter = Table.AddColumn(Source, \"Custom\", each if [ProsjektNummer] = [HovedArbeidProsjektNr] then 1 else 0),",
+    "    FilterHovedProsjekt = Table.SelectRows(AddHPFilter, each ([Custom] = 1)),",
+    "    #\"Grouped Rows\" = Table.Group(FilterHovedProsjekt, {\"HovedArbeidProsjektNr\"}, {{\"Start\", each List.Min([StartDato]), type date}, {\"Slutt\", each List.Max([PlanFerdigDato]), type date}})",
+    "in",
+    "    #\"Grouped Rows\""
+  ],
+  "queryGroup": "Hjelpetabeller",
+  "lineageTag": "2cfbae9b-0414-4a72-8a2e-eb79406650de",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

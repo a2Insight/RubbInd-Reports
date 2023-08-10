@@ -1,0 +1,12 @@
+{
+  "name": "Ordrereserve",
+  "expression": "[ProInntektEst]-[ProInntektTD]",
+  "formatString": "#,0",
+  "lineageTag": "145fe776-5f50-48c2-b258-b37aed63e683",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

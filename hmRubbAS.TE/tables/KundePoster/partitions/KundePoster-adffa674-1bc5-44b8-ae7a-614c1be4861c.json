@@ -1,0 +1,36 @@
+{
+  "name": "KundePoster-adffa674-1bc5-44b8-ae7a-614c1be4861c",
+  "mode": "import",
+  "queryGroup": "WorkInProgress",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "",
+      "    Source = Sql.Database(SQLserver1, SQLdatabase1),",
+      "    dbo_KundeReskontro = Source{[Schema=\"dbo\",Item=\"PostMotPostLogg\"]}[Data],",
+      "    #\"Merged Queries3\" = Table.NestedJoin(dbo_KundeReskontro, {\"F_FIRMA\", \"ReskontroNummer\"}, SQL_Customers, {\"FirmaId\", \"KundeId\"}, \"SQL_Customers\", JoinKind.LeftOuter),",
+      "    #\"Expanded SQL_Customers\" = Table.ExpandTableColumn(#\"Merged Queries3\", \"SQL_Customers\", {\"KundeId\"}, {\"KundeId\"}),",
+      "    #\"Filtered Rows\" = Table.SelectRows(#\"Expanded SQL_Customers\", each [KundeId] <> null),",
+      "",
+      "    ",
+      "    Poster = Table.SelectRows(#\"Filtered Rows\", each ([DatoSisteAvreg] = null) and ([Belop] <> 0)),",
+      "    #\"Merged Queries\" = Table.NestedJoin(Poster, {\"PostMotPostLog_ID\"}, KundePosterDoble, {\"PostMotPostLog_ID\"}, \"KundePosterDoble\", JoinKind.LeftAnti),",
+      "    UnikeKPoster = Table.RemoveColumns(#\"Merged Queries\",{\"KundePosterDoble\"}),",
+      "",
+      "    FromPayments = Table.Group(KundeMotposter, {\"BilagsNummer\"}, {{\"Betalingsdato\", each List.Max([BilagsDato2]), type nullable datetime}, {\"Betalt\", each List.Sum([Belop]), type nullable number}}),",
+      "    #\"Merged Queries1\" = Table.NestedJoin(UnikeKPoster, {\"BilagsNummer\"}, FromPayments, {\"BilagsNummer\"}, \"FromPayments\", JoinKind.LeftOuter),",
+      "    #\"Expanded FromPayments\" = Table.ExpandTableColumn(#\"Merged Queries1\", \"FromPayments\", {\"Betalingsdato\", \"Betalt\"}, {\"Betalingsdato\", \"Betalt\"}),",
+      "    #\"Added Custom\" = Table.AddColumn(#\"Expanded FromPayments\", \"Status\", each if [Belop] = -[Betalt] then \"Oppgjort\" else \"Utestående\", type text),",
+      "    #\"Added Custom1\" = Table.AddColumn(#\"Added Custom\", \"Kredittid\", each if [Status] = \"Oppgjort\" then Number.From([Betalingsdato])-Number.From([BilagsDato])+1 else Number.From(Date.From (DateTime.LocalNow())) - Number.From([BilagsDato]) + 1, Int64.Type),",
+      "    #\"Added Custom2\" = Table.AddColumn(#\"Added Custom1\", \"DaysOverdue\", each if [Status] = \"Utestående\" then if [ForfallsDato] <> null then if Date.From(DateTime.LocalNow())>Date.From([ForfallsDato]) then Number.From(Date.From((DateTime.LocalNow())))-Number.From(Date.From([ForfallsDato])) else null else Number.From(Date.From((DateTime.LocalNow())))-Number.From(Date.From([BilagsDato])) else null),",
+      "    #\"Added Custom3\" = Table.AddColumn(#\"Added Custom2\", \"NetOutstanding\", each if [Status] = \"Utestående\" then [Belop] + ( if [Betalt] = null then 0 else [Betalt] ) else null, type number),",
+      "    #\"Merged Queries2\" = Table.NestedJoin(#\"Added Custom3\", {\"BilagsNummer\"}, BilagProsjektLink, {\"BilagsNummer\"}, \"Kunder (2)\", JoinKind.LeftOuter),",
+      "    #\"Expanded Kunder (2)\" = Table.ExpandTableColumn(#\"Merged Queries2\", \"Kunder (2)\", {\"ProsjektId\"}, {\"ProsjektId\"}),",
+      "    #\"Removed Other Columns\" = Table.SelectColumns(#\"Expanded Kunder (2)\",{\"ReskontroNummer\", \"BilagsDato\", \"BilagsNummer\", \"ValutaKode\", \"ValutaKurs\", \"FaktBelopOrginal\", \"FaktBelopNorsk\", \"RestBelopOrginal\", \"RestBelopNorsk\", \"DatoSisteAvreg\", \"ForfallsDato\", \"DimensjonA\", \"DimensjonB\", \"Ar\", \"Periode\", \"Belop\", \"BelopInnenlandsk\", \"Betalingsdato\", \"Betalt\", \"Status\", \"Kredittid\", \"DaysOverdue\", \"NetOutstanding\", \"ProsjektId\"}),",
+      "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Removed Other Columns\",{{\"ForfallsDato\", type date}, {\"DatoSisteAvreg\", type date}, {\"BilagsDato\", type date}, {\"Betalingsdato\", type date}, {\"DaysOverdue\", Int64.Type}})",
+      "in",
+      "    #\"Changed Type\""
+    ]
+  }
+}

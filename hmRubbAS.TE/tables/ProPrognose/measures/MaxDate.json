@@ -1,0 +1,6 @@
+{
+  "name": "MaxDate",
+  "expression": "CLOSINGBALANCEMONTH(MAX(ProPrognose[PlanSlutt]),Kalender[Dato])",
+  "formatString": "General Date",
+  "lineageTag": "1d78ff4c-2000-42f9-8841-1d9f36bafd8f"
+}

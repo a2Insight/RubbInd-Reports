@@ -1,0 +1,12 @@
+{
+  "name": "GrossContributionForecastAdj",
+  "expression": "IF([Justert]>0,[RevenueForecastLive]-[CostForecastLive],\" \")",
+  "formatString": "#,0",
+  "lineageTag": "59d9ee4e-aef6-4895-9458-15fd4782042a",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

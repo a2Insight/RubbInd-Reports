@@ -1,0 +1,14 @@
+{
+  "name": "ProsjektMeasures",
+  "lineageTag": "2b25f6af-d2f0-49ce-9c57-c15aeae7c6b5",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

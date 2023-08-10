@@ -1,0 +1,15 @@
+{
+  "type": "calculated",
+  "name": "SetId",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "expression": "\"Bud\"",
+  "lineageTag": "e3900531-775e-4d9d-9b06-cd4bd83f5ce0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

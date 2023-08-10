@@ -1,0 +1,27 @@
+{
+  "name": "SQL_ReportingCOA",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"KontoplanGrupper\",",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data]",
+    "",
+    "",
+    "in",
+    "    sqlTbl1"
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "15a94daf-7aff-486d-80a5-b512730e3820",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ExcelMeasures",
+  "dataType": "string",
+  "sourceColumn": "ExcelMeasures",
+  "lineageTag": "9a2962c8-8963-41fe-9109-4357f053fa8f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

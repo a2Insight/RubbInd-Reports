@@ -1,0 +1,13 @@
+{
+  "name": "Rapport",
+  "dataType": "string",
+  "sourceColumn": "Rapport",
+  "lineageTag": "1746f3ba-d5f1-4324-aeba-eb62f0fefa85",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

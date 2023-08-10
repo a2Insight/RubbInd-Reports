@@ -1,0 +1,13 @@
+{
+  "name": "Side",
+  "dataType": "string",
+  "sourceColumn": "Side",
+  "lineageTag": "80630e5b-38d9-464a-ba3f-e15a323748d8",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

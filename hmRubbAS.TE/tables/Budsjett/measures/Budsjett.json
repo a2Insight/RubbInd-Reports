@@ -1,0 +1,11 @@
+{
+  "name": "Budsjett",
+  "expression": "SUM(Budsjett[NOK])",
+  "lineageTag": "24ccae6b-cab3-401d-a3f1-ac96ffc08e6f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

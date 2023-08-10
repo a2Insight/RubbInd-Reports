@@ -1,0 +1,15 @@
+{
+  "name": "Betalt",
+  "expression": [
+    "",
+    "-SUM('KundePoster'[Betalt])"
+  ],
+  "formatString": "#,##0",
+  "displayFolder": "Kunder",
+  "lineageTag": "10371017-64b0-430b-9c10-d1bb3710be8e",
+  "changedProperties": [
+    {
+      "property": "FormatString"
+    }
+  ]
+}

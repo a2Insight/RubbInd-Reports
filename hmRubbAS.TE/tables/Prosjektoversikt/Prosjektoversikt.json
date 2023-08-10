@@ -1,0 +1,229 @@
+{
+  "name": "Prosjektoversikt",
+  "lineageTag": "376c587f-1824-4606-8c46-6089bd9ac20c",
+  "calculationGroup": {
+    "calculationItems": [
+      {
+        "name": "Inntekt",
+        "expression": [
+          "",
+          "CALCULATE(",
+          "    SELECTEDMEASURE( ),",
+          "    DATESYTD( 'Kalender'[Dato] )",
+          ")"
+        ],
+        "ordinal": 1
+      },
+      {
+        "name": "Kostnad",
+        "expression": [
+          "",
+          "CALCULATE(",
+          "    [Prosjekt kostnad],",
+          "    DATESYTD( 'Kalender'[Dato] )",
+          ")"
+        ],
+        "ordinal": 2
+      },
+      {
+        "name": "Bidrag",
+        "expression": [
+          "",
+          "CALCULATE(",
+          "    [Prosjekt bidrag],",
+          "    DATESYTD( 'Kalender'[Dato] )",
+          ")"
+        ],
+        "ordinal": 3
+      },
+      {
+        "name": "Kalkyle:",
+        "expression": [
+          "",
+          "BLANK()"
+        ],
+        "ordinal": 8
+      },
+      {
+        "name": "Inntekt ",
+        "expression": [
+          "",
+          "VAR _Selected =",
+          "    CALCULATE(",
+          "        SELECTEDMEASURE( ),",
+          "        'Prosjektoversikt'[Name] = \"Bidrag\"",
+          "    )",
+          "RETURN",
+          "    IF( ISBLANK( _Selected ), BLANK( ), [Inntektsbudsjett] )"
+        ],
+        "ordinal": 9
+      },
+      {
+        "name": "HIÅ:",
+        "expression": [
+          "",
+          "BLANK()"
+        ],
+        "ordinal": 0
+      },
+      {
+        "name": "Kostnad ",
+        "expression": [
+          "",
+          "VAR _Selected =",
+          "    CALCULATE(",
+          "        SELECTEDMEASURE( ),",
+          "        'Prosjektoversikt'[Name] = \"Bidrag\"",
+          "    )",
+          "RETURN",
+          "    IF( ISBLANK( _Selected ), BLANK( ), [Kostnadsbudsjett] )"
+        ],
+        "ordinal": 10
+      },
+      {
+        "name": "Bidrag ",
+        "expression": [
+          "",
+          "VAR _Selected =",
+          "    CALCULATE(",
+          "        SELECTEDMEASURE( ),",
+          "        'Prosjektoversikt'[Name] = \"Bidrag\"",
+          "    )",
+          "RETURN",
+          "    IF( ISBLANK( _Selected ), BLANK( ), [DB budsjett] )"
+        ],
+        "ordinal": 11
+      },
+      {
+        "name": "Prognose:",
+        "expression": [
+          "",
+          "BLANK()"
+        ],
+        "ordinal": 12
+      },
+      {
+        "name": "Inntekt  ",
+        "expression": [
+          "",
+          "VAR _Selected =",
+          "    CALCULATE(",
+          "        SELECTEDMEASURE( ),",
+          "        'Prosjektoversikt'[Name] = \"Bidrag\"",
+          "    )",
+          "RETURN",
+          "    IF( ISBLANK( _Selected ), BLANK( ), [Inntektsprognose] )"
+        ],
+        "ordinal": 13
+      },
+      {
+        "name": "Kostnad  ",
+        "expression": [
+          "",
+          "VAR _Selected =",
+          "    CALCULATE(",
+          "        SELECTEDMEASURE( ),",
+          "        'Prosjektoversikt'[Name] = \"Bidrag\"",
+          "    )",
+          "RETURN",
+          "    IF( ISBLANK( _Selected ), BLANK( ), [Kostnadsprognose] )"
+        ],
+        "ordinal": 14
+      },
+      {
+        "name": "Bidrag  ",
+        "expression": [
+          "CALCULATE(",
+          "    SELECTEDMEASURE( ),",
+          "    'Prosjektoversikt'[Name] = \"Inntekt  \"",
+          ")",
+          "    - CALCULATE(",
+          "        SELECTEDMEASURE( ),",
+          "        'Prosjektoversikt'[Name] = \"Kostnad  \"",
+          "    )"
+        ],
+        "ordinal": 15
+      },
+      {
+        "name": "HIP:",
+        "expression": [
+          "",
+          "BLANK()"
+        ],
+        "ordinal": 4
+      },
+      {
+        "name": "Inntekt   ",
+        "expression": [
+          "",
+          "VAR _Selected =",
+          "    CALCULATE(",
+          "        SELECTEDMEASURE( ),",
+          "        'Prosjektoversikt'[Name] = \"Bidrag\"",
+          "    )",
+          "VAR _Inntekt =",
+          "    CALCULATE(",
+          "        SELECTEDMEASURE( ),",
+          "        FILTER(",
+          "            ALL( 'Kalender' ),",
+          "            'Kalender'[Dato] <= MAX( 'Kalender'[Dato] )",
+          "        )",
+          "    )",
+          "RETURN",
+          "    IF( ISBLANK( _Selected ), BLANK( ), _Inntekt )"
+        ],
+        "ordinal": 5
+      },
+      {
+        "name": "Kostnad     ",
+        "expression": [
+          "",
+          "VAR _Selected =",
+          "    CALCULATE(",
+          "        SELECTEDMEASURE( ),",
+          "        'Prosjektoversikt'[Name] = \"Bidrag\"",
+          "    )",
+          "VAR _Inntekt =",
+          "    CALCULATE(",
+          "        [Prosjekt kostnad],",
+          "        FILTER(",
+          "            ALL( 'Kalender' ),",
+          "            'Kalender'[Dato] <= MAX( 'Kalender'[Dato] )",
+          "        )",
+          "    )",
+          "RETURN",
+          "    IF( ISBLANK( _Selected ), BLANK( ), _Inntekt )"
+        ],
+        "ordinal": 6
+      },
+      {
+        "name": "Bidrag      ",
+        "expression": [
+          "",
+          "VAR _Selected =",
+          "    CALCULATE(",
+          "        SELECTEDMEASURE( ),",
+          "        'Prosjektoversikt'[Name] = \"Bidrag\"",
+          "    )",
+          "VAR _Inntekt =",
+          "    CALCULATE(",
+          "        [Prosjekt bidrag],",
+          "        FILTER(",
+          "            ALL( 'Kalender' ),",
+          "            'Kalender'[Dato] <= MAX( 'Kalender'[Dato] )",
+          "        )",
+          "    )",
+          "RETURN",
+          "    IF( ISBLANK( _Selected ), BLANK( ), _Inntekt )"
+        ],
+        "ordinal": 7
+      }
+    ]
+  },
+  "annotations": [
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

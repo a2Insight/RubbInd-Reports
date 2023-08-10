@@ -1,0 +1,11 @@
+{
+  "name": "ProsjektInntektYTD",
+  "expression": "[FakturertHIÅ] + [VIAendringYtd]",
+  "lineageTag": "f1df94d7-a3af-4a3b-9769-39d9bf38d8eb",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

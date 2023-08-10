@@ -1,0 +1,13 @@
+{
+  "name": "Enhet",
+  "dataType": "string",
+  "sourceColumn": "Enhet",
+  "lineageTag": "7b71efb0-7dce-44d7-b9a6-239ccc2ece8c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

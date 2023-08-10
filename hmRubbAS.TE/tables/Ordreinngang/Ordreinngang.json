@@ -1,0 +1,39 @@
+{
+  "name": "Ordreinngang",
+  "lineageTag": "82ad1a4e-1fda-4a47-989f-31ac7686c98e",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": [
+        "[",
+        "  {",
+        "    \"fromTable\": \"Ordreinngang\",",
+        "    \"fromColumn\": \"CompanyId\",",
+        "    \"toTable\": \"Selskap\",",
+        "    \"toColumn\": \"SelskapsId\"",
+        "  },",
+        "  {",
+        "    \"fromTable\": \"Ordreinngang\",",
+        "    \"fromColumn\": \"Date\",",
+        "    \"toTable\": \"Kalender\",",
+        "    \"toColumn\": \"Dato\"",
+        "  },",
+        "  {",
+        "    \"fromTable\": \"Ordreinngang\",",
+        "    \"fromColumn\": \"ProsjektLnk\",",
+        "    \"toTable\": \"Prosjekt\",",
+        "    \"toColumn\": \"ProsjektLnk\"",
+        "  }",
+        "]"
+      ]
+    }
+  ]
+}

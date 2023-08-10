@@ -1,0 +1,39 @@
+{
+  "name": "Betalinger",
+  "lineageTag": "73c58d50-7fc6-437f-9368-565358dc5c19",
+  "annotations": [
+    {
+      "name": "PBI_QueryRelationships",
+      "value": "{\"columnCount\":14,\"keyColumnNames\":[],\"queryRelationships\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/Companies.{InfoEasyId,3}\",\"KeyColumnCount\":1}],\"columnIdentities\":[\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{FirmaId,0}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{KundeId,1}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{BilagsNummer,2}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{PostNummer,3}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{NOK,5}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{TekstKode,6}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{Tekst,7}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{ForfallsDato,8}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{BokfDato,9}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/Companies.{CompanyId,0}\",\"Section1/Betalinger/Added Custom.{Custom,11}\",\"Section1/Regnskap/Appended Query1.{Belop,4}\",\"Section1/Regnskap/Appended Query1.{ProsjektLnk,10}\",\"Section1/Betalinger/Changed Type.{Old,13}\"],\"ColumnCount\":14,\"KeyColumnNames\":[],\"ColumnIdentities\":[\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{FirmaId,0}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{KundeId,1}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{BilagsNummer,2}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{PostNummer,3}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{NOK,5}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{TekstKode,6}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{Tekst,7}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{ForfallsDato,8}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/KundeReskontro.{BokfDato,9}\",\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/Companies.{CompanyId,0}\",\"Section1/Betalinger/Added Custom.{Custom,11}\",\"Section1/Regnskap/Appended Query1.{Belop,4}\",\"Section1/Regnskap/Appended Query1.{ProsjektLnk,10}\",\"Section1/Betalinger/Changed Type.{Old,13}\"],\"RelationshipInfo\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/a2insight.database.windows.net;a2dmHallmaker/dbo/Companies.{InfoEasyId,3}\",\"KeyColumnCount\":1}]}"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": [
+        "[",
+        "  {",
+        "    \"fromTable\": \"Betalinger\",",
+        "    \"fromColumn\": \"Dato\",",
+        "    \"toTable\": \"Kalender\",",
+        "    \"toColumn\": \"Dato\"",
+        "  },",
+        "  {",
+        "    \"fromTable\": \"Betalinger\",",
+        "    \"fromColumn\": \"KundeLnk\",",
+        "    \"toTable\": \"Kunder\",",
+        "    \"toColumn\": \"KundeLnk\"",
+        "  },",
+        "  {",
+        "    \"fromTable\": \"Betalinger\",",
+        "    \"fromColumn\": \"ProsjektLnk\",",
+        "    \"toTable\": \"Prosjekt\",",
+        "    \"toColumn\": \"ProsjektLnk\"",
+        "  }",
+        "]"
+      ]
+    }
+  ]
+}

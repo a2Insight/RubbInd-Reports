@@ -1,0 +1,5 @@
+{
+  "name": "LiveStage",
+  "expression": "CONCATENATE(IF(HASONEVALUE(Prosjekt[HP Beskrivelse]),MAX(LiveProjectForecast[Status]),BLANK()),BLANK())",
+  "lineageTag": "9c1a55c4-04e0-4d40-996a-dc6ccf53f30b"
+}

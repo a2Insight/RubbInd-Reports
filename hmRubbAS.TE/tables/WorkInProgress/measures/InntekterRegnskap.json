@@ -1,0 +1,12 @@
+{
+  "name": "InntekterRegnskap",
+  "expression": "CALCULATE([Virkelig YTD],KR_Resultat[Nivå1]=\"Inntekter\")",
+  "formatString": "#,0",
+  "lineageTag": "59ff4003-ba7e-4606-bf8b-40b17534479e",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

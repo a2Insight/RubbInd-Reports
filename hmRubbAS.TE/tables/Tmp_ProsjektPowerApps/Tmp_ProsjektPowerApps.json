@@ -1,0 +1,14 @@
+{
+  "name": "Tmp_ProsjektPowerApps",
+  "lineageTag": "f5dc325b-12b6-486d-9ec5-f60ccd3e1c8c",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

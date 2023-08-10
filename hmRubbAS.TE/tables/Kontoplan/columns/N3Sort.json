@@ -1,0 +1,14 @@
+{
+  "name": "N3Sort",
+  "dataType": "int64",
+  "sourceColumn": "N3Sort",
+  "formatString": "0",
+  "lineageTag": "5808626c-5960-48d8-9af5-0964a6eef607",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

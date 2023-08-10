@@ -1,0 +1,49 @@
+{
+  "name": "SQL_Projects",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"Prosjekter\",",
+    "    table2 = \"LU_Projects\",",
+    "    table3 = \"LU_ProjectMgrs\",",
+    "    ",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
+    "    sqlTbl2 = sqlDatabase{[Schema=\"dbo\",Item=(table2)]}[Data],",
+    "    sqlTbl3 = sqlDatabase{[Schema=\"dbo\",Item=(table3)]}[Data],",
+    "    #\"Added Custom\" = Table.AddColumn(sqlTbl1, \"Custom\", each if [HovedArbeidProsjektNr] <> null then [HovedArbeidProsjektNr] else Text.BeforeDelimiter([ProsjektId], \"-\"), type text),",
+    "    #\"Filtered Rows1\" = Table.SelectRows(#\"Added Custom\", each [Status] <> 9 ),",
+    "    #\"Removed Columns\" = Table.RemoveColumns(#\"Filtered Rows1\",{\"HovedArbeidProsjektNr\"}),",
+    "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns\",{{\"Custom\", \"HovedArbeidProsjektNr\"}, {\"Frifelt3\", \"DG\"}, {\"KontraktSum\", \"OrdreVerdi\"}, {\"Frifelt4\", \"OrdreDato\"}, {\"FriTekst1\", \"Adresse\"}}),",
+    "    ExtractFromFrifelt = Table.TransformColumns(#\"Renamed Columns\", {{\"Adresse\", each Text.AfterDelimiter(_, \" \"), type text}, {\"DG\", each Text.AfterDelimiter(_, \" \"), type text}, {\"OrdreDato\", each Text.AfterDelimiter(_, \" \"), type text}}),",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(ExtractFromFrifelt,{{\"HovedArbeidProsjektNr\", type text}, {\"OrdreVerdi\", type number}, {\"DG\", Percentage.Type}, {\"OrdreDato\", type date}, {\"Adresse\", type text}}),",
+    "    #\"Replaced Errors\" = Table.ReplaceErrorValues(#\"Changed Type\", {{\"DG\", null},{\"OrdreDato\", null}}),",
+    "    #\"Merged Queries\" = Table.NestedJoin(#\"Replaced Errors\",{\"FirmaId\"},SQL_Company,{\"InfoEasyId\"},\"SQL_Company\",JoinKind.Inner),",
+    "    #\"Expanded SQL_Company\" = Table.ExpandTableColumn(#\"Merged Queries\", \"SQL_Company\", {\"CompanyId\"}, {\"CompanyId\"}),",
+    "    #\"Merged Queries1\" = Table.NestedJoin(#\"Expanded SQL_Company\",{\"ProsjektId\",\"CompanyId\"},sqlTbl2,{\"ProjectRef\",\"CompanyId\"},\"Removed Columns1\",JoinKind.LeftOuter),",
+    "    #\"Expanded Removed Columns1\" = Table.ExpandTableColumn(#\"Merged Queries1\", \"Removed Columns1\", {\"ParentProjectNo\", \"ProjectId\", \"ProjectManagerId\", \"Status\"}, {\"ParentProjectNo\", \"ProjectId\", \"ProjectManagerId\", \"Status.1\"}),",
+    "    #\"Changed Type2\" = Table.TransformColumnTypes(#\"Expanded Removed Columns1\",{{\"ProjectManagerId\", Int64.Type}}),",
+    "    #\"Merged Queries2\" = Table.NestedJoin(#\"Changed Type2\",{\"ProjectManagerId\"},sqlTbl3,{\"ProjectMgrId\"},\"Expanded Removed Columns1\",JoinKind.LeftOuter),",
+    "    #\"Expanded Expanded Removed Columns1\" = Table.ExpandTableColumn(#\"Merged Queries2\", \"Expanded Removed Columns1\", {\"NickName\", \"email\"}, {\"NickName\", \"email\"}),",
+    "    #\"Removed Columns2\" = Table.RemoveColumns(#\"Expanded Expanded Removed Columns1\",{\"Status\", \"HovedArbeidProsjektNr\", \"CompanyId\", \"ProjectManagerId\", \"Prosjektleder\"}),",
+    "    #\"Renamed Columns1\" = Table.RenameColumns(#\"Removed Columns2\",{{\"Status.1\", \"Status\"}, {\"ParentProjectNo\", \"HovedArbeidProsjektNr\"}}),",
+    "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Renamed Columns1\",{\"ProsjektlederId\"}),",
+    "    #\"Renamed Columns2\" = Table.RenameColumns(#\"Removed Columns1\",{{\"email\", \"ProsjektlederId\"}, {\"NickName\", \"Prosjektleder\"}}),",
+    "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Renamed Columns2\",{{\"ProsjektlederId\", type text}})",
+    "in",
+    "    #\"Changed Type1\""
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "0bd0ddb2-839b-4a7e-9012-a2deda0d0f3a",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

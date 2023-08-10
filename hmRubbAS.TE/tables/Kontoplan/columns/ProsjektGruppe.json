@@ -1,0 +1,13 @@
+{
+  "name": "ProsjektGruppe",
+  "dataType": "string",
+  "sourceColumn": "ProsjektGruppe",
+  "lineageTag": "7a4b5c18-83b6-4c01-986f-1a234c75a9be",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

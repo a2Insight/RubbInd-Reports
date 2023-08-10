@@ -1,0 +1,12 @@
+{
+  "name": "SaldoNet",
+  "expression": "SUM(KundePoster[NetOutstanding])",
+  "formatString": "#,##0",
+  "displayFolder": "Kunder",
+  "lineageTag": "1c679500-4d51-4a41-8f1b-4c9b08a61808",
+  "changedProperties": [
+    {
+      "property": "FormatString"
+    }
+  ]
+}

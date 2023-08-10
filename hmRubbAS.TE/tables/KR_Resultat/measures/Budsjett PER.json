@@ -1,0 +1,12 @@
+{
+  "name": "Budsjett PER",
+  "expression": "CALCULATE([Resultat],Datasett[Sett]=\"Budsjett\")",
+  "formatString": "#,0",
+  "lineageTag": "f35e9037-d99b-4691-afc2-d4f9df72999f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

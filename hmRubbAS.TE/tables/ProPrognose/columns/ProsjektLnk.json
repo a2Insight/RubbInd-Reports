@@ -1,0 +1,13 @@
+{
+  "name": "ProsjektLnk",
+  "dataType": "string",
+  "sourceColumn": "ProsjektLnk",
+  "lineageTag": "54147348-bd9e-402e-ad5a-9c80f4952673",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

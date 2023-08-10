@@ -1,0 +1,13 @@
+{
+  "name": "Status",
+  "dataType": "string",
+  "sourceColumn": "Status",
+  "lineageTag": "933c9968-89bb-4f6f-9665-a7b97721c0b3",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "DG% fper",
+  "expression": "CALCULATE([DG %],DATEADD(Kalender[Dato],-1,MONTH))",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "598bbcb9-9881-4f6f-b679-dfd00d4c8bef"
+}

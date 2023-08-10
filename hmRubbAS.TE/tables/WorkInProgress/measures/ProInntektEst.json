@@ -1,0 +1,12 @@
+{
+  "name": "ProInntektEst",
+  "expression": "SUM(HpPrognose[Inntekter])",
+  "formatString": "#,0",
+  "lineageTag": "d2aeab39-078d-4761-81a3-1ea538159169",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

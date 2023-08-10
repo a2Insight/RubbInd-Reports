@@ -1,0 +1,17 @@
+{
+  "name": "Type",
+  "dataType": "int64",
+  "sourceColumn": "Type",
+  "lineageTag": "c05c3238-6ab7-4662-9739-f92f3e1e7c04",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

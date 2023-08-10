@@ -1,0 +1,17 @@
+{
+  "name": "NetOutstanding",
+  "dataType": "double",
+  "sourceColumn": "NetOutstanding",
+  "lineageTag": "dd835a09-f559-4164-bc68-68588880016d",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

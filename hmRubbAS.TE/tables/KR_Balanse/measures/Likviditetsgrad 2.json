@@ -1,0 +1,11 @@
+{
+  "name": "Likviditetsgrad 2",
+  "expression": "DIVIDE(CALCULATE([BalanseFraRegnskap],Kontoplan[Nivå1]=\"Omløpsmidler\",Kontoplan[Nivå3]<>\"Anlegg under utførelse (opptjent ikke fakturert)\",Kontoplan[Nivå3]<>\"Skattetrekkskonto\"),CALCULATE([BalanseFraRegnskap],Kontoplan[Nivå2]=\"Kortsiktig gjeld\",Kontoplan[Nivå3]<>\"Anlegg under utførelse (opptjent ikke fakturert)\",Kontoplan[Nivå3]<>\"Skattetrekkskonto\"))",
+  "lineageTag": "ab77f464-f9bb-40fa-ac35-84d89132ccbd",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

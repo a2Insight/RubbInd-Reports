@@ -1,0 +1,12 @@
+{
+  "name": "BidragALL",
+  "expression": "[InntektALL]-[KostALL]",
+  "formatString": "#,0",
+  "lineageTag": "036cbb9e-b0c4-4180-a230-e80e05ae71d0",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "SQL_Company",
+  "kind": "m",
+  "expression": [
+    "let",
+    "",
+    "    table1 = \"Companies\",",
+    "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data],",
+    "    #\"Filtered Rows\" = Table.SelectRows(sqlTbl1, each [Company] = companyId)",
+    "",
+    "",
+    "in",
+    "    #\"Filtered Rows\""
+  ],
+  "queryGroup": "DataSources",
+  "lineageTag": "ecfab917-e518-4b2d-9c78-04b4b0494203",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

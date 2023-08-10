@@ -1,0 +1,11 @@
+{
+  "name": "PrognoseOrdreAll",
+  "expression": "[PrognoseOrdre]+[SalgAlliå]",
+  "lineageTag": "f9d80b6f-f75f-491b-be27-04c1a79467da",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

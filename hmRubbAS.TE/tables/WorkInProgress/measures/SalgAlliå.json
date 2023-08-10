@@ -1,0 +1,12 @@
+{
+  "name": "SalgAlliå",
+  "expression": "SUMX(VALUES(Prosjekt[HP Beskrivelse]),CALCULATE(IF(YEAR(CALCULATE(MAX(Ordreinngang[FerdigDato]),ALL(Kalender)))<=YEAR(MAX(Kalender[Dato])),[SalgEtterPeriode],[SalgEtterPeriode]*(1-DIVIDE((CALCULATE(MAX(Ordreinngang[FerdigDato]),ALL(Kalender))-DATE(YEAR(MAX(Kalender[Dato])),12,31))*1,CALCULATE(MAX(Ordreinngang[Duration]),ALL(Kalender)))))))",
+  "formatString": "#,0",
+  "lineageTag": "93885276-950c-46b5-8559-78f62aad9e2c",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

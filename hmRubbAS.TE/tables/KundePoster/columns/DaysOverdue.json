@@ -1,0 +1,14 @@
+{
+  "name": "DaysOverdue",
+  "dataType": "int64",
+  "sourceColumn": "DaysOverdue",
+  "formatString": "0",
+  "lineageTag": "5b3c3ae2-e3dd-4b8d-abdf-e7c80ea9d837",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

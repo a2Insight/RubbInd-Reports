@@ -1,0 +1,6 @@
+{
+  "name": "DG %",
+  "expression": "DIVIDE([Bidrag],[Inntekt])",
+  "formatString": "0.0\\ %;-0.0\\ %;0.0\\ %",
+  "lineageTag": "7364856d-39b5-4ed1-a213-dddc0a99b9a0"
+}

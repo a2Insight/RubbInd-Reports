@@ -1,0 +1,11 @@
+{
+  "name": "Snitt virkelig",
+  "expression": "DIVIDE([TotalInntektYTD],SELECTEDVALUE(Kalender[MndNo]))",
+  "lineageTag": "77827e88-12db-4080-8da5-1f5398a089ec",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

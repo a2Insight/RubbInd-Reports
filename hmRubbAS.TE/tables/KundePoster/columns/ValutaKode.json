@@ -1,0 +1,13 @@
+{
+  "name": "ValutaKode",
+  "dataType": "string",
+  "sourceColumn": "ValutaKode",
+  "lineageTag": "b4fcb0a7-fbb1-42a3-a35d-67c12edd68a0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

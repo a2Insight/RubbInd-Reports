@@ -1,0 +1,13 @@
+{
+  "name": "SelskapNavn",
+  "dataType": "string",
+  "sourceColumn": "SelskapNavn",
+  "lineageTag": "895aa054-8fc5-4310-ae96-a378abf5c68c",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

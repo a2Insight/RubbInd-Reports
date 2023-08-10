@@ -1,0 +1,12 @@
+{
+  "name": "ProgVsBud",
+  "expression": "[Kostnadsbudsjett]-[Kostnadsprognose]",
+  "formatString": "#,0",
+  "lineageTag": "a49957e8-91eb-4dd5-8d85-76c5f4862709",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isDecimal\":true}"
+    }
+  ]
+}

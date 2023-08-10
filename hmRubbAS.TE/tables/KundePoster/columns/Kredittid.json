@@ -1,0 +1,14 @@
+{
+  "name": "Kredittid",
+  "dataType": "int64",
+  "sourceColumn": "Kredittid",
+  "formatString": "0",
+  "lineageTag": "083b49ea-0c45-4364-9733-cb92583e6d48",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

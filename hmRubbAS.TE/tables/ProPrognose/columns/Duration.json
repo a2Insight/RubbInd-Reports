@@ -1,0 +1,13 @@
+{
+  "name": "Duration",
+  "dataType": "string",
+  "sourceColumn": "Duration",
+  "lineageTag": "9281a263-a098-4dc7-8147-cd34c8ec9bfa",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "RestBelopNorsk",
+  "dataType": "double",
+  "sourceColumn": "RestBelopNorsk",
+  "lineageTag": "8fb0cfe2-b38a-4dbc-a142-9bd8fa5627a9",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

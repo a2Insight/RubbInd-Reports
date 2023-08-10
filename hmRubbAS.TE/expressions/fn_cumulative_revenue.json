@@ -1,0 +1,38 @@
+{
+  "name": "fn_cumulative_revenue",
+  "kind": "m",
+  "expression": [
+    "let ",
+    "",
+    "Source = (Input as table) =>",
+    "",
+    "let",
+    "",
+    "    Sorting = Table.Sort(Input,{{\"Dato\", Order.Ascending}}),",
+    "    added_Index = Table.AddIndexColumn(Sorting, \"Index\", 1, 1),",
+    "    cumulativ_total = Table.AddColumn(added_Index, \"Revenue\", each List.Sum(List.Range(added_Index[Inntekter],0,[Index]))),",
+    "",
+    "",
+    "    extract_total = cumulativ_total[Revenue]",
+    "    ",
+    "    ",
+    "in",
+    "    extract_total",
+    "    ",
+    "in",
+    "",
+    "    Source"
+  ],
+  "queryGroup": "WorkInProgress",
+  "lineageTag": "f45fa4b5-4fc2-49d4-8fbc-340adc61a4ec",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Function"
+    }
+  ]
+}

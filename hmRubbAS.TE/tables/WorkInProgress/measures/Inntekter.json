@@ -1,0 +1,11 @@
+{
+  "name": "Inntekter",
+  "expression": "[ProInntektPer]",
+  "lineageTag": "5e88d4b1-2b7e-4127-8e95-be853e7aba9f",
+  "annotations": [
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

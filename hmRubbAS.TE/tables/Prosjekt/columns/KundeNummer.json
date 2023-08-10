@@ -1,0 +1,14 @@
+{
+  "name": "KundeNummer",
+  "dataType": "int64",
+  "sourceColumn": "KundeNummer",
+  "formatString": "0",
+  "lineageTag": "bc708364-9b5a-4009-9f1e-e5baffee3f3e",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

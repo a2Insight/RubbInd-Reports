@@ -1,0 +1,10 @@
+{
+  "name": "Alt",
+  "modelPermission": "read",
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "7077c72f481d4c5c8f14c142c2d181b2"
+    }
+  ]
+}

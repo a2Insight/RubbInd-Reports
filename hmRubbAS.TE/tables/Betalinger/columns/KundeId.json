@@ -1,0 +1,14 @@
+{
+  "name": "KundeId",
+  "dataType": "int64",
+  "sourceColumn": "KundeId",
+  "formatString": "0",
+  "lineageTag": "4c519e31-7ddb-4dae-8901-8d16443f484e",
+  "summarizeBy": "count",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

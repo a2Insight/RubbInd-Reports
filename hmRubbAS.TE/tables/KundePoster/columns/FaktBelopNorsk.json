@@ -1,0 +1,17 @@
+{
+  "name": "FaktBelopNorsk",
+  "dataType": "double",
+  "sourceColumn": "FaktBelopNorsk",
+  "lineageTag": "f133e15a-4aeb-4264-81c4-bd4145e7620b",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

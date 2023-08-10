@@ -1,0 +1,14 @@
+{
+  "name": "SelskapsId",
+  "dataType": "int64",
+  "sourceColumn": "SelskapsId",
+  "formatString": "0",
+  "lineageTag": "cd3c0bbd-02c8-4df0-b591-1c72437bc0ea",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

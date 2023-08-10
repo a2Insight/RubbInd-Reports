@@ -1,0 +1,5 @@
+{
+  "name": "AvsluttetProsjekt",
+  "expression": "CONCATENATE(CONCATENATE(MAX(Prosjekt[Status]),\" \"),SELECTEDVALUE(Prosjekt[HP Beskrivelse]))",
+  "lineageTag": "036f9dcb-ca30-4a45-9ae9-2e9aa549fe80"
+}

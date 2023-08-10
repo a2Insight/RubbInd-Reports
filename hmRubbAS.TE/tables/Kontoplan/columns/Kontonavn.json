@@ -1,0 +1,13 @@
+{
+  "name": "Kontonavn",
+  "dataType": "string",
+  "sourceColumn": "Kontonavn",
+  "lineageTag": "f872cf39-ecaf-42c2-8d79-072687070982",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Tertial",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = Kalender,",
+    "    #\"Grouped Rows\" = Table.Group(Source, {\"YY-Tx\"}, {{\"MaxDate\", each List.Max([Dato]), type datetime}}),",
+    "    #\"Sorted Rows\" = Table.Sort(#\"Grouped Rows\",{{\"YY-Tx\", Order.Ascending}}),",
+    "    #\"Added Index\" = Table.AddIndexColumn(#\"Sorted Rows\", \"Index\", 1, 1),",
+    "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Added Index\",{{\"YY-Tx\", type text}, {\"MaxDate\", type date}, {\"Index\", Int64.Type}})",
+    "in",
+    "    #\"Changed Type\""
+  ],
+  "lineageTag": "eaa9108b-4ccc-4f5f-b0e1-8e167e9f4b40",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

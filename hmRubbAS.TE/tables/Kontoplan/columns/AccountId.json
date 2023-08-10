@@ -1,0 +1,14 @@
+{
+  "name": "AccountId",
+  "dataType": "int64",
+  "sourceColumn": "AccountId",
+  "formatString": "0",
+  "lineageTag": "ec62a8ed-06b1-4862-8d5f-5e50a053f9d0",
+  "summarizeBy": "count",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}
