@@ -1,0 +1,15 @@
+{
+  "name": "VelgInnhold",
+  "mode": "import",
+  "source": {
+    "type": "calculated",
+    "expression": [
+      "{",
+      "    (\"Delprosjekt\", NAMEOF('Prosjekt'[DelprosjektNummer]), 0),",
+      "    (\"Leverandør\", NAMEOF('Leverandører'[LeverandorBeskrivelse]), 1),",
+      "    (\"År\", NAMEOF('Kalender'[KortÅr]), 2),",
+      "    (\"Mnd\", NAMEOF('Kalender'[KortMnd]), 3)",
+      "}"
+    ]
+  }
+}

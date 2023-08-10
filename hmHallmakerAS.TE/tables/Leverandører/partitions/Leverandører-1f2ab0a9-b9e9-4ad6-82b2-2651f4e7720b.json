@@ -11,15 +11,9 @@
       "//Procedure",
       "",
       "    #\"Merged Queries\" = Table.NestedJoin(SQL_Suppliers,{\"FirmaId\"},SQL_Company,{\"InfoEasyId\"},\"Temp\",JoinKind.Inner),",
-      "    #\"Expanded Temp\" = Table.ExpandTableColumn(#\"Merged Queries\", \"Temp\", {\"CompanyId\"}, {\"CompanyId\"}),",
-      "    #\"Added Custom\" = Table.AddColumn(#\"Expanded Temp\", \"Custom\", each if Text.Length(Text.From([LevId])) = 0 then null else Text.From([CompanyId])&\"-\"&Text.From([LevId])),",
-      "    #\"Added Custom1\" = Table.AddColumn(#\"Added Custom\", \"LeverandorBeskrivelse\", each if Text.Length(Text.From([LevId])) = 0 then null else Text.From([LevId])&\" - \"&Text.From([Leverandor])),",
-      "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Added Custom1\",{\"FirmaId\", \"LevLnk\", \"CompanyId\"}),",
-      "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns1\",{{\"Custom\", \"LevLnk\"}}),",
-      "    #\"Appended Query\" = Table.Combine({#\"Renamed Columns\", SuppliersFromMergers})",
-      "",
+      "    #\"Removed Columns\" = Table.RemoveColumns(#\"Merged Queries\",{\"Temp\"})",
       "in",
-      "    #\"Appended Query\""
+      "    #\"Removed Columns\""
     ]
   }
 }

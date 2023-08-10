@@ -1,5 +1,5 @@
 {
-  "name": "1752",
+  "name": "1530",
   "expression": "SUMX(VALUES(Prosjekt[HP Beskrivelse]),if([VIAakkumulert] > 0,  [VIAakkumulert]))",
   "formatString": "#,0",
   "lineageTag": "2f508374-c84a-403f-8e26-fad2be90f11d",

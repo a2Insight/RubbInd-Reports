@@ -1,0 +1,18 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "Parameter Order",
+  "dataType": "int64",
+  "isNameInferred": false,
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "sourceColumn": "[Value3]",
+  "formatString": "0",
+  "lineageTag": "6453dee7-9393-45df-933f-fb25a9551752",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

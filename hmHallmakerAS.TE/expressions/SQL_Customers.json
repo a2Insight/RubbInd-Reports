@@ -6,7 +6,7 @@
     "",
     "    table1 = \"Kunder\",",
     "    sqlDatabase = Sql.Database(SQLserver1, SQLdatabase1),",
-    "    sqlTbl1 = sqlDatabase{[Schema=\"dbo\",Item=(table1)]}[Data]",
+    "    sqlTbl1 = sqlDatabase{[Schema=\"pbi\",Item=(table1)]}[Data]",
     "",
     "",
     "in",

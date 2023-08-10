@@ -2,13 +2,17 @@
   "name": "ForfallsDato",
   "dataType": "dateTime",
   "sourceColumn": "ForfallsDato",
-  "formatString": "General Date",
+  "formatString": "Long Date",
   "lineageTag": "0a9b8829-a33f-4e67-8300-199fb62c0e43",
   "summarizeBy": "none",
   "annotations": [
     {
       "name": "SummarizationSetBy",
       "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
     }
   ]
 }

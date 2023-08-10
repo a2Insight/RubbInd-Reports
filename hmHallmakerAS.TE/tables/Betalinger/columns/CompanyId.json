@@ -1,6 +1,6 @@
 {
   "name": "CompanyId",
-  "dataType": "double",
+  "dataType": "int64",
   "sourceColumn": "CompanyId",
   "formatString": "0",
   "lineageTag": "4daf3340-bf11-4238-bf8e-bcefad6fc54f",

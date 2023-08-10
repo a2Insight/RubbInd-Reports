@@ -3,12 +3,12 @@
   "lineageTag": "8935626e-f0eb-4460-91c9-cfa7e4d55ffc",
   "annotations": [
     {
-      "name": "PBI_NavigationStepName",
-      "value": "Navigation"
-    },
-    {
       "name": "PBI_ResultType",
       "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
     },
     {
       "name": "TabularEditor_Relationships",

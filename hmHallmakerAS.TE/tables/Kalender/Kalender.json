@@ -3,10 +3,6 @@
   "lineageTag": "e4d4406f-7939-4b5e-a6e7-689dedbe817b",
   "annotations": [
     {
-      "name": "PBI_NavigationStepName",
-      "value": "Navigasjon"
-    },
-    {
       "name": "PBI_ResultType",
       "value": "Table"
     },

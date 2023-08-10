@@ -1,7 +1,7 @@
 {
   "name": "HpPrognose-ed06083f-2d77-477b-b135-a5cb0ba52aad",
   "mode": "import",
-  "queryGroup": "Fakta",
+  "queryGroup": "Dimensjoner",
   "source": {
     "type": "m",
     "expression": [

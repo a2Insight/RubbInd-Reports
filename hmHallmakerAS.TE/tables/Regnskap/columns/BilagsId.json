@@ -1,14 +1,15 @@
 {
   "name": "BilagsId",
-  "dataType": "string",
+  "dataType": "int64",
   "sourceColumn": "BilagsId",
+  "formatString": "0",
   "lineageTag": "4be9668b-acba-4b36-97cb-70af3f0f9e16",
-  "dataCategory": "PostalCode",
+  "dataCategory": "Uncategorized",
   "summarizeBy": "none",
   "annotations": [
     {
       "name": "SummarizationSetBy",
-      "value": "Automatic"
+      "value": "User"
     }
   ]
 }

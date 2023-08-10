@@ -30,12 +30,11 @@
       "    #\"Removed Columns1\" = Table.RemoveColumns(#\"Added Custom\",{\"FirmaId\", \"KundeLnk\", \"CompanyId\"}),",
       "    #\"Renamed Columns\" = Table.RenameColumns(#\"Removed Columns1\",{{\"Custom\", \"KundeLnk\"}}),",
       "    #\"Replaced Value\" = Table.ReplaceValue(#\"Renamed Columns\",null,\"\",Replacer.ReplaceValue,{\"Kunde\"}),",
-      "    #\"Appended Query\" = Table.Combine({#\"Replaced Value\", CustomersFromMergers}),",
-      "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Appended Query\", \"Kunde\", \"Kunde - Copy\"),",
+      "    #\"Duplicated Column\" = Table.DuplicateColumn(#\"Replaced Value\", \"Kunde\", \"Kunde - Copy\"),",
       "    #\"Uppercased Text\" = Table.TransformColumns(#\"Duplicated Column\",{{\"Kunde - Copy\", Text.Upper, type text}}),",
-      "    #\"Added Conditional Column\" = Table.AddColumn(#\"Uppercased Text\", \"IC Kunder\", each if Text.Contains([#\"Kunde - Copy\"], \"HALLMAKER\") then 1 else if Text.Contains([#\"Kunde - Copy\"], \"RUBB\") then 1 else 0),",
+      "    #\"Added Conditional Column\" = Table.AddColumn(#\"Uppercased Text\", \"IC Kunder\", each if Text.Contains([#\"Kunde - Copy\"], \"HALLMAKER\") then 1 else if Text.Contains([#\"Kunde - Copy\"], \"RUBB\") then 1 else if Text.Contains([#\"Kunde - Copy\"], \"PLAMEK\") then 1 else 0),",
       "    #\"Removed Columns\" = Table.RemoveColumns(#\"Added Conditional Column\",{\"Kunde - Copy\"}),",
-      "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"KundeId\", Int64.Type}, {\"Kunde\", type text}, {\"KundeLnk\", type text}, {\"IC Kunder\", type logical}})",
+      "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Removed Columns\",{{\"KundeId\", type text}, {\"Kunde\", type text}, {\"KundeLnk\", type text}, {\"IC Kunder\", type logical}})",
       "in",
       "    #\"Changed Type\""
     ]
