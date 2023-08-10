@@ -4,7 +4,7 @@
   "sourceColumn": "SideSort",
   "formatString": "0",
   "lineageTag": "1633ec64-5c25-4d69-b91c-b10b28fab543",
-  "summarizeBy": "sum",
+  "summarizeBy": "none",
   "annotations": [
     {
       "name": "SummarizationSetBy",
